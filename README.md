@@ -4,6 +4,8 @@ The following fonts were slightly modified for my e-reading enjoyment.
 
 The fonts were all originally available under the OFL license.
 
+## What fonts are included?
+
 I decided on the following fonts:
 
 - [Charis SIL](https://software.sil.org/charis/) (has become **Charis eBook**)
@@ -14,3 +16,7 @@ I decided on the following fonts:
 - [Literata](https://github.com/googlefonts/literata) (has become **Literata eBook**)
 
 The copyright disclaimers and such have not been modified, only some of the metrics and font family name information is different.
+
+## Where can I get the altered fonts?
+
+Go to [releases](https://github.com/nicoverbruggen/ebook-fonts/releases) and you can download a zip file per font family.
