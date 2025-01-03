@@ -10,19 +10,19 @@ Included in the repository right now are my tweaked 'NV' fonts, but [the older r
 
 ### NV Garamond
 
-![](./examples/NV-Garamond.png)
+<kbd><img src="./examples/NV-Garamond.png" width='400px'/></kbd>
 
  **NV Garamond** is an EB Garamond version that contains a bunch of tweaks, mostly related to glyph sizes. This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-garamond) that I've linked. OFL licensed.
 
 ### NV Jost
 
-![](./examples/NV-Jost.png)
+<kbd><img src="./examples/NV-Jost.png" width='400px'/></kbd>
 
 **NV Jost** is a Jost variant, with a slightly altered lowercase G and single storey a (similar to Futura, only accessible via OT feature on the original font). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-jost) that I've linked, OFL licensed.
 
 ### NV Cardo
 
-![](./examples/NV-Cardo.png)
+<kbd><img src="./examples/NV-Cardo.png" width='400px'/></kbd>
 
 **NV Cardo** is a version of Cardo with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
 
