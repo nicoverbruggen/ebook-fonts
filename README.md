@@ -8,6 +8,12 @@ Included in the repository right now are my tweaked 'NV' fonts, but [the older r
 
 ## Included tweaked fonts
 
+### NV Charter
+
+<kbd><img src="./examples/NV-Charter.png" width='400px'/></kbd>
+
+**NV Charter**, is a renamed version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-charter) that I've linked. Available under a [Free license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE).
+
 ### NV Garamond
 
 <kbd><img src="./examples/NV-Garamond.png" width='400px'/></kbd>
