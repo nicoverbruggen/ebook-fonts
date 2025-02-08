@@ -8,12 +8,6 @@ Included in the repository right now are my tweaked 'NV' fonts, but [the older r
 
 ## Included tweaked fonts
 
-### NV Charter
-
-<kbd><img src="./examples/NV-Charter.png" width='400px'/></kbd>
-
-**NV Charter**, is a renamed version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-charter) that I've linked. Available under a [Free license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE).
-
 ### NV Garamond
 
 <kbd><img src="./examples/NV-Garamond.png" width='400px'/></kbd>
@@ -26,11 +20,31 @@ Included in the repository right now are my tweaked 'NV' fonts, but [the older r
 
 **NV Jost** is a Jost variant, with a slightly altered lowercase G and single storey a (similar to Futura, only accessible via OT feature on the original font). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-jost) that I've linked, OFL licensed.
 
+## Included renamed fonts
+
 ### NV Cardo
 
 <kbd><img src="./examples/NV-Cardo.png" width='400px'/></kbd>
 
 **NV Cardo** is a version of Cardo with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
+
+### NV Charter
+
+<kbd><img src="./examples/NV-Charter.png" width='400px'/></kbd>
+
+**NV Charter**, is a renamed version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-charter) that I've linked. Available under a [Free license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE).
+
+### NV Palatium
+
+<kbd><img src="./examples/NV-Palatium.png" width='400px'/></kbd>
+
+**NV Palatium**, is a renamed version of [Domitian](https://www.ctan.org/tex-archive/fonts/domitian/), which is an extended version of [URW Palladio](https://tug.org/FontCatalogue/urwpalladio/). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-palatium) that I've linked. Available under a [Free license](https://github.com/nicoverbruggen/nv-palatium/blob/main/LICENSE).
+
+### NV Tempus
+
+<kbd><img src="./examples/NV-Tempus.png" width='400px'/></kbd>
+
+**NV Tempus**, is a renamed version of [TeX Gyre Termes](https://ctan.org/pkg/tex-gyre-termes), which is an extended version of [URW Nimbus Roman No9](https://tug.org/FontCatalogue/urwpalladio/). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-tempus) that I've linked. Available under a [Free license](https://github.com/nicoverbruggen/nv-tempus/blob/main/LICENSE).
 
 ### Where can I get the fonts?
 
@@ -56,10 +70,11 @@ To reboot, long-press the power button until your Kobo says it has been shut dow
 
 ### How are these fonts licensed?
 
-* Most of these fonts are available under their original [Open Font License](https://openfontlicense.org/).
-* _XCharter_ is available under the original Bitstream license, which is included in the respective archive.
+* Many of these fonts are available under their original [Open Font License](https://openfontlicense.org/).
+* NV Charter is available under the original Bitstream license, which is included in the respective archive.
+* NV Palatium is available under the OFL license, and is available under the same license as Domitian is.
 
 ### What is your favorite font from the collection?
 
-* For simple books and basic readability, I personally prefer XCharter or NV Jost.
+* For simple books and basic readability, I personally prefer NV Charter or NV Jost.
 * For fantasy books, I prefer to use NV Garamond or NV Cardo.
