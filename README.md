@@ -40,12 +40,6 @@ Included in the repository right now are my tweaked 'NV' fonts, but [the older r
 
 **NV Palatium**, is a renamed version of [Domitian](https://www.ctan.org/tex-archive/fonts/domitian/), which is an extended version of [URW Palladio](https://tug.org/FontCatalogue/urwpalladio/). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-palatium) that I've linked. Available under a [Free license](https://github.com/nicoverbruggen/nv-palatium/blob/main/LICENSE).
 
-### NV Tempus
-
-<kbd><img src="./examples/NV-Tempus.png" width='400px'/></kbd>
-
-**NV Tempus**, is a renamed version of [TeX Gyre Termes](https://ctan.org/pkg/tex-gyre-termes), which is an extended version of [URW Nimbus Roman No9](https://tug.org/FontCatalogue/urwpalladio/). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-tempus) that I've linked. Available under a [Free license](https://github.com/nicoverbruggen/nv-tempus/blob/main/LICENSE).
-
 ### Where can I get the fonts?
 
 The fonts are available via the [release](https://github.com/nicoverbruggen/ebook-fonts/releases).
