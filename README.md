@@ -32,7 +32,7 @@ Included in the repository right now are my tweaked 'NV' fonts, but [the older r
 
 <kbd><img src="./examples/NV-Cardo.png" width='400px'/></kbd>
 
-**NV Cardo** is a version of Cardo with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
+**NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
 
 ### NV Charter
 
