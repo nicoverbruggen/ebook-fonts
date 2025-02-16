@@ -22,6 +22,12 @@ Included in the repository right now are my tweaked 'NV' fonts, but [the older r
 
 ## Included renamed fonts
 
+### NV Elstob
+
+<kbd><img src="./examples/NV-Elstob.png" width='400px'/></kbd>
+
+**NV Elstob** is a version of [Elstob](https://github.com/psb1558/Elstob-font) that has been renamed so it works correctly on Kobo devices. It is based on the 12pt version. Does not have a separate repository because no other changes were applied. OFL licensed.
+
 ### NV Cardo
 
 <kbd><img src="./examples/NV-Cardo.png" width='400px'/></kbd>
