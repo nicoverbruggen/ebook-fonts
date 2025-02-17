@@ -74,6 +74,10 @@ To reboot, long-press the power button until your Kobo says it has been shut dow
 * NV Charter is available under the original Bitstream license, which is included in the respective archive.
 * NV Palatium is available under the OFL license, and is available under the same license as Domitian is.
 
+### Is there anything else I should do?
+
+If you are manually transferring books to your Kobo devices, you should consider converting `epub` files to `kepub` files. To do this, you can use [kepubify](https://pgaskin.net/kepubify/) or use [Calibre](https://calibre-ebook.com/). This ensures that your Kobo device will use a superior and faster book renderer. This renderer also gives you broader font compatibility.
+
 ### What is your favorite font from the collection?
 
 * For simple books and basic readability, I personally prefer NV Charter or NV Jost.
