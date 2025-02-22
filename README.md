@@ -20,6 +20,12 @@ Included in the repository right now are my tweaked 'NV' fonts, but [the older r
 
 **NV Jost** is a Jost variant, with a slightly altered lowercase G and single storey a (similar to Futura, only accessible via OT feature on the original font). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-jost) that I've linked, OFL licensed.
 
+### NV Zilla Slab
+
+<kbd><img src="./examples/NV-ZillaSlab.png" width='400px'/></kbd>
+
+**NV Zilla Slab** is a [Zilla Slab](https://github.com/mozilla/zilla-slab) variant, with adjusted metrics and a 10% glyph size increase. This makes it ideal for digital reading on e-readers. This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-zilla-slab) that I've linked, OFL licensed.
+
 ## Included renamed fonts
 
 ### NV Elstob
