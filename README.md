@@ -20,13 +20,19 @@ Included in the repository right now are my tweaked 'NV' fonts, but [the older r
 
 **NV Jost** is a Jost variant, with a slightly altered lowercase G and single storey a (similar to Futura, only accessible via OT feature on the original font). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-jost) that I've linked, OFL licensed.
 
-### NV Zilla Slab
+### NV Junius
 
-<kbd><img src="./examples/NV-ZillaSlab.png" width='400px'/></kbd>
+<kbd><img src="./examples/NV-Junius.png" width='400px'/></kbd>
 
-**NV Zilla Slab** is a [Zilla Slab](https://github.com/mozilla/zilla-slab) variant, with adjusted metrics and a 10% glyph size increase. This makes it ideal for digital reading on e-readers. This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-zilla-slab) that I've linked, OFL licensed.
+**NV Junius** is a [Junicode 2](https://github.com/psb1558/Junicode-font) variant based on the variable font, with adjusted metrics and a 10% glyph size increase. This one does not have a repository, but can be easily recreated by using [Slice](https://github.com/source-foundry/Slice), a GUI that allows you to export various fixed configurations.
 
 ## Included renamed fonts
+
+### NV Bitter
+
+<kbd><img src="./examples/NV-Bitter.png" width='400px'/></kbd>
+
+**NV Bitter** is a renamed version of [Bitter](https://www.huertatipografica.com/en/fonts/bitter-ht) (that can co-exist with Bitter if necessary). Intended for older Kobo devices that do not include an on-board version. Bitter is included by default on Kobo Clara BW and Kobo Libra Color. OFL licensed.
 
 ### NV Elstob
 
