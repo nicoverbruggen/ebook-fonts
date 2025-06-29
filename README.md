@@ -6,7 +6,7 @@ This is a selection of fonts that I've tweaked for reading purposes on Kobo devi
 
 Included in the repository right now are my tweaked 'NV' fonts, but [the older release](https://github.com/nicoverbruggen/ebook-fonts/releases/tag/v2024.03) may still be of interest as I've included my initial batch of tweaked fonts mentioned in [the blog post](https://nicoverbruggen.be/blog/patching-fonts-for-kobo) there.
 
-## Included tweaked fonts
+## Included fonts
 
 ### NV Garamond
 
@@ -25,8 +25,6 @@ Included in the repository right now are my tweaked 'NV' fonts, but [the older r
 <kbd><img src="./examples/NV-Junius.png" width='400px'/></kbd>
 
 **NV Junius** is a [Junicode 2](https://github.com/psb1558/Junicode-font) variant based on the variable font, with adjusted metrics and a 10% glyph size increase. This one does not have a repository, but can be easily recreated by using [Slice](https://github.com/source-foundry/Slice), a GUI that allows you to export various fixed configurations.
-
-## Included renamed fonts
 
 ### NV Bitter
 
@@ -80,6 +78,10 @@ To reboot, long-press the power button until your Kobo says it has been shut dow
 
 ## FAQ
 
+### Can I test these fonts?
+
+Yes, I recommend grabbing the **Evaluating typefaces for electronic reading** document that I have added as a sample book. It contains markup to test various font styles. You can get the [Kobo epub](./docs/Evaluating typefaces.kepub.epub) or [regular epub](./docs/Evaluating typefaces.epub).
+
 ### What tweaks have been applied to these fonts?
 
 - I've set a 20% line height (using `font-line percent 20`). Some fonts rendered poorly on Kobo devices with the line height slider all the way to the left. This fixes that!
@@ -88,7 +90,7 @@ To reboot, long-press the power button until your Kobo says it has been shut dow
 
 ### How are these fonts licensed?
 
-* Many of these fonts are available under their original [Open Font License](https://openfontlicense.org/).
+* Many of these fonts are available under their original [Open Font License](https://openfontlicense.org/). Because of licensing rules, the font names have been modified to include a prefix to avoid confusion with the original fonts.
 * NV Charter is available under the original Bitstream license, which is included in the respective archive.
 * NV Palatium is available under the OFL license, and is available under the same license as Domitian is.
 
