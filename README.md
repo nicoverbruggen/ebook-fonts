@@ -19,15 +19,23 @@ If you're curious, you can learn more about how and why I originally made these 
 
 ## Included fonts
 
+### NV Baskerwil
+
+<kbd><img src="./examples/NV-Baskerwil.png" width='400px'/></kbd>
+
+ **NV Baskerwil** is a version of [Baskervville](https://github.com/anrt-type/ANRT-Baskervville) that was extracted from the  so it works correctly on Kobo devices. For optimal readability, the Regular and Italic fonts are using a weight of 500 instead of 400.
+
+_You can also find the original version of Baskervville [on Google Web Fonts](https://fonts.google.com/specimen/Baskervville/about). Baskervville was designed by the ANRT students from 2017 (Alexis Faudot, Rémi Forte, Morgane Pierson, Rafael Ribas, Tanguy Vanlaeys and Rosalie Wagner), under the direction of Charles Mazé and Thomas Huot-Marchand. It is available under the [OFL license](https://openfontlicense.org/)._
+
 ### NV Bitter
 
 <kbd><img src="./examples/NV-Bitter.png" width='400px'/></kbd>
 
  **NV Bitter** is a version of [Bitter](https://github.com/solmatas/BitterPro) that has been renamed so it works correctly on Kobo devices.
 
-You can also find the original version of Bitter [on Google Web Fonts](https://fonts.google.com/specimen/Bitter/about). Bitter was designed by [Sol Matas](http://www.solmatas.com/), and available under the [OFL license](https://openfontlicense.org/).
+_You can also find the original version of Bitter [on Google Web Fonts](https://fonts.google.com/specimen/Bitter/about). Bitter was designed by [Sol Matas](http://www.solmatas.com/), and available under the [OFL license](https://openfontlicense.org/)._
 
-**Note:** _This font is included by default on newer Kobo devices. On older Kobo devices, like the Kobo Libra 2, it is not available without installing this version. Because this font has a different name, you can install it and it will co-exist alongside the included system font on newer devices._
+**Note:** This font is included by default on newer Kobo devices. On older Kobo devices, like the Kobo Libra 2, it is not available without installing this version. Because this font has a different name, you can install it and it will co-exist alongside the included system font on newer devices.
 
 ---
 
@@ -152,6 +160,14 @@ Well, those are my initials... also, I like to think of the prefix to mean "Nice
 ### In your original blog post, you made various fonts available. Where are those?
 
 Included in the repository right now are only my tweaked fonts, which have all be prefixed with _NV_. However, [the older release](https://github.com/nicoverbruggen/ebook-fonts/releases/tag/v2024.03) may still be of interest as I've included my initial batch of tweaked fonts mentioned in [the blog post](https://nicoverbruggen.be/blog/patching-fonts-for-kobo) there.
+
+### Why were some of the font names altered?
+
+Some are easter eggs or fun references to the original name:
+
+- Baskerwil because of Baskervil because of the [historical context](https://fonts.google.com/specimen/Baskervville/about) related to the revival of Baskervville
+- Junius instead of Junicode because the latter actually a shorthand for "Junius-Unicode"
+- Palatium as a reference to the Palatine hill in Italy, but it's the Roman name; I couldn't use Palatino and didn't want to use Palatine
 
 ### I've discovered a problem with one of the fonts. What should I do?
 
