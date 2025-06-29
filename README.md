@@ -1,6 +1,6 @@
 # Modified fonts for e-reading
 
-This is a selection of fonts that I've tweaked for reading purposes on Kobo devices.
+This is a selection of fonts that I've tweaked for reading purposes on Kobo devices. These fonts can also be used other devices, including Kindle, Pocketbook, and may also work well for general use (i.e. word processing).
 
 > [!IMPORTANT]
 > **If you found these fonts useful, please consider starring the repository**, it helps me understand how useful my work has been.
@@ -14,6 +14,8 @@ For some fonts, font family names have been altered, sometimes glyphs have been 
 The main use of these fonts is for usage on an e-reader. I've only selected and altered fonts that I have the rights to alter because of their license (e.g. free/libre license or equivalent).
 
 These alterations were made for my own personal use, but I figure these fonts may be of use to others, so I make them available here. While font names have been changed and this is allowed due to the licensing of each of the source fonts, I have not modified any copyright messages included in the font files and included attribution to the original authors in the document below.
+
+If you're curious, you can learn more about how and why I originally made these tweaked fonts on my website: [Patching Fonts for my Kobo](https://nicoverbruggen.be/blog/patching-fonts-for-kobo). I explain there how this repository came to be.
 
 ## Included fonts
 
@@ -87,12 +89,6 @@ _TODO: reorganize and update all descriptions below_
 
 **NV Palatium**, is a renamed version of [Domitian](https://www.ctan.org/tex-archive/fonts/domitian/), which is an extended version of [URW Palladio](https://tug.org/FontCatalogue/urwpalladio/). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-palatium) that I've linked. Available under a [Free license](https://github.com/nicoverbruggen/nv-palatium/blob/main/LICENSE).
 
-### Where can I get the fonts?
-
-The fonts are available via the [release](https://github.com/nicoverbruggen/ebook-fonts/releases).
-
-You can learn more about how and why I originally made these tweaked fonts on my blog: [Patching Fonts for my Kobo](https://nicoverbruggen.be/blog/patching-fonts-for-kobo). I explain there why and how.
-
 ## How to install
 
 To install these fonts on your Kobo, unzip the files and drag the font files into the `fonts` directory at the root of your Kobo device after connecting your Kobo to your PC via USB cable. You may need to create the `fonts` directory.
@@ -103,32 +99,51 @@ To reboot, long-press the power button until your Kobo says it has been shut dow
 
 ## FAQ
 
-### Can I test these fonts?
+### Where can I download these fonts?
 
-Yes, I recommend grabbing the **Evaluating typefaces for electronic reading** document that I have added as a sample book. It contains markup to test various font styles and some more information about the included fonts. 
+The fonts are available via the [releases section](https://github.com/nicoverbruggen/ebook-fonts/releases) on GitHub.
+
+### Why did you alter these fonts?
+
+Please go take a look at my blog post, [Patching Fonts for my Kobo](https://nicoverbruggen.be/blog/patching-fonts-for-kobo). It's part of a series of posts related to customizing fonts for the most optimal (subjective) e-reading experience.
+
+### Can I easily test these fonts to see what they look like?
+
+I hope that the screenshots above do a good job at showing what they look like. If you want to further tune the fonts, you can do so in any book you have on your device, but I also provide a reference "book" you can download.
+
+This document is called **Evaluating typefaces for electronic reading**, and contains markup to test various font styles and some more information about the included fonts. 
 
 You can get the [Kobo epub](/docs/evaluating-typefaces.kepub.epub) or [regular epub](/docs/evaluating-typefaces.epub), which you should be able to copy to your e-reader.
 
 ### What tweaks have been applied to these fonts?
 
-- I've normalized all fonts to a **20% line height** (using `font-line percent 20`). Some fonts rendered poorly on Kobo devices with the line height slider all the way to the left. This fixes that!
-- Incorrect **PANOSE information has been corrected** where necessary (using [panosifier](https://github.com/source-foundry/panosifier)). This ensures that the fonts render correctly on Kobo devices.
-- Certain fonts have had their **glyphs rescaled**. In particular, NV Junius and NV Garamond have had their glyph sizes increased by 10%, making them seem visually larger, and more consistent in size with the other fonts included in this collection.
-- All of the **fonts have been renamed** (using [fontname.py](https://github.com/chrissimpkins/fontname.py)). This way, you can keep them installed side-by-side with the original versions, if you'd like. This is also a requirement of the Open Font License, which does not allow you to redistribute the fonts using the original name if they have been altered.
+All of the **fonts have been renamed** (using [fontname.py](https://github.com/chrissimpkins/fontname.py)). This way, you can keep them installed side-by-side with the original versions, if you'd like. This is also a requirement of the Open Font License, which does not allow you to redistribute the fonts using the original name if they have been altered.
+
+Some practical changes to the fonts themselves have been made, including:
+
+- I've **normalized metrics** for all fonts to a **20% line height** (using `font-line percent 20`). Some fonts rendered poorly on Kobo devices with the line height slider all the way to the left. This fixes that!
+- Incorrect **PANOSE information has been corrected** where necessary (using [panosifier](https://github.com/source-foundry/panosifier)). This ensures that the fonts render correctly on Kobo devices. For some fonts, incorrect information meant that the fonts would always render using their Bold style, for example.
+- Certain fonts have had their **glyphs rescaled**. In particular, NV Junius and NV Garamond have had their glyph sizes increased by 10%, making them seem visually larger, and more consistent in size with the other fonts included in this collection. If you like to stick to a certain font size, you won't need to constantly tweak things if you swap to a different font.
 
 ### How are these fonts licensed?
 
-Most of these fonts are available under their original [Open Font License](https://openfontlicense.org/). Because of licensing rules, the font names have been modified to include a prefix to avoid confusion with the original fonts.
+Most of these fonts are available under their original [Open Font License](https://openfontlicense.org/). Because of licensing rules, the font names have been modified to include a prefix to avoid confusion with the original fonts. 
 
-_NV Charter_ is available under the original Bitstream license, which is included in the respective archive and directory.
+_NV Charter_ is available under the original Bitstream license. The original LICENSE file is embedded within my version of the fonts, and also included in the repository for legal reasons.
 
-### Is there anything else I should do?
+### Is there anything else I should do to to get a better reading experience with these fonts?
 
-If you are manually transferring books to your Kobo devices, you should consider converting `epub` files to `kepub` files. To do this, you can use [kepubify](https://pgaskin.net/kepubify/) or use [Calibre](https://calibre-ebook.com/). This ensures that your Kobo device will use a superior and faster book renderer. This renderer also gives you broader font compatibility.
+If you are manually transferring books to your Kobo devices, you should consider converting `epub` files to `kepub` files. 
+
+To do this, you can use [kepubify](https://pgaskin.net/kepubify/) or use [Calibre](https://calibre-ebook.com/). This ensures that your Kobo device will use a superior and faster book renderer. This renderer also gives you broader font compatibility.
+
+### What version of the Kobo operating system did you last test the fonts with?
+
+The last release was tested on a Kobo Libra Color running firmware version 4.42 and on a Kobo Libra 2 running version firmware 4.38. The screenshots you see above were made on a Kobo Libra 2 running [NickelMenu](https://pgaskin.net/NickelMenu/) with [this configuration](https://github.com/nicoverbruggen/kobo-config).
 
 ### What is your favorite font from the collection?
 
-For simple books and basic readability, I personally prefer NV Charter or NV Jost. For fantasy books, I prefer to use NV Garamond or NV Cardo.
+_Charter_ is a timeless classic, so it is my preferred reading font.
 
 ### Why did your prefix the fonts with "NV"?
 
@@ -137,3 +152,9 @@ Well, those are my initials... also, I like to think of the prefix to mean "Nice
 ### In your original blog post, you made various fonts available. Where are those?
 
 Included in the repository right now are only my tweaked fonts, which have all be prefixed with _NV_. However, [the older release](https://github.com/nicoverbruggen/ebook-fonts/releases/tag/v2024.03) may still be of interest as I've included my initial batch of tweaked fonts mentioned in [the blog post](https://nicoverbruggen.be/blog/patching-fonts-for-kobo) there.
+
+### I've discovered a problem with one of the fonts. What should I do?
+
+If you're having an issue you think I can fix, please get [in touch](mailto:mail@nicoverbruggen.be) with me and let me know what the issue is. I may be able to help.
+
+It is possible that certain issues are resolved by updating the fonts with the upstream version, which may need to happen every now and then.
