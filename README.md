@@ -39,15 +39,33 @@ _You can also find the original version of Bitter [on Google Web Fonts](https://
 
 ---
 
-_TODO: reorganize and update all descriptions below_
+> **TODO**: All font descriptions below should be updated and contain links to the original source and attribution. Fonts that are already present on Kobo devices should also have the same note as NV Bitter below them.
 
 ---
+
+### NV Cardo
+
+<kbd><img src="./examples/NV-Cardo.png" width='400px'/></kbd>
+
+**NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
+
+### NV Elstob
+
+<kbd><img src="./examples/NV-Elstob.png" width='400px'/></kbd>
+
+**NV Elstob** is a version of [Elstob](https://github.com/psb1558/Elstob-font) that has been renamed so it works correctly on Kobo devices. It is based on the 12pt version. Does not have a separate repository because no other changes were applied. OFL licensed.
 
 ### NV Garamond
 
 <kbd><img src="./examples/NV-Garamond.png" width='400px'/></kbd>
 
  **NV Garamond** is an EB Garamond version that contains a bunch of tweaks, mostly related to glyph sizes. This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-garamond) that I've linked. OFL licensed.
+
+### NV Georsio
+
+<kbd><img src="./examples/NV-Georsio.png" width='400px'/></kbd>
+
+**NV Georsio** is a modified version of Gelasio.
 
 ### NV Jost
 
@@ -61,23 +79,29 @@ _TODO: reorganize and update all descriptions below_
 
 **NV Junius** is a [Junicode 2](https://github.com/psb1558/Junicode-font) variant based on the variable font, with adjusted metrics and a 10% glyph size increase. This one does not have a repository, but can be easily recreated by using [Slice](https://github.com/source-foundry/Slice), a GUI that allows you to export various fixed configurations.
 
-### NV Bitter
+### NV Legible
 
-<kbd><img src="./examples/NV-Bitter.png" width='400px'/></kbd>
+<kbd><img src="./examples/NV-Legible.png" width='400px'/></kbd>
 
-**NV Bitter** is a renamed version of [Bitter](https://www.huertatipografica.com/en/fonts/bitter-ht) (that can co-exist with Bitter if necessary). Intended for older Kobo devices that do not include an on-board version. Bitter is included by default on Kobo Clara BW and Kobo Libra Color. OFL licensed.
+**NV Legible** is a variant of Atkinson Hyperlegible Next.
 
-### NV Elstob
+### NV Libertinus
 
-<kbd><img src="./examples/NV-Elstob.png" width='400px'/></kbd>
+<kbd><img src="./examples/NV-Libertinus.png" width='400px'/></kbd>
 
-**NV Elstob** is a version of [Elstob](https://github.com/psb1558/Elstob-font) that has been renamed so it works correctly on Kobo devices. It is based on the 12pt version. Does not have a separate repository because no other changes were applied. OFL licensed.
+**NV Libertinus** is a variant of Libertinus Serif.
 
-### NV Cardo
+### NV Newsreader
 
-<kbd><img src="./examples/NV-Cardo.png" width='400px'/></kbd>
+<kbd><img src="./examples/NV-Newsreader.png" width='400px'/></kbd>
 
-**NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
+**NV Newsreader** is a variant of Newsreader.
+
+### NV Palatium
+
+<kbd><img src="./examples/NV-Palatium.png" width='400px'/></kbd>
+
+**NV Palatium**, is a renamed version of [Domitian](https://www.ctan.org/tex-archive/fonts/domitian/), which is an extended version of [URW Palladio](https://tug.org/FontCatalogue/urwpalladio/). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-palatium) that I've linked. Available under a [Free license](https://github.com/nicoverbruggen/nv-palatium/blob/main/LICENSE).
 
 ### NV Source Serif
 
@@ -85,17 +109,11 @@ _TODO: reorganize and update all descriptions below_
 
 **NV Source Serif** is a version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing and has been renamed so it works correctly on Kobo devices. Does not have a separate repository because no other changes were applied. OFL licensed.
 
-### NV Charter
+### NV Technical
 
-<kbd><img src="./examples/NV-Charter.png" width='400px'/></kbd>
+<kbd><img src="./examples/NV-Technical.png" width='400px'/></kbd>
 
-**NV Charter**, is a renamed version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-charter) that I've linked. Available under a [Free license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE).
-
-### NV Palatium
-
-<kbd><img src="./examples/NV-Palatium.png" width='400px'/></kbd>
-
-**NV Palatium**, is a renamed version of [Domitian](https://www.ctan.org/tex-archive/fonts/domitian/), which is an extended version of [URW Palladio](https://tug.org/FontCatalogue/urwpalladio/). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-palatium) that I've linked. Available under a [Free license](https://github.com/nicoverbruggen/nv-palatium/blob/main/LICENSE).
+**NV Technical** is a variant of STIX Two Text.
 
 ## How to install
 
