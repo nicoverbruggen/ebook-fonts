@@ -37,6 +37,12 @@ _You can also find the original version of Bitter [on Google Web Fonts](https://
 
 **Note:** This font is included by default on newer Kobo devices. On older Kobo devices, like the Kobo Libra 2, it is not available without installing this version. Because this font has a different name, you can install it and it will co-exist alongside the included system font on newer devices.
 
+### NV Charter
+
+<kbd><img src="./examples/NV-Charter.png" width='400px'/></kbd>
+
+// TODO
+
 ### NV Garamond
 
 <kbd><img src="./examples/NV-Garamond.png" width='400px'/></kbd>
