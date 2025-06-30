@@ -9,7 +9,7 @@ This is a selection of fonts that I've tweaked for reading purposes on Kobo devi
 
 This is a repository that includes various fonts that have been altered in some minor way for better compatibility with e-readers.
 
-For some fonts, font family names have been altered, sometimes glyphs have been altered, sometimes metrics have been altered, all in the interest of consistence and readability.
+For some fonts, font family names have been altered, sometimes glyphs have been altered, sometimes metrics have been altered, all to improve the readability on E Ink displays.
 
 The main use of these fonts is for usage on an e-reader. I've only selected and altered fonts that I have the rights to alter because of their license (e.g. free/libre license or equivalent).
 
@@ -17,7 +17,7 @@ These alterations were made for my own personal use, but I figure these fonts ma
 
 If you're curious, you can learn more about how and why I originally made these tweaked fonts on my website: [Patching Fonts for my Kobo](https://nicoverbruggen.be/blog/patching-fonts-for-kobo). I explain there how this repository came to be.
 
-## Included fonts
+## Core fonts
 
 ### NV Baskerwil
 
@@ -37,31 +37,21 @@ _You can also find the original version of Bitter [on Google Web Fonts](https://
 
 **Note:** This font is included by default on newer Kobo devices. On older Kobo devices, like the Kobo Libra 2, it is not available without installing this version. Because this font has a different name, you can install it and it will co-exist alongside the included system font on newer devices.
 
----
+### NV Garamond
+
+<kbd><img src="./examples/NV-Garamond.png" width='400px'/></kbd>
+
+ **NV Garamond** is an EB Garamond version that contains a bunch of tweaks, mostly related to glyph sizes. This version is about 10% optically larger than EB Garamond, which, with an adjusted line height, makes it ideal for reading on Kobo devices. This version has a [dedicated repository](https://github.com/nicoverbruggen/nv-garamond) that I've linked because of the manual edits that I've made.
+
+ _You can also find the original version of EB Garamond [on Google Web Fonts](https://fonts.google.com/specimen/EB+Garamond/about). EB Garamond was designed by Octavio Pardo and Georg Duffner, and created as an open source revival of Claude Garamont's original design, based on the Berner specimen. You can learn more about the project [here](http://www.georgduffner.at/ebgaramond/). It is available under the [OFL license](https://openfontlicense.org/)._
+
+ ---
 
 > **TODO**: All font descriptions below should be updated and contain links to the original source and attribution. Fonts that are already present on Kobo devices should also have the same note as NV Bitter below them.
 
 ---
 
-### NV Cardo
-
-<kbd><img src="./examples/NV-Cardo.png" width='400px'/></kbd>
-
-**NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
-
-### NV Elstob
-
-<kbd><img src="./examples/NV-Elstob.png" width='400px'/></kbd>
-
-**NV Elstob** is a version of [Elstob](https://github.com/psb1558/Elstob-font) that has been renamed so it works correctly on Kobo devices. It is based on the 12pt version. Does not have a separate repository because no other changes were applied. OFL licensed.
-
-### NV Garamond
-
-<kbd><img src="./examples/NV-Garamond.png" width='400px'/></kbd>
-
- **NV Garamond** is an EB Garamond version that contains a bunch of tweaks, mostly related to glyph sizes. This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-garamond) that I've linked. OFL licensed.
-
-### NV Georsio
+ ### NV Georsio
 
 <kbd><img src="./examples/NV-Georsio.png" width='400px'/></kbd>
 
@@ -73,29 +63,11 @@ _You can also find the original version of Bitter [on Google Web Fonts](https://
 
 **NV Jost** is a Jost variant, with a slightly altered lowercase G and single storey a (similar to Futura, only accessible via OT feature on the original font). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-jost) that I've linked, OFL licensed.
 
-### NV Junius
-
-<kbd><img src="./examples/NV-Junius.png" width='400px'/></kbd>
-
-**NV Junius** is a [Junicode 2](https://github.com/psb1558/Junicode-font) variant based on the variable font, with adjusted metrics and a 10% glyph size increase. This one does not have a repository, but can be easily recreated by using [Slice](https://github.com/source-foundry/Slice), a GUI that allows you to export various fixed configurations.
-
 ### NV Legible
 
 <kbd><img src="./examples/NV-Legible.png" width='400px'/></kbd>
 
 **NV Legible** is a variant of Atkinson Hyperlegible Next.
-
-### NV Libertinus
-
-<kbd><img src="./examples/NV-Libertinus.png" width='400px'/></kbd>
-
-**NV Libertinus** is a variant of Libertinus Serif.
-
-### NV Newsreader
-
-<kbd><img src="./examples/NV-Newsreader.png" width='400px'/></kbd>
-
-**NV Newsreader** is a variant of Newsreader.
 
 ### NV Palatium
 
@@ -103,17 +75,29 @@ _You can also find the original version of Bitter [on Google Web Fonts](https://
 
 **NV Palatium**, is a renamed version of [Domitian](https://www.ctan.org/tex-archive/fonts/domitian/), which is an extended version of [URW Palladio](https://tug.org/FontCatalogue/urwpalladio/). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-palatium) that I've linked. Available under a [Free license](https://github.com/nicoverbruggen/nv-palatium/blob/main/LICENSE).
 
-### NV Source Serif
+## Extra fonts
 
-<kbd><img src="./examples/NV-SourceSerif.png" width='400px'/></kbd>
+Also included are a set of extra fonts. Because this list could potentially grow, I do not have screenshots for each and every one of them.
 
-**NV Source Serif** is a version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing and has been renamed so it works correctly on Kobo devices. Does not have a separate repository because no other changes were applied. OFL licensed.
+- **NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
 
-### NV Technical
+- **NV Charis** is a version of Charis 7.0 with a slightly more narrow line-height.
 
-<kbd><img src="./examples/NV-Technical.png" width='400px'/></kbd>
+- **NV Cooper** is a renamed version of [Cooper](https://indestructibletype.com/Cooper/).
 
-**NV Technical** is a variant of STIX Two Text.
+-  **NV Elstob** is a version of [Elstob](https://github.com/psb1558/Elstob-font) that has been renamed so it works correctly on Kobo devices. It is based on the 12pt version. Does not have a separate repository because no other changes were applied. OFL licensed.
+
+- **NV Gentium** is a version of Gentium Book 7.0 with corrected PANOSE information for the Bold and Bold Italic weights. This ensures the font is displayed correctly on Kobo devices.
+
+-  **NV Junius** is a [Junicode 2](https://github.com/psb1558/Junicode-font) variant based on the variable font, with adjusted metrics and a 10% glyph size increase. This one does not have a repository, but can be easily recreated by using [Slice](https://github.com/source-foundry/Slice), a GUI that allows you to export various fixed configurations.
+
+-  **NV Libertinus** is a variant of Libertinus Serif.
+
+-  **NV Newsreader** is a variant of Newsreader.
+
+-  **NV Source Serif** is a version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing and has been renamed so it works correctly on Kobo devices. Does not have a separate repository because no other changes were applied. OFL licensed.
+
+-  **NV Technical** is a variant of STIX Two Text. (If you use a Kobo that has stylus support, STIX Two Text will be included on your device.)
 
 ## How to install
 
