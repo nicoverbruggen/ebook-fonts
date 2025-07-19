@@ -23,31 +23,9 @@ If you're curious, you can learn more about how and why I originally made these 
 
 The _core_ collection is a selection of my very favorite fonts, and the ones that I consider to the highest quality ones.
 
-### NV Baskerwil
+### ❶ NV Charter
 
-An excellent open, libre alternative for _Baskerville_.
-
-<kbd><img src="./examples/NV-Baskerwil.png" width='400px'/></kbd>
-
-**NV Baskerwil** is a version of [Baskervville](https://github.com/anrt-type/ANRT-Baskervville) that was extracted from the  so it works correctly on Kobo devices. For optimal readability, the Regular and Italic fonts are using a weight of 500 instead of 400.
-
-_You can also find the original version of Baskervville [on Google Web Fonts](https://fonts.google.com/specimen/Baskervville/about). Baskervville was designed by the ANRT students from 2017 (Alexis Faudot, Rémi Forte, Morgane Pierson, Rafael Ribas, Tanguy Vanlaeys and Rosalie Wagner), under the direction of Charles Mazé and Thomas Huot-Marchand. It is available under the [OFL license](https://openfontlicense.org/)._
-
-### NV Bitter
-
-An excellent open, libre alternative for _Caecilia_.
-
-<kbd><img src="./examples/NV-Bitter.png" width='400px'/></kbd>
-
-**NV Bitter** is a version of [Bitter](https://github.com/solmatas/BitterPro) that has been renamed so it works correctly on Kobo devices.
-
-_You can find the original version of Bitter [on Google Web Fonts](https://fonts.google.com/specimen/Bitter/about). Bitter was designed by [Sol Matas](http://www.solmatas.com/), and available under the [OFL license](https://openfontlicense.org/)._
-
-**Note:** This font is included by default on newer Kobo devices. On older Kobo devices, like the Kobo Libra 2, it is not available without installing this version. Because this font has a different name, you can install it and it will co-exist alongside the included system font on newer devices.
-
-### NV Charter
-
-This is not an alternative to _Charter_, it is _is_ a Charter variant.
+_An excellent all-rounder font, and a classic choice._
 
 <kbd><img src="./examples/NV-Charter.png" width='400px'/></kbd>
 
@@ -57,9 +35,7 @@ _Charter was designed by Matthew Carter in 1987 as a body text font that would h
 
 > **What about Charis?** Recently, [Charis 7.0](https://software.sil.org/charis/) was released. It is visually very similar to Charter. Up until recently I considered it an inferior version of Charter due for various reasons, but since then there have been improvements to kerning, line spacing [and more](https://software.sil.org/charis/v7changes/) recently. I've included **NV Charis** as part of the collection now, too. Charis is fully licensed under the OFL license, which may be more desirable if you care about that sort of thing.
 
-### NV Garamond
-
-An excellent open, libre alternative for _Garamond_ and _Adobe Garamond_.
+### ❷ NV Garamond
 
 <kbd><img src="./examples/NV-Garamond.png" width='400px'/></kbd>
 
@@ -67,9 +43,43 @@ An excellent open, libre alternative for _Garamond_ and _Adobe Garamond_.
 
 _You can also find the original version of EB Garamond [on Google Web Fonts](https://fonts.google.com/specimen/EB+Garamond/about). EB Garamond was designed by Octavio Pardo and Georg Duffner, and created as an open source revival of Claude Garamont's original design, based on the Berner specimen. You can learn more about the project [here](http://www.georgduffner.at/ebgaramond/). It is available under the [OFL license](https://openfontlicense.org/)._
 
- ### NV Georsio
+### ❸ NV Membo
 
-An excellent open, libre alternative for _Georgia_.
+<kbd><img src="./examples/NV-Membo.png" width='400px'/></kbd>
+
+**NV Membo** is a renamed version of [fbb](https://www.ctan.org/tex-archive/fonts/fbb), a modified version of Cardo which has a Bold Italic style, unlike NV Cardo. It has been converted to TrueType (`ttf`) for better Kobo compatibility.
+
+_You can find the original version of fbb [on CTAN](https://www.ctan.org/tex-archive/fonts/fbb). The package provides a Bembo-like font package based on Cardo but with many modifications, adding Bold Italic, small caps in all styles, six figure choices in all styles, updated kerning tables, added figure tables and corrected f-ligatures._
+
+**Note:** If you need extended character support for foreign languages (Cyrillic, Greek), please check out **NV Cardo** in the extras section below.
+
+### ❹ NV Scarlet
+
+<kbd><img src="./examples/NV-Scarlet.png" width='400px'/></kbd>
+
+**NV Scarlet** is a renamed version of [Crimson](https://github.com/skosch/Crimson)'s 2012 version. I personally find it to be a better choice for digital reading than the more modern version of Crimson Pro. This version has been optically resized for optimal reading on Kobo devices.
+
+_You can find the original version of Crimson on GitHub. Designed by: Sebastian Kosch. The font is designed in the tradition of beautiful oldstyle type, and inspired particularly by the fantastic work of people like Jan Tschichold (Sabon), Robert Slimbach (Arno, Minion) and Jonathan Hoefler (Hoefler Text)._
+
+### ❺ NV Jost
+
+<kbd><img src="./examples/NV-Jost.png" width='400px'/></kbd>
+
+**NV Jost** is a Jost variant, with a slightly altered lowercase G and single storey a (similar to Futura, only accessible via OT feature on the original font). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-jost), mostly because I made some glyph alterations.
+
+_You can find the original version of Jost [on Google Web Fonts](https://fonts.google.com/specimen/Jost/about). Jost was designed by Owen Earl of [indestructable type*](https://indestructibletype.com). It is available under the [OFL license](https://openfontlicense.org/)._
+
+### ❻ NV Bitter
+
+<kbd><img src="./examples/NV-Bitter.png" width='400px'/></kbd>
+
+**NV Bitter** is a version of [Bitter](https://github.com/solmatas/BitterPro) that has been renamed so it works correctly on Kobo devices.
+
+_You can find the original version of Bitter [on Google Web Fonts](https://fonts.google.com/specimen/Bitter/about). Bitter was designed by [Sol Matas](http://www.solmatas.com/), and available under the [OFL license](https://openfontlicense.org/)._
+
+**Note:** This font is included by default on newer Kobo devices. On older Kobo devices, like the Kobo Libra 2, it is not available without installing this version. Because this font has a different name, you can install it and it will co-exist alongside the included system font on newer devices.
+
+ ### ❼ NV Georsio
 
 <kbd><img src="./examples/NV-Georsio.png" width='400px'/></kbd>
 
@@ -79,19 +89,7 @@ _You can find the original version of Gelasio [on Google Web Fonts](https://font
 
 **Note**: Georgia used to be the default font on older Kobo devices, and if you really liked it you can consider this to be a very similar alternative. With the release of Kobo Libra Color and Kobo Clara Color, Rakuten Serif is now the default font.
 
-### NV Jost
-
-An excellent open, libre alternative for _Futura_.
-
-<kbd><img src="./examples/NV-Jost.png" width='400px'/></kbd>
-
-**NV Jost** is a Jost variant, with a slightly altered lowercase G and single storey a (similar to Futura, only accessible via OT feature on the original font). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-jost), mostly because I made some glyph alterations.
-
-_You can find the original version of Jost [on Google Web Fonts](https://fonts.google.com/specimen/Jost/about). Jost was designed by Owen Earl of [indestructable type*](https://indestructibletype.com). It is available under the [OFL license](https://openfontlicense.org/)._
-
-### NV Legible
-
-An excellent open, libre alternative for _Helvetica_ or _Arial_. Excellent for readers with low vision, as individual characters are easier to distinguish even when blurry.
+### ❽ NV Legible
 
 <kbd><img src="./examples/NV-Legible.png" width='400px'/></kbd>
 
@@ -101,9 +99,7 @@ _You can find the original version of Atkinson Hyperlegible Next [on Google Web 
 
 **Note:** The previous version, Atkinson Hyperlegible, is included by default on newer Kobo devices. This is an improved version and I recommend it over the original.
 
-### NV Palatium
-
-An excellent open, libre alternative for _Palatino_.
+### ❾ NV Palatium
 
 <kbd><img src="./examples/NV-Palatium.png" width='400px'/></kbd>
 
@@ -130,6 +126,8 @@ Also included are a set of extra fonts. Because this list remains in flux and ca
 -  **NV Libertinus** is a variant of [Libertinus](https://github.com/alerque/libertinus) Serif. I've altered the metrics for adjusted line height. OFL licensed.
 
 -  **NV Newsreader** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader). Based on a particular weight that is ideal for e-reading. OFL licensed.
+
+- **NV Old Style** is a variant of QT Caslan from the [QualiType fonts package](https://ctan.org/pkg/qualitype?lang=en). Renamed and converted to TrueType for optimal Kobo reading. OFL licensed.
 
 -  **NV Source Serif** is a version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing and has been renamed so it works correctly on Kobo devices. OFL licensed.
 
@@ -206,6 +204,8 @@ Some are easter eggs or fun references to the original name:
 - Baskerwil because of Baskervil because of the [historical context](https://fonts.google.com/specimen/Baskervville/about) related to the revival of Baskervville
 - Junius instead of Junicode because the latter actually a shorthand for "Junius-Unicode"
 - Palatium as a reference to the Palatine hill in Italy, but it's the Roman name; I couldn't use Palatino and didn't want to use Palatine
+- Membo was decided upon by thinking along the lines of "Modified Bembo-like"
+- Old Style instead of "Caslan" which was a clear bastardization of Caslon
 
 ### I've discovered a problem with one of the fonts. What should I do?
 
