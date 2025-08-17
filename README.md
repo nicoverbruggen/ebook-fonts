@@ -141,6 +141,9 @@ To reboot, long-press the power button until your Kobo says it has been shut dow
 
 ### Where can I download these fonts?
 
+> [!WARNING]
+> **If you are using a Kobo device and reading books purchased from the Kobo Store or reading `kepub` files converted via Calibre**, you should download the Kobo Collection, which has fonts slightly altered for optimal kerning for the `kepub` renderer.
+
 The fonts are available via the [releases section](https://github.com/nicoverbruggen/ebook-fonts/releases) on GitHub.
 
 ### Why did you alter these fonts?
