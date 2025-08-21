@@ -107,6 +107,8 @@ The _core_ collection is a selection of my very favorite fonts, and the ones tha
 
 Also included are a set of extra fonts. Because this list remains in flux and can potentially grow, I do not have screenshots for each and every one of them.
 
+- **NV Basker** is a variant of [ANRT-Baskervville](https://github.com/anrt-type/ANRT-Baskervville). I've altered the metrics for adjusted line height, and the medium weight is used for text, as opposed to the regular weight. OFL licensed.
+
 - **NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
 
 - **NV Charis** is a version of [Charis](https://software.sil.org/charis/) 7.0 by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license. OFL licensed.
@@ -120,6 +122,8 @@ Also included are a set of extra fonts. Because this list remains in flux and ca
 - **NV Junius** is a [Junicode 2](https://github.com/psb1558/Junicode-font) variant based on the variable font, with adjusted metrics and a 10% glyph size increase. This one does not have a repository, but can be easily recreated by using [Slice](https://github.com/source-foundry/Slice), a GUI that allows you to export various fixed configurations. OFL licensed.
 
 - **NV Libertinus** is a variant of [Libertinus](https://github.com/alerque/libertinus) Serif. I've altered the metrics for adjusted line height. OFL licensed.
+
+- **NV Lore** is a variant of [Lora](https://github.com/cyrealtype/Lora-Cyrillic). I've altered the metrics for adjusted line height. OFL licensed.
 
 - **NV Newsreader** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader). Based on a particular weight that is ideal for e-reading. OFL licensed.
 
@@ -194,6 +198,7 @@ Included in the repository right now are only my tweaked fonts, which have all b
 
 Some are easter eggs or fun references to the original name:
 
+- Lore instead of Lora because "Lore" is a Dutch name that is derived from Lora. Since I'm from the Flemish part of Belgium, we speak Dutch here and it's a common name.
 - Junius instead of Junicode because the latter actually a shorthand for "Junius-Unicode".
 - Palatium as a reference to the Palatine hill in Italy, but it's the Roman name; I couldn't use Palatino and didn't want to use Palatine.
 - Membo was decided upon by thinking along the lines of "Modified Bembo-like".
