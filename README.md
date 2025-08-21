@@ -23,7 +23,7 @@ If you're curious, you can learn more about how and why I originally made these 
 
 The _core_ collection is a selection of my very favorite fonts, and the ones that I consider to the highest quality ones.
 
-### ❶ NV Charter
+### NV Charter
 
 <kbd><img src="./examples/NV-Charter.png" width='400px'/></kbd>
 
@@ -31,7 +31,7 @@ The _core_ collection is a selection of my very favorite fonts, and the ones tha
 
 > Charter was designed by Matthew Carter in 1987 as a body text font that would hold up well on low-resolution output devices of the day—fax machines and 300 dpi laser printers. XCharter is a project by Michael Sharpe, which extends Bitstream's Charter. An extended copyright notice has been included as part of the font files.
 
-### ❷ NV Garamond
+### NV Garamond
 
 <kbd><img src="./examples/NV-Garamond.png" width='400px'/></kbd>
 
@@ -39,7 +39,7 @@ The _core_ collection is a selection of my very favorite fonts, and the ones tha
 
 > You can also find the original version of EB Garamond [on Google Web Fonts](https://fonts.google.com/specimen/EB+Garamond/about). EB Garamond was designed by Octavio Pardo and Georg Duffner, and created as an open source revival of Claude Garamont's original design, based on the Berner specimen. You can learn more about the project [here](http://www.georgduffner.at/ebgaramond/). It is available under the [OFL license](https://openfontlicense.org/).
 
-### ❸ NV Membo
+### NV Membo
 
 <kbd><img src="./examples/NV-Membo.png" width='400px'/></kbd>
 
@@ -49,15 +49,7 @@ The _core_ collection is a selection of my very favorite fonts, and the ones tha
 
 **Note:** If you need extended character support for foreign languages (e.g. Cyrillic, Greek), please check out _Cardo_ in the extras section below.
 
-### ❹ NV Scarlet
-
-<kbd><img src="./examples/NV-Scarlet.png" width='400px'/></kbd>
-
-**NV Scarlet** is a renamed version of [Crimson](https://github.com/skosch/Crimson)'s 2012 version. I personally find it to be a better choice for digital reading than the more modern version of Crimson Pro. This version has been optically resized for optimal reading on Kobo devices.
-
-> You can find the original version of Crimson on GitHub. Designed by: Sebastian Kosch. The font is designed in the tradition of beautiful oldstyle type, and inspired particularly by the fantastic work of people like Jan Tschichold (Sabon), Robert Slimbach (Arno, Minion) and Jonathan Hoefler (Hoefler Text).
-
-### ❺ NV Jost
+### NV Jost
 
 <kbd><img src="./examples/NV-Jost.png" width='400px'/></kbd>
 
@@ -65,7 +57,7 @@ The _core_ collection is a selection of my very favorite fonts, and the ones tha
 
 > You can find the original version of Jost [on Google Web Fonts](https://fonts.google.com/specimen/Jost/about). Jost was designed by Owen Earl of [indestructable type*](https://indestructibletype.com). It is available under the [OFL license](https://openfontlicense.org/).
 
-### ❻ NV Bitter
+### NV Bitter
 
 <kbd><img src="./examples/NV-Bitter.png" width='400px'/></kbd>
 
@@ -75,7 +67,7 @@ The _core_ collection is a selection of my very favorite fonts, and the ones tha
 
 **Note:** The original font is included by default on newer Kobo devices, but I recommend using this version.
 
- ### ❼ NV Georsio
+ ### NV Georsio
 
 <kbd><img src="./examples/NV-Georsio.png" width='400px'/></kbd>
 
@@ -85,7 +77,7 @@ The _core_ collection is a selection of my very favorite fonts, and the ones tha
 
 **Note**: Georgia used to be the default font on older Kobo devices, and if you really liked it you can consider this to be a very similar alternative. With the release of Kobo Libra Color and Kobo Clara Color, Rakuten Serif is now the default font.
 
-### ❽ NV Legible
+### NV Legible
 
 <kbd><img src="./examples/NV-Legible.png" width='400px'/></kbd>
 
@@ -95,7 +87,7 @@ The _core_ collection is a selection of my very favorite fonts, and the ones tha
 
 **Note:** The previous version of this font is included by default on newer Kobo devices, but I recommend using this version since it is newer.
 
-### ❾ NV Palatium
+### NV Palatium
 
 <kbd><img src="./examples/NV-Palatium.png" width='400px'/></kbd>
 
@@ -128,6 +120,8 @@ Also included are a set of extra fonts. Because this list remains in flux and ca
 - **NV Newsreader** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader). Based on a particular weight that is ideal for e-reading. OFL licensed.
 
 - **NV Old Style** is a variant of QT Caslan from the [QualiType fonts package](https://ctan.org/pkg/qualitype?lang=en). Renamed and converted to TrueType for optimal Kobo reading. OFL licensed.
+
+- **NV Scarlet** is a renamed version of [Crimson](https://github.com/skosch/Crimson)'s 2012 version. I personally find it to be a better choice for digital reading than the more modern version of Crimson Pro. This version has been optically resized for optimal reading on Kobo devices. OFL-licensed.
 
 - **NV Source Serif** is a version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing and has been renamed so it works correctly on Kobo devices. OFL licensed.
 
