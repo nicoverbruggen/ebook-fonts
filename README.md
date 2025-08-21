@@ -156,7 +156,7 @@ Some practical changes to the fonts themselves have been made, including:
 - I've **normalized metrics** for all fonts to a **20% line height** (using `font-line percent 20`). Some fonts rendered poorly on Kobo devices with the line height slider all the way to the left. This fixes that. Some fonts have not been modified if their line spacing was even smaller.
 - Incorrect **PANOSE metadata has been corrected** where necessary (using [panosifier](https://github.com/source-foundry/panosifier)). This ensures that the fonts render correctly on Kobo devices. For some fonts, incorrect information meant that the fonts would always render using their Bold style, for example.
 - Certain fonts have had their **glyphs rescaled**. Certain fonts have had their glyph sizes increased by 10%, making them seem visually larger, and more consistent in size with the other fonts included in this collection. If you like to stick to a certain font size, you won't need to constantly tweak things if you swap to a different font.
-- The Kobo Collection (KC) versions of the fonts are optimized for Kobo devices. They were **re-exported with old style kerning** via FontForge, to ensure improved kerning is applied for the `kepub` render on Kobo devices.
+- The Kobo Collection versions of the fonts are optimized for Kobo devices. They were **re-exported with an old style `kern` table** via [kobo-font-fix](https://github.com/nicoverbruggen/kobo-font-fix), to ensure improved kerning is applied for the `kepub` render on Kobo devices.
 
 ### How are these fonts licensed?
 
@@ -182,6 +182,8 @@ _Charter_ is a timeless classic, so it is my preferred reading font.
 
 Well, those are my initials... also, I like to think of the prefix to mean "Nice Version" or "Nico's Version". I have also modified the font names where necessary.
 
+(The alternate variants for Kobo devices are prefixed with "KF NV", meaning "Kobo Fixed, Nice Version".)
+
 I initially suffixed each of the fonts with "eBook" but I wanted to have shorter font names for display purposes on smaller e-ink devices.
 
 ### In your original blog post, you made various fonts available. Where are those?
@@ -192,7 +194,6 @@ Included in the repository right now are only my tweaked fonts, which have all b
 
 Some are easter eggs or fun references to the original name:
 
-- Baskerwil because of Baskervil because of the [historical context](https://fonts.google.com/specimen/Baskervville/about) related to the revival of Baskervville.
 - Junius instead of Junicode because the latter actually a shorthand for "Junius-Unicode".
 - Palatium as a reference to the Palatine hill in Italy, but it's the Roman name; I couldn't use Palatino and didn't want to use Palatine.
 - Membo was decided upon by thinking along the lines of "Modified Bembo-like".
