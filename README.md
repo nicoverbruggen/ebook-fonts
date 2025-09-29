@@ -143,6 +143,12 @@ To reboot, long-press the power button until your Kobo says it has been shut dow
 
 The fonts are available via the [releases section](https://github.com/nicoverbruggen/ebook-fonts/releases) on GitHub.
 
+### Do you have any other recommendations other than installing these fonts?
+
+Yes! I highly recommend using [KOReader](https://koreader.rocks/) instead of the built-in functionality that comes with your device, especially if you wish to read books you bought as `epub` files. 
+
+It's the best and most comprehensive digital reading software I know, with excellent font rendering and incredible customization options. It's available for almost all devices you can think of. I highly recommend trying it.
+
 ### Why did you alter these fonts?
 
 Please go take a look at my blog post, [Patching Fonts for my Kobo](https://nicoverbruggen.be/blog/patching-fonts-for-kobo). It's part of a series of posts related to customizing fonts for the most optimal (subjective) e-reading experience.
@@ -178,17 +184,22 @@ The last release was tested on a Kobo Libra Color running firmware version 4.42 
 
 _Charter_ is a timeless classic, so it is my preferred reading font.
 
-### Why did your prefix the fonts with "NV"?
+### Why did your prefix the fonts with "NV" or "KF"?
 
-Well, those are my initials... also, I like to think of the prefix to mean "Nice Version" or "Nico's Version". I have also modified the font names where necessary.
+Well, those are my initials... also, I like to think of the prefix to mean "Nice Version" or "Nico's Version". I have also modified the font names where necessary. (The alternate variants for Kobo devices are prefixed with "KF", meaning "Kobo Fixed".)
 
-(The alternate variants for Kobo devices are prefixed with "KF NV", meaning "Kobo Fixed, Nice Version".)
+I initially suffixed each of the fonts with "eBook", but I wanted to have shorter font names for display purposes on smaller e-ink devices.
 
-I initially suffixed each of the fonts with "eBook" but I wanted to have shorter font names for display purposes on smaller e-ink devices.
+### Can I do anything to fix ligature rendering with the `kepub` renderer on Kobo devices?
 
-### In your original blog post, you made various fonts available. Where are those?
+Yes, by tweaking `.kobo/Kobo/Kobo eReader.conf`. You can add an override for `webkitTextRenderer`, but this may have some unexpected results if you like reading fully justified text.
 
-Included in the repository right now are only my tweaked fonts, which have all be prefixed with _NV_. However, [the older release](https://github.com/nicoverbruggen/ebook-fonts/releases/tag/v2024.03) may still be of interest as I've included my initial batch of tweaked fonts mentioned in [the blog post](https://nicoverbruggen.be/blog/patching-fonts-for-kobo) there.
+```
+[Reading] # below this line
+webkitTextRenderer=optimizeLegibility
+```
+
+Then, fully restart your Kobo device and now ligatures should render correctly.
 
 ### Why were some of the font names altered?
 
