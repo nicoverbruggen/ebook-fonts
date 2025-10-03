@@ -192,14 +192,14 @@ I initially suffixed each of the fonts with "eBook", but I wanted to have shorte
 
 ### Can I do anything to fix ligature rendering with the `kepub` renderer on Kobo devices?
 
-Yes, by tweaking `.kobo/Kobo/Kobo eReader.conf`. You can add an override for `webkitTextRenderer`, but this may have some unexpected results if you like reading fully justified text.
+Yes, by tweaking `.kobo/Kobo/Kobo eReader.conf`. You can add an override for `webkitTextRenderer`, but this WILL have some unexpected results if you like reading with fully justified text (the default setting).
 
 ```
 [Reading] # below this line
-webkitTextRenderer=optimizeLegibility
+webkitTextRendering=optimizeLegibility
 ```
 
-Then, fully restart your Kobo device and now ligatures should render correctly.
+Then, fully restart your Kobo device and now ligatures should render correctly, at the cost of breaking your fully-justified text. (Make sure to choose left-aligned text!)
 
 ### Why were some of the font names altered?
 
