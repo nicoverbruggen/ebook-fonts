@@ -21,7 +21,7 @@ If you're curious, you can learn more about how and why I originally made these 
 
 ## Core fonts
 
-The _core_ collection is a selection of my very favorite fonts, and the ones that I consider to the highest quality ones.
+The _core_ collection is a selection of my very favorite fonts, and the ones that I consider to the highest quality ones. Each of these fonts has solid styles for all four font files (Regular, Italic, Bold and BoldItalic) and decent glyph coverage.
 
 ### NV Charter
 
@@ -38,16 +38,6 @@ The _core_ collection is a selection of my very favorite fonts, and the ones tha
 **NV Garamond** is an EB Garamond version that contains a bunch of tweaks, mostly related to glyph sizes. This version is about 10% optically larger than EB Garamond, which, with an adjusted line height, makes it ideal for reading on Kobo devices. This version has a [dedicated repository](https://github.com/nicoverbruggen/nv-garamond) that I've linked because of the manual edits that I've made.
 
 > You can also find the original version of EB Garamond [on Google Web Fonts](https://fonts.google.com/specimen/EB+Garamond/about). EB Garamond was designed by Octavio Pardo and Georg Duffner, and created as an open source revival of Claude Garamont's original design, based on the Berner specimen. You can learn more about the project [here](http://www.georgduffner.at/ebgaramond/). It is available under the [OFL license](https://openfontlicense.org/).
-
-### NV Membo
-
-<kbd><img src="./examples/NV-Membo.png" width='400px'/></kbd>
-
-**NV Membo** is a renamed version of [fbb](https://www.ctan.org/tex-archive/fonts/fbb), a modified version of Cardo which has a Bold Italic style, unlike NV Cardo. It has been converted to TrueType (`ttf`) for better Kobo compatibility.
-
-> You can find the original version of fbb [on CTAN](https://www.ctan.org/tex-archive/fonts/fbb). The package provides a Bembo-like font package based on Cardo but with many modifications, adding Bold Italic, small caps in all styles, six figure choices in all styles, updated kerning tables, added figure tables and corrected f-ligatures.
-
-**Note:** If you need extended character support for foreign languages (e.g. Cyrillic, Greek), please check out _Cardo_ in the extras section below.
 
 ### NV Jost
 
@@ -67,16 +57,6 @@ The _core_ collection is a selection of my very favorite fonts, and the ones tha
 
 **Note:** The original font is included by default on newer Kobo devices, but I recommend using this version.
 
- ### NV Georsio
-
-<kbd><img src="./examples/NV-Georsio.png" width='400px'/></kbd>
-
-**NV Georsio** is a modified version of Gelasio, which was created to have identical metrics to Georgia, one of the [web's core fonts](https://en.wikipedia.org/wiki/Core_fonts_for_the_Web) thanks to Microsoft making it available on pretty much every PC and Mac in the world.
-
-> You can find the original version of Gelasio [on Google Web Fonts](https://fonts.google.com/specimen/Gelasio/about). Gelasio was designed by Eben Sorkin. Gelasio is an original typeface that has metrics compatible with Georgia in its Regular, Bold, Italic and Bold Italic weights. Its design was inspired by an original printed sample of a French Transitional typeface which follows the Romain Du Roi typeface introduced in 1702. It is available under the [OFL license](https://openfontlicense.org/).
-
-**Note**: Georgia used to be the default font on older Kobo devices, and if you really liked it you can consider this to be a very similar alternative. With the release of Kobo Libra Color and Kobo Clara Color, Rakuten Serif is now the default font.
-
 ### NV Legible
 
 <kbd><img src="./examples/NV-Legible.png" width='400px'/></kbd>
@@ -86,6 +66,14 @@ The _core_ collection is a selection of my very favorite fonts, and the ones tha
 > You can find the original version of Atkinson Hyperlegible Next [on Google Web Fonts](https://fonts.google.com/specimen/Atkinson+Hyperlegible+Next/about). Designed by: Braille Institute, Applied Design Works, Elliott Scott, Megan Eiswerth, Letters From Sweden. Named after the founder of the Braille Institute, Atkinson Hyperlegible Next has been developed specifically to increase legibility for readers with low vision, and to improve reading comprehension.
 
 **Note:** The previous version of this font is included by default on newer Kobo devices, but I recommend using this version since it is newer.
+
+### NV Literata
+
+<kbd><img src="./examples/NV-Literata.png" width='400px'/></kbd>
+
+**NV Literata** is a variant of [Literata](https://github.com/googlefonts/literata) with some adjusted metrics and has been renamed so it works correctly on Kobo devices.
+
+> You can find the original version of Literata [on Google Web Fonts](https://fonts.google.com/specimen/Literata/about). Designed by: TypeTogether, an independent type foundry committed to excellence in type design with a focus on editorial use. Now in its third version, Literata is a distinct variable font family for digital text. Originally created as the brand typeface for Google Play Books, it exceeds the strict needs of a comfortable reading experience on any device, screen resolution, or font size.
 
 ### NV Palatium
 
@@ -115,15 +103,17 @@ Also included are a set of extra fonts. Because this list remains in flux and ca
 
 - **NV Gentium** is a version of [Gentium](https://software.sil.org/gentium/) Book 7.0 with corrected PANOSE information for the Bold and Bold Italic weights, which was incorrect. This modified version ensures the font is displayed correctly on Kobo devices. OFL licensed.
 
+- **NV Georsio** is a modified version of Gelasio, which was created to have identical metrics to Georgia, one of the [web's core fonts](https://en.wikipedia.org/wiki/Core_fonts_for_the_Web) thanks to Microsoft making it available on pretty much every PC and Mac in the world. OFL licensed.
+
 - **NV Junius** is a [Junicode 2](https://github.com/psb1558/Junicode-font) variant based on the variable font, with adjusted metrics and a 10% glyph size increase. This one does not have a repository, but can be easily recreated by using [Slice](https://github.com/source-foundry/Slice), a GUI that allows you to export various fixed configurations. OFL licensed.
 
 - **NV Libertinus** is a variant of [Libertinus](https://github.com/alerque/libertinus) Serif. I've altered the metrics for adjusted line height. OFL licensed.
 
 - **NV Lore** is a variant of [Lora](https://github.com/cyrealtype/Lora-Cyrillic). I've altered the metrics for adjusted line height. OFL licensed.
 
-- **NV Newsreader** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader). Based on a particular weight that is ideal for e-reading. OFL licensed.
+- **NV Membo** is a renamed version of [fbb](https://www.ctan.org/tex-archive/fonts/fbb), a modified version of Cardo which has a Bold Italic style, unlike NV Cardo. It has been converted to TrueType (`ttf`) for better Kobo compatibility. OFL licensed.
 
-- **NV Old Style** is a variant of QT Caslan from the [QualiType fonts package](https://ctan.org/pkg/qualitype?lang=en). Renamed and converted to TrueType for optimal Kobo reading. OFL licensed.
+- **NV Newsreader** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader). Based on a particular weight that is ideal for e-reading. OFL licensed.
 
 - **NV Scarlet** is a renamed version of [Crimson](https://github.com/skosch/Crimson)'s 2012 version. I personally find it to be a better choice for digital reading than the more modern version of Crimson Pro. This version has been optically resized for optimal reading on Kobo devices. OFL-licensed.
 
