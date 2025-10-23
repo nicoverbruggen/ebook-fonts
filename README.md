@@ -115,6 +115,8 @@ Also included are a set of extra fonts. Because this list remains in flux and ca
 
 - **NV Newsreader** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader). Based on a particular weight that is ideal for e-reading. OFL licensed.
 
+- **NV OpenDyslexic** is a variant of [OpenDyslexic](https://forge.hackers.town/antijingoist/opendyslexic). May be newer than what ships on your Kobo or Kindle if you're on an older version of the software. OFL licensed.
+
 - **NV Scarlet** is a renamed version of [Crimson](https://github.com/skosch/Crimson)'s 2012 version. I personally find it to be a better choice for digital reading than the more modern version of Crimson Pro. This version has been optically resized for optimal reading on Kobo devices. OFL-licensed.
 
 - **NV Source Serif** is a version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing and has been renamed so it works correctly on Kobo devices. OFL licensed.
