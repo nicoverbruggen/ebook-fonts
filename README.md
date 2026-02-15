@@ -19,17 +19,17 @@ These alterations were made for my own personal use, but I figure these fonts ma
 
 If you're curious, you can learn more about how and why I originally made these tweaked fonts on my website: [Patching Fonts for my Kobo](https://nicoverbruggen.be/blog/patching-fonts-for-kobo). I explain there how this repository came to be.
 
-## Core fonts
+## Core Collection
 
-The _core_ collection is a selection of my very favorite fonts, and the ones that I consider to the highest quality ones. Each of these fonts has solid styles for all four font files (Regular, Italic, Bold and BoldItalic) and decent glyph coverage.
+The Core Collection is a selection of my very favorite fonts, and the ones that I consider to the highest quality ones. Each of these fonts has solid styles for all four font files (Regular, Italic, Bold and BoldItalic) and decent glyph coverage.
 
-### NV Charter
+### NV Charis
 
-<kbd><img src="./examples/NV-Charter.png" width='400px'/></kbd>
+<kbd><img src="./examples/NV-Charis.png" width='400px'/></kbd>
 
-**NV Charter** is a renamed version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-charter) that I've linked. Available under [this license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE) which lets you use, copy, modify, sublicense, sell and redistribute this font.
+**NV Charis** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license. OFL licensed.
 
-> Charter was designed by Matthew Carter in 1987 as a body text font that would hold up well on low-resolution output devices of the day—fax machines and 300 dpi laser printers. XCharter is a project by Michael Sharpe, which extends Bitstream's Charter. An extended copyright notice has been included as part of the font files.
+> Charis is very closely based on the design of Bitstream Charter. [...] The glyphs were completely redrawn based only on visual reference to Charter. There are some significant design differences in the serif structure, proportions, diacritics, and Cyrillic. The design was also adjusted and extended to cover a much wider range of characters and publishing needs.
 
 ### NV Garamond
 
@@ -83,9 +83,9 @@ The _core_ collection is a selection of my very favorite fonts, and the ones tha
 
 > You can find the original version of Domitian [on GitHub](https://github.com/dbenjaminmiller/domitian). Designed by: Hermann Zapf, Daniel Benjamin Miller. Domitian is a project to develop a full-featured, free and open-source implementation of Hermann Zapf's Palatino design. "Domitian" is in refrerence to builder of the Flavian Palace, located on the Palatine Hill. It is available under various licenses, including the [OFL license](https://openfontlicense.org/).
 
-## Extra fonts
+## Extra Collection
 
-Also included are a set of extra fonts. Because this list remains in flux and can potentially grow, I do not have screenshots for each and every one of them.
+Because this list remains in flux and can potentially grow, I do not have screenshots for each and every one of them.
 
 - **NV Adelph** is a variant of the [Adelphe](https://gitlab.com/bye-bye-binary/adelphe). I've altered the metrics for adjusted line height. [OIFL licensed](https://typotheque.genderfluid.space/fr/licences), like the original. (If you're curious, this is in essence a more gender-inclusive version of the OFL, so you can use the font in the exact same way as any OFL-licensed font.)
 
@@ -95,7 +95,7 @@ Also included are a set of extra fonts. Because this list remains in flux and ca
 
 - **NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
 
-- **NV Charis** is a version of [Charis](https://software.sil.org/charis/) 7.0 by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license. OFL licensed.
+- **NV Charter** is a renamed version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-charter) that I've linked since it does contain some modifications. Available under [this license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE) which lets you use, copy, modify, sublicense, sell and redistribute this font.
 
 - **NV Charter Basic** is simply a tweaked version of the original Charter, without the additions of XCharter. Hence, basic. Available under [this license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE) which lets you use, copy, modify, sublicense, sell and redistribute this font.
 
