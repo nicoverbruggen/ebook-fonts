@@ -127,7 +127,7 @@ These are additional fonts that I think you should try, as well! Because this li
 
 - **NV Membo** is a renamed version of [fbb](https://www.ctan.org/tex-archive/fonts/fbb), a modified version of Cardo which has a Bold Italic style, unlike NV Cardo. It has been converted to TrueType (`ttf`) for better Kobo compatibility. OFL licensed.
 
-- **NV Newsreader** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader). Based on a particular weight that is ideal for e-reading. OFL licensed.
+- **NV Newsreader** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader). Based on the 14pt optical variant, which makes it great for e-reading. (For the 9pt optical variant, see _NinePoint_ in the core collection, above.) OFL licensed.
 
 - **NV OpenDyslexic** is a variant of [OpenDyslexic](https://forge.hackers.town/antijingoist/opendyslexic). May be newer than what ships on your Kobo or Kindle if you're on an older version of the software. OFL licensed.
 
