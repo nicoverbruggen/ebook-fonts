@@ -39,6 +39,14 @@ The Core Collection is a selection of my very favorite fonts, and the ones that 
 
 > You can also find the original version of EB Garamond [on Google Web Fonts](https://fonts.google.com/specimen/EB+Garamond/about). EB Garamond was designed by Octavio Pardo and Georg Duffner, and created as an open source revival of Claude Garamont's original design, based on the Berner specimen. You can learn more about the project [here](http://www.georgduffner.at/ebgaramond/). It is available under the [OFL license](https://openfontlicense.org/).
 
+### NV NinePoint
+
+<kbd><img src="./examples/NV-NinePoint.png" width='400px'/></kbd>
+
+**NV NinePoint** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader), based on the 9pt TrueType version. This makes it a very good choice for those who want maximum readability at smaller font sizes. In order to ensure it loads correctly on Kobo devices, and in order to avoid confusion with the other version of Newsreader included in this repository, the font has been renamed to _NinePoint_.
+
+> [Newsreader](https://github.com/productiontype/Newsreader) is an original typeface designed by Production Type, primarily intended for continuous on-screen reading in content-rich environments. It is available under the [OFL license](https://openfontlicense.org/).
+
 ### NV Jost
 
 <kbd><img src="./examples/NV-Jost.png" width='400px'/></kbd>
