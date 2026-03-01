@@ -49,7 +49,7 @@ _**Note**: Various Garamond variants are commonly used when typesetting for prin
 
 <kbd><img src="./examples/NV-NinePoint.png" width='400px'/></kbd>
 
-**NV NinePoint** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader), based on the 9pt TrueType version. This makes it a very good choice for those who want maximum readability at smaller font sizes. In order to ensure it loads correctly on Kobo devices, and in order to avoid confusion with the other version of Newsreader included in this repository, the font has been renamed to _NinePoint_.
+**NV NinePoint** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader), based on the 9pt optical variant. This makes it a very good choice for those who want maximum readability at smaller font sizes. In order to ensure it loads correctly on Kobo devices, and in order to avoid confusion with the other version of Newsreader included in this repository, the font has been renamed to _NinePoint_.
 
 > [Newsreader](https://github.com/productiontype/Newsreader) is an original typeface designed by Production Type, primarily intended for continuous on-screen reading in content-rich environments. It is available under the [OFL license](https://openfontlicense.org/).
 
@@ -105,9 +105,9 @@ These are additional fonts that I think you should try, as well! Because this li
 
 - **NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
 
-- **NV XCharter** is a renamed version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-charter) that I've linked since it does contain some modifications. Available under [this license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE) which lets you use, copy, modify, sublicense, sell and redistribute this font.
+- **NV Charter** is simply a tweaked version of the original [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). Available under [this license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE) which lets you use, copy, modify, sublicense, sell and redistribute this font.
 
-- **NV Charter** is simply a tweaked version of the original [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter), without the additions of XCharter. Available under [this license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE) which lets you use, copy, modify, sublicense, sell and redistribute this font.
+- **NV XCharter** is a renamed version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-charter) that I've linked since it does contain some modifications. Available under [this license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE) which lets you use, copy, modify, sublicense, sell and redistribute this font.
 
 - **NV Cooper** is a renamed version of [Cooper](https://indestructibletype.com/Cooper/). It's another beautiful font made by Owen Earl of [indestructable type*](https://indestructibletype.com). I've altered the metrics for adjusted line height. OFL licensed.
 
@@ -135,7 +135,7 @@ These are additional fonts that I think you should try, as well! Because this li
 
 - **NV Source Serif** is a version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing and has been renamed so it works correctly on Kobo devices. OFL licensed.
 
-- **NV Technical** is a variant of [STIX Two Text](https://fonts.google.com/specimen/STIX+Two+Text/about). OFL licensed. (Note: If you use a Kobo that has stylus support, STIX Two Text will likely already be included on your device.)
+- **NV Technical** is a variant of [STIX Two Text](https://fonts.google.com/specimen/STIX+Two+Text/about). OFL licensed. If you use a Kobo that has stylus support, STIX Two Text will likely already be included on your device.
 
 ## How to install
 
@@ -163,7 +163,9 @@ Please go take a look at my blog post, [Patching Fonts for my Kobo](https://nico
 
 ### What tweaks have been applied to these fonts?
 
-All of the **fonts have been renamed** (using [fontname.py](https://github.com/chrissimpkins/fontname.py)). This way, you can keep them installed side-by-side with the original versions, if you'd like. This is also a requirement of the Open Font License, which does not allow you to redistribute the fonts using the original name if they have been altered.
+All of the **fonts have been renamed** (using [fontname.py](https://github.com/chrissimpkins/fontname.py)). Sometimes only a prefix has been added, but sometimes the font name has been totally changed, although I've attributed the original and their authors, of course.
+
+This way, you can keep them installed side-by-side with the original versions, if you'd like. This is also a requirement of the Open Font License, which does not allow you to redistribute the fonts using the original name if they have been altered.
 
 Some practical changes to the fonts themselves have been made, including:
 
@@ -194,7 +196,9 @@ _Charter_ is a timeless classic, so it is my preferred reading font.
 
 ### Why did your prefix the fonts with "NV" or "KF"?
 
-Well, those are my initials... also, I like to think of the prefix to mean "Nice Version" or "Nico's Version". I have also modified the font names where necessary. (The alternate variants for Kobo devices are prefixed with "KF", meaning "Kobo Fixed".)
+Well, those are my initials... also, I like to think of the prefix to mean "Nice Version" or "Nico's Version". I have also modified the font names where necessary. 
+
+(The alternate variants for Kobo devices are prefixed with "KF", meaning "Kobo Fixed".)
 
 I initially suffixed each of the fonts with "eBook", but I wanted to have shorter font names for display purposes on smaller e-ink devices.
 
@@ -211,12 +215,7 @@ Then, fully restart your Kobo device and now ligatures should render correctly, 
 
 ### Why were some of the font names altered?
 
-Some are easter eggs or fun references to the original name:
-
-- Lore instead of Lora because "Lore" is a Dutch name that is derived from Lora. Since I'm from the Flemish part of Belgium, we speak Dutch here and it's a common name.
-- Junius instead of Junicode because the latter actually a shorthand for "Junius-Unicode".
-- Palatium as a reference to the Palatine hill in Italy, but it's the Roman name; I couldn't use Palatino and didn't want to use Palatine.
-- Membo was decided upon by thinking along the lines of "Modified Bembo-like".
+Because I thought it would be fun, and to avoid confusion with the original versions of the fonts.
 
 ### I've discovered a problem with one of the fonts. What should I do?
 
