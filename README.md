@@ -89,7 +89,7 @@ The Core Collection is a selection of my very favorite fonts, and the ones that 
 
 **NV Palatium**, is a renamed version of [Domitian](https://www.ctan.org/tex-archive/fonts/domitian/), which is an extended version of [URW Palladio](https://tug.org/FontCatalogue/urwpalladio/). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-palatium) that I've linked because I've expanded and updated the embedded license in each of the font files.
 
-> You can find the original version of Domitian [on GitHub](https://github.com/dbenjaminmiller/domitian). Designed by: Hermann Zapf, Daniel Benjamin Miller. Domitian is a project to develop a full-featured, free and open-source implementation of Hermann Zapf's Palatino design. "Domitian" is in refrerence to builder of the Flavian Palace, located on the Palatine Hill. It is available under various licenses, including the [OFL license](https://openfontlicense.org/).
+> You can find the original version of Domitian [on GitHub](https://github.com/dbenjaminmiller/domitian). Designed by: Hermann Zapf, Daniel Benjamin Miller. Domitian is a project to develop a full-featured, free and open-source implementation of Hermann Zapf's Palatino design. "Domitian" is in reference to builder of the Flavian Palace, located on the Palatine Hill. It is available under various licenses, including the [OFL license](https://openfontlicense.org/).
 
 ## Extra Collection
 
@@ -174,7 +174,7 @@ Most of these fonts are available under their original [Open Font License](https
 
 _NV Charter_ is available under the original Bitstream license. The original LICENSE file is embedded within my version of the fonts, and also included in the repository for legal reasons.
 
-### Is there anything else I should do to to get a better reading experience with these fonts?
+### Is there anything else I should do, to get a better reading experience with these fonts?
 
 If you are manually transferring books to your Kobo devices, you should consider converting `epub` files to `kepub` files. 
 
@@ -182,7 +182,7 @@ To do this, you can use [kepubify](https://pgaskin.net/kepubify/) or use [Calibr
 
 ### What version of the Kobo operating system did you last test the fonts with?
 
-The last release was tested on a Kobo Libra Color running firmware version 4.42 and on a Kobo Libra 2 running version firmware 4.38. The screenshots you see above were made on a Kobo Libra 2 running [NickelMenu](https://pgaskin.net/NickelMenu/) with [this configuration](https://github.com/nicoverbruggen/kobo-config).
+The last release was tested on a Kobo Libra Color running firmware version 4.45 and on a Kobo Libra 2 running version firmware 4.38. The screenshots you see above were made on a Kobo Libra Color running [NickelMenu](https://pgaskin.net/NickelMenu/) with [this configuration](https://github.com/nicoverbruggen/kobo-config).
 
 ### What is your favorite font from the collection?
 
@@ -213,7 +213,6 @@ Some are easter eggs or fun references to the original name:
 - Junius instead of Junicode because the latter actually a shorthand for "Junius-Unicode".
 - Palatium as a reference to the Palatine hill in Italy, but it's the Roman name; I couldn't use Palatino and didn't want to use Palatine.
 - Membo was decided upon by thinking along the lines of "Modified Bembo-like".
-- Old Style instead of "Caslan" which was a clear bastardization of Caslon.
 
 ### I've discovered a problem with one of the fonts. What should I do?
 
