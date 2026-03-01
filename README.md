@@ -89,8 +89,6 @@ _**Curator's Note**: The previous version of this font is included by default on
 
 > You can find the original version of Domitian [on GitHub](https://github.com/dbenjaminmiller/domitian). Designed by: Hermann Zapf, Daniel Benjamin Miller. Domitian is a project to develop a full-featured, free and open-source implementation of Hermann Zapf's Palatino design. "Domitian" is in reference to builder of the Flavian Palace, located on the Palatine Hill. It is available under various licenses, including the [OFL license](https://openfontlicense.org/).
 
-**Curator's Note**:
-
 ## Extra Collection
 
 These are additional fonts that I think you should try, as well! Because this list remains in flux and can potentially grow, I do not have screenshots for each and every one of them.
@@ -105,9 +103,7 @@ These are additional fonts that I think you should try, as well! Because this li
 
 - **NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
 
-- **NV Charter** is simply a tweaked version of the original [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). Available under [this license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE) which lets you use, copy, modify, sublicense, sell and redistribute this font.
-
-- **NV XCharter** is a renamed version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-charter) that I've linked since it does contain some modifications. Available under [this license](https://github.com/nicoverbruggen/nv-charter/blob/main/LICENSE) which lets you use, copy, modify, sublicense, sell and redistribute this font.
+- **NV Charter** is simply a tweaked version of the original [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). Available under [this license](https://github.com/nicoverbruggen/nv-xcharter/blob/main/LICENSE) which lets you use, copy, modify, sublicense, sell and redistribute this font.
 
 - **NV Cooper** is a renamed version of [Cooper](https://indestructibletype.com/Cooper/). It's another beautiful font made by Owen Earl of [indestructable type*](https://indestructibletype.com). I've altered the metrics for adjusted line height. OFL licensed.
 
