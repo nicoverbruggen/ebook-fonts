@@ -35,21 +35,21 @@ If you're curious, you can learn more about how and why I originally made these 
 
 Each of these fonts has solid styles for all four font files (Regular, Italic, Bold and Bold Italic) that modern e-readers require, and have decent glyph coverage, with at least full support for Latin-1, and preferably even more character sets. This is all done to provide you with the optimal reading experience.
 
-### [Readerly](https://github.com/nicoverbruggen/readerly)
+### NV Readerly
 
 <kbd><img src="./examples/Readerly.png" width='400px'/></kbd>
 
-**Readerly** is modified font based on [Newsreader (9pt)](https://github.com/productiontype/Newsreader), while attempting to be metrically very similar to [Bookerly](https://en.wikipedia.org/wiki/Bookerly). The latter is the default font on Kindle devices. This font aims to provide a similar reading experience. A [separate repository](https://github.com/nicoverbruggen/readerly) is available with the source files.
+**NV Readerly** is modified font based on [Newsreader (9pt)](https://github.com/productiontype/Newsreader), while attempting to be metrically very similar to [Bookerly](https://en.wikipedia.org/wiki/Bookerly). The latter is the default font on Kindle devices. This font aims to provide a similar reading experience. A [separate repository](https://github.com/nicoverbruggen/readerly) is available with the source files.
 
 > [Newsreader](https://github.com/productiontype/Newsreader) is an original typeface designed by Production Type, primarily intended for continuous on-screen reading in content-rich environments. It is available under the [OFL license](https://openfontlicense.org/), and so is this derivative version.
 
 _**Nico's Note**: Readerly has become my new default for digital reading on my Kobo Libra Color. (If you prefer the original 9pt version, don't worry: I've also made it available, compatible with Kobo devices as "NinePoint" in the Extra Collection.)_
 
-### [Cartisse](https://github.com/nicoverbruggen/Cartisse)
+### NV Cartisse
 
 <kbd><img src="./examples/Cartisse.png" width='400px'/></kbd>
 
-**Cartisse** is a modified version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This modified version has a [dedicated repository](https://github.com/nicoverbruggen/cartisse) that I've linked since it does contain some manual modifications to kerning specifically made for optimal legibility and appearance on Kobo devices.
+**NV Cartisse** is a modified version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This modified version has a [dedicated repository](https://github.com/nicoverbruggen/cartisse) that I've linked since it does contain some manual modifications to kerning specifically made for optimal legibility and appearance on Kobo devices.
 
 > Charter was designed by Matthew Carter in 1987 as a body text font that would hold up well on low-resolution output devices of the day—fax machines and 300 dpi laser printers. XCharter is a project by Michael Sharpe, which extends Bitstream's Charter. An extended copyright notice has been included as part of Cartisse.
 
@@ -218,20 +218,31 @@ _Charter_ is a timeless classic, so it is my preferred reading font.
 
 Well, those are my initials... also, I like to think of the prefix to mean "Nice Version" or "Nico's Version". I have also modified the font names where necessary. 
 
-(The alternate variants for Kobo devices are prefixed with "KF", meaning "Kobo Fixed".)
+(The alternate variants for Kobo devices are prefixed with "KF", meaning "Kobo Fixed". If you use a stock Kobo without the `webkitTextRendering` override -- see below -- these are the ones you want.)
 
 I initially suffixed each of the fonts with "eBook", but I wanted to have shorter font names for display purposes on smaller e-ink devices.
 
-### Can I do anything to fix ligature rendering with the `kepub` renderer on Kobo devices?
+### Can I do anything to fix ligature rendering and/or kerning with the `kepub` renderer on Kobo devices?
 
-Yes, by tweaking `.kobo/Kobo/Kobo eReader.conf`. You can add an override for `webkitTextRenderer`, but this WILL have some unexpected results if you like reading with fully justified text (the default setting).
+Yes, by adding something to `.kobo/Kobo/Kobo eReader.conf`. Like when transferring the fonts, you will need to connect your e-reader to your computer and modify this file.
+
+It's a file located in a hidden folder on your Kobo device, so you may need to toggle "show hidden files" in whatever file manager you use.
+
+You can add an override for `webkitTextRenderer`, but this WILL have some unexpected results if you like reading with fully justified text (the default setting).
+
+Somewhere in that file, you should be able to find a `[Reading]` heading. Simply paste the instruction below:
 
 ```
-[Reading] # below this line
+[Reading] # add the next line, below this line!
 webkitTextRendering=optimizeLegibility
 ```
 
-Then, fully restart your Kobo device and now ligatures should render correctly, at the cost of breaking your fully-justified text. (Make sure to choose left-aligned text!)
+Then, **fully restart your Kobo device**. After rebooting, ligatures should render correctly, at the cost of breaking your fully-justified text. (Make sure to choose left-aligned text!)
+
+You can be on the lookout for words containing `fi` or `ff`, which are commonly used ligatures, and present in fonts like NV Garamond and NV Readerly.
+
+> [!TIP]
+> I should note that this also fixes kerning issues. If you enable this you don't need to use the KF fonts, and the regular NV fonts should now render correctly.
 
 ### Why were some of the font names altered?
 
