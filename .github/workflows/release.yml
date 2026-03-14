@@ -27,6 +27,8 @@ jobs:
           cp fonts/core/*.ttf /tmp/kobo-core/
           cd /tmp/kobo-core
           python3 /tmp/kobofix.py --preset kf *.ttf
+          mkdir -p /tmp/kf-core
+          mv KF_*.ttf /tmp/kf-core/
 
       - name: Process extra fonts with KF preset
         run: |
@@ -34,11 +36,13 @@ jobs:
           cp fonts/extra/*.ttf /tmp/kobo-extra/
           cd /tmp/kobo-extra
           python3 /tmp/kobofix.py --preset kf *.ttf
+          mkdir -p /tmp/kf-extra
+          mv KF_*.ttf /tmp/kf-extra/
 
       - name: Create zip files
         run: |
-          cd /tmp/kobo-core && zip -j /tmp/kobo-core-fonts.zip *.ttf
-          cd /tmp/kobo-extra && zip -j /tmp/kobo-extra-fonts.zip *.ttf
+          cd /tmp/kf-core && zip -j /tmp/kobo-core-fonts.zip *.ttf
+          cd /tmp/kf-extra && zip -j /tmp/kobo-extra-fonts.zip *.ttf
           cd $GITHUB_WORKSPACE/fonts/core && zip -j /tmp/other-core-fonts.zip *.ttf
           cd $GITHUB_WORKSPACE/fonts/extra && zip -j /tmp/other-extra-fonts.zip *.ttf
 
