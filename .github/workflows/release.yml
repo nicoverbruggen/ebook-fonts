@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Download kobofix.py
         run: curl -fsSL -o /tmp/kobofix.py https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/main/kobofix.py
@@ -47,7 +47,7 @@ jobs:
           cd $GITHUB_WORKSPACE/fonts/extra && zip -j /tmp/other-extra-fonts.zip *.ttf
 
       - name: Create draft release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v2.5.0
         with:
           draft: true
           name: NV Collection (${{ github.ref_name }})
