@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Download kobofix.py
-        run: curl -fsSL -o /tmp/kobofix.py https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/develop/kobofix.py
+        run: curl -fsSL -o /tmp/kobofix.py https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/main/kobofix.py
 
       - name: Process core fonts with KF preset
         run: |
