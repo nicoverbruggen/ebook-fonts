@@ -35,7 +35,7 @@ If you're curious, you can learn more about how and why I originally made these 
 
 Each of these fonts has solid styles for all four font files (Regular, Italic, Bold and Bold Italic) that modern e-readers require, and have decent glyph coverage, with at least full support for Latin-1, and preferably even more character sets. This is all done to provide you with the optimal reading experience.
 
-### NV Readerly
+### Readerly
 
 <kbd><img src="./examples/Readerly.png" width='400px'/></kbd>
 
@@ -45,15 +45,25 @@ Each of these fonts has solid styles for all four font files (Regular, Italic, B
 
 _**Nico's Note**: Readerly has become my new default for digital reading on my Kobo Libra Color. (If you prefer the original 9pt version, don't worry: I've also made it available, compatible with Kobo devices as "NinePoint" in the Extra Collection.)_
 
-### NV Cartisse
+### Sourcerer
 
-<kbd><img src="./examples/Cartisse.png" width='400px'/></kbd>
+<kbd><img src="./examples/Sourcerer.png" width='400px'/></kbd>
 
-**NV Cartisse** is a modified version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This modified version has a [dedicated repository](https://github.com/nicoverbruggen/cartisse) that I've linked since it does contain some manual modifications to kerning specifically made for optimal legibility and appearance on Kobo devices.
+**Sourcerer** is a thicker version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing, and has been renamed so it works correctly on Kobo devices (as fonts containing a number will often not work). It is available under the [OFL license](https://openfontlicense.org/).
 
-> Charter was designed by Matthew Carter in 1987 as a body text font that would hold up well on low-resolution output devices of the day—fax machines and 300 dpi laser printers. XCharter is a project by Michael Sharpe, which extends Bitstream's Charter. An extended copyright notice has been included as part of Cartisse.
+> [Source Serif](https://github.com/adobe-fonts/source-serif/wiki/Source-Serif-Readme) continues Adobe’s line of high-quality open source typefaces. Designed for a digital environment, the letter shapes are simplified and highly readable. Its historical roots, combined with expert guidance give the typeface a strong character of its own that will shine when used for extended text on paper or screen.
 
-_**Nico's Note**: Cartisse makes for a great universal pick for most books. It's my choice for a font that doesn't distract while remaining very easy to read._
+_**Nico's Note**: If you prefer the original (thinner) version of Source Serif, it's included in the Extra collection. However, I've found this version nicer to read on e-ink displays._
+
+### NV Charis
+
+<kbd><img src="./examples/NV-Charis.png" width='400px'/></kbd>
+
+**NV Charis** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license. The KF version specifically comes with optimized hinting tweaked for Kobo devices.
+
+> Charis is very closely based on the design of Bitstream Charter. [...] The glyphs were completely redrawn based only on visual reference to Charter. There are some significant design differences in the serif structure, proportions, diacritics, and Cyrillic. The design was also adjusted and extended to cover a much wider range of characters and publishing needs. It is available under the [OFL license](https://openfontlicense.org/).
+
+_**Note**: Charis is slightly thicker than Charter, which makes it a great universal pick for any book and any e-reader. Charis is, alongside Charter, my choice for a font that doesn't distract while remaining supremely readable._
 
 ### NV Garamond
 
@@ -153,7 +163,7 @@ Here's the included fonts, with links to the original and licensing information:
 
 - **NV Scarlet** is a renamed version of [Crimson](https://github.com/skosch/Crimson)'s 2012 version. I personally find it to be a better choice for digital reading than the more modern version of Crimson Pro, because it looks visually more similar to Minion Pro, which is a very popular commercial font from Adobe. This version has been optically resized for optimal reading on Kobo devices. OFL-licensed.
 
-- **NV Source Serif** is a version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing and has been renamed so it works correctly on Kobo devices. Yup, if fonts contain a number they will often not work, so I wanted to make sure that was fixed. OFL licensed.
+- **NV Source Serif** is a version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing and has been renamed so it works correctly on Kobo devices. Yup, if fonts contain a number they will often not work, so I wanted to make sure that was fixed. OFL licensed. (Like Sourcerer, but thinner.)
 
 - **NV Technical** is a variant of [STIX Two Text](https://fonts.google.com/specimen/STIX+Two+Text/about). OFL licensed. If you use a Kobo that has stylus support, STIX Two Text will likely already be included on your device, and in that case you probably don't need to install this version.
 
