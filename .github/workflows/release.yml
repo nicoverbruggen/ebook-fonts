@@ -1,0 +1,71 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/nicoverbruggen/fntbld-oci:latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Download kobofix.py
+        run: curl -fsSL -o /tmp/kobofix.py https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/main/kobofix.py
+
+      - name: Process core fonts with KF preset
+        run: |
+          mkdir -p /tmp/kobo-core
+          cp fonts/core/*.ttf /tmp/kobo-core/
+          cd /tmp/kobo-core
+          python3 /tmp/kobofix.py --preset kf *.ttf
+          mkdir -p /tmp/kf-core
+          mv KF_*.ttf /tmp/kf-core/
+
+      - name: Process extra fonts with KF preset
+        run: |
+          mkdir -p /tmp/kobo-extra
+          cp fonts/extra/*.ttf /tmp/kobo-extra/
+          cd /tmp/kobo-extra
+          python3 /tmp/kobofix.py --preset kf *.ttf
+          mkdir -p /tmp/kf-extra
+          mv KF_*.ttf /tmp/kf-extra/
+
+      - name: Create zip files
+        run: |
+          cd /tmp/kf-core && zip -j /tmp/kobo-core-fonts.zip *.ttf
+          cd /tmp/kf-extra && zip -j /tmp/kobo-extra-fonts.zip *.ttf
+          cd $GITHUB_WORKSPACE/fonts/core && zip -j /tmp/other-core-fonts.zip *.ttf
+          cd $GITHUB_WORKSPACE/fonts/extra && zip -j /tmp/other-extra-fonts.zip *.ttf
+
+      - name: Create draft release
+        uses: softprops/action-gh-release@v2.5.0
+        with:
+          draft: true
+          name: NV Collection (${{ github.ref_name }})
+          body: |
+            > [!TIP]
+            > **If you are using a Kobo device and reading books purchased from the Kobo Store or reading `kepub` files converted via Calibre**, you should download the Kobo Collection (`kobo-core-fonts.zip`, `kobo-extra-fonts.zip`), which has fonts slightly altered for optimal kerning for the `kepub` renderer.
+
+            ### Learn more
+
+            For more information about the fonts, screenshots and how to install them, please consult the [README](https://github.com/nicoverbruggen/ebook-fonts/blob/main/README.md). The FAQ also includes an entry on how to enable ligatures on Kobo devices, which is highly recommended.
+
+            ### License
+
+            Due to the nature of the OFL/libre licensing of the fonts, you may find these or the original fonts also excellent for embedding in your digital books in lieu of a commercial font, which may be prohibitively expensive to license if you wish to distribute your own epub files.
+
+            More info about licensing information can be found in the FAQ, which is part of the README.
+          files: |
+            /tmp/kobo-core-fonts.zip
+            /tmp/kobo-extra-fonts.zip
+            /tmp/other-core-fonts.zip
+            /tmp/other-extra-fonts.zip
