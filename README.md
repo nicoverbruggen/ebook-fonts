@@ -55,15 +55,25 @@ _**Nico's Note**: Readerly has become my new default for digital reading on my K
 
 _**Nico's Note**: If you prefer the original (thinner) version of Source Serif, it's included in the Extra collection. However, I've found this version nicer to read on e-ink displays._
 
+### Cartisse
+
+<kbd><img src="./examples/Cartisse.png" width='400px'/></kbd>
+
+**Cartisse** is a modified version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This modified version has a [dedicated repository](https://github.com/nicoverbruggen/cartisse) that I've linked since it does contain some manual modifications to kerning specifically made for optimal legibility and appearance on Kobo devices.
+
+> Charter was designed by Matthew Carter in 1987 as a body text font that would hold up well on low-resolution output devices of the day—fax machines and 300 dpi laser printers. XCharter is a project by Michael Sharpe, which extends Bitstream's Charter. An extended copyright notice has been included as part of Cartisse.
+
+_**Note**: Cartisse makes for a great universal pick for most books. It's my choice for a font that doesn't distract while remaining very easy to read._
+
 ### NV Charis
 
 <kbd><img src="./examples/NV-Charis.png" width='400px'/></kbd>
 
-**NV Charis** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license. The KF version specifically comes with optimized hinting tweaked for Kobo devices.
+**NV Charis** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license.
 
 > Charis is very closely based on the design of Bitstream Charter. [...] The glyphs were completely redrawn based only on visual reference to Charter. There are some significant design differences in the serif structure, proportions, diacritics, and Cyrillic. The design was also adjusted and extended to cover a much wider range of characters and publishing needs. It is available under the [OFL license](https://openfontlicense.org/).
 
-_**Note**: Charis is slightly thicker than Charter, which makes it a great universal pick for any book and any e-reader. Charis is, alongside Charter, my choice for a font that doesn't distract while remaining supremely readable._
+_**Note**: Charis is slightly thicker than Cartisse, and has broader language support. If that's what you want, you may want to pick it over Cartisse._
 
 ### NV Garamond
 
