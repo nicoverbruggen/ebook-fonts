@@ -115,6 +115,9 @@ def main() -> int:
     args = parse_args()
     out_dir = (REPO_ROOT / args.out_dir).resolve()
 
+    if out_dir.exists():
+        shutil.rmtree(out_dir)
+
     with tempfile.TemporaryDirectory(prefix="kobofix-script-") as temp_dir:
         temp_path = Path(temp_dir)
         if args.kobofix:

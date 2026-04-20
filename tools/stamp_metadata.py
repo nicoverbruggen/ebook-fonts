@@ -28,8 +28,8 @@ REPO_URL = "https://github.com/nicoverbruggen/ebook-fonts"
 
 def build_copyright_notice(date_iso: str) -> str:
     return (
-        f"Some modifications for e-readers applied on {date_iso} by "
-        f"Nico Verbruggen for `ebook-fonts` ({REPO_URL})."
+        f"This font file has been automatically modified for e-readers.\n"
+        f"Curated by Nico Verbruggen for `ebook-fonts` ({REPO_URL}) on {date_iso}."
     )
 
 
