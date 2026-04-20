@@ -69,7 +69,7 @@ _**Note**: Cartisse makes for a great universal pick for most books. It's my cho
 
 <kbd><img src="./examples/NV-Charis.png" width='400px'/></kbd>
 
-**NV Charis** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license.
+**NV Charis** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license. The `i` and `j` stems have also been nudged slightly below x-height so rendering appears more visually correct.
 
 > Charis is very closely based on the design of Bitstream Charter. [...] The glyphs were completely redrawn based only on visual reference to Charter. There are some significant design differences in the serif structure, proportions, diacritics, and Cyrillic. The design was also adjusted and extended to cover a much wider range of characters and publishing needs. It is available under the [OFL license](https://openfontlicense.org/).
 
@@ -213,6 +213,16 @@ Some practical changes to the fonts themselves have been made, including:
 - Incorrect **PANOSE metadata has been corrected** where necessary (using [panosifier](https://github.com/source-foundry/panosifier)). This ensures that the fonts render correctly on Kobo devices. For some fonts, incorrect information meant that the fonts would always render using their Bold style, for example.
 - Certain fonts have had their **glyphs rescaled**. Certain fonts have had their glyph sizes increased by 10%, making them seem visually larger, and more consistent in size with the other fonts included in this collection. If you like to stick to a certain font size, you won't need to constantly tweak things if you swap to a different font.
 - The Kobo Collection versions of the fonts are optimized for Kobo devices. They were **re-exported with an old style `kern` table** via [kobo-font-fix](https://github.com/nicoverbruggen/kobo-font-fix), to ensure improved kerning is applied for the `kepub` render on Kobo devices.
+
+Font-specific tweaks (like the Charis `i`/`j` adjustment, described in the Core Collection section above) are applied via small scripts under `tools/mods/`. Scripts rather than hand-edited outlines means upstream font updates can simply be re-run through the same script, and the fixes self-calibrate from each font's own metrics.
+
+### Are the modified fonts' copyright messages updated?
+
+Yes, but this doesn't change the actual licensing. 
+
+The release build (`build.py`) appends a short dated notice to each NV font's copyright string (Name ID 0) pointing back at this repository. 
+
+The original copyright is preserved verbatim above it, as required by the OFL. The stamping is idempotent, and is done using [fontTools](https://github.com/fonttools/fonttools). This stamp is only added to make it easier to determine when a font was generated.
 
 ### How are these fonts licensed?
 

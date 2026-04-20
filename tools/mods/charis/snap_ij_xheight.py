@@ -16,9 +16,20 @@ fix this because the overshoot is baked into the outline, not the hints.
 What this script does
 ---------------------
 For each target glyph it finds the stem contour (the one that reaches
-the baseline), computes the overshoot `delta = stem_max_y − OS/2.sxHeight`,
-and rigidly translates every stem point above `sxHeight` down by that
-delta. The top shape (serif brackets, flare) is preserved rather than
+the baseline) and rigidly translates every stem point above the target
+y down so the stem's top sits at that target. The target is
+`OS/2.sxHeight − undershoot` (default undershoot: 25 font units at
+Charis's UPEM of 2048, ≈1% of x-height).
+
+The undershoot exists because `i`'s flat top renders as a full-width
+pixel row of ink, while neighbouring letters like `n`/`e`/`o` have
+curved tops that antialias to a thinner visual mark. Setting `i`'s
+outline at exactly x-height still leaves it visually taller than the
+curves; pulling it a touch below lines them up on device. Charter/
+XCharter handles this the same way in its own design (its `i` stems
+sit ~1% of x-height below its `n`/`e`/`o` tops).
+
+The top shape (serif brackets, flare) is preserved rather than
 compressed. Any additional contours on the glyph — i.e. the tittle on
 `i`/`j` — are translated down by the same delta so the dot-to-stem
 spacing designed by SIL is preserved.
@@ -41,7 +52,7 @@ automatically if SIL adjusts x-height or overshoot in a future release.
 
 Usage
 -----
-    python snap_ij_xheight.py <input-dir> <output-dir>
+    python snap_ij_xheight.py <input-dir> <output-dir> [--undershoot N]
 """
 
 from __future__ import annotations
@@ -57,10 +68,12 @@ from fontTools.ttLib import TTFont
 # propagates the fix automatically — no need to list every accented form.
 STEM_GLYPHS = ["i", "j", "dotlessi", "idotless", "uni0237", "dotlessj"]
 
+DEFAULT_UNDERSHOOT = 25  # font units, ~1% of Charis's sxHeight (987 @ UPEM 2048)
 
-def flatten_stem_top(glyph, x_height: int) -> bool:
-    """Rigidly translate every stem point above `x_height` down so the
-    stem's top sits exactly at `x_height`, and translate the tittle
+
+def flatten_stem_top(glyph, target_y: int) -> bool:
+    """Rigidly translate every stem point above `target_y` down so the
+    stem's top sits exactly at `target_y`, and translate the tittle
     (if present) down by the same delta so its spacing to the stem is
     preserved.
 
@@ -91,15 +104,15 @@ def flatten_stem_top(glyph, x_height: int) -> bool:
     stem = contours[stem_idx]
 
     stem_max_y = max(coords[p][1] for p in stem)
-    if stem_max_y <= x_height:
-        return False  # no overshoot
+    if stem_max_y <= target_y:
+        return False  # already at or below target
 
-    delta = stem_max_y - x_height
+    delta = stem_max_y - target_y
     modified = False
 
     for p in stem:
         x, y = coords[p]
-        if y > x_height:
+        if y > target_y:
             coords[p] = (x, y - delta)
             modified = True
 
@@ -114,18 +127,19 @@ def flatten_stem_top(glyph, x_height: int) -> bool:
     return modified
 
 
-def process_font(src: Path, dst: Path) -> int:
+def process_font(src: Path, dst: Path, undershoot: int) -> int:
     font = TTFont(src)
     x_height = font["OS/2"].sxHeight
     if not x_height:
         raise RuntimeError(f"{src.name}: OS/2.sxHeight is 0 or missing; cannot flatten")
 
+    target_y = x_height - undershoot
     glyf = font["glyf"]
     modified = 0
     for name in STEM_GLYPHS:
         if name not in glyf:
             continue
-        if flatten_stem_top(glyf[name], x_height):
+        if flatten_stem_top(glyf[name], target_y):
             modified += 1
     font.save(dst)
     return modified
@@ -135,6 +149,12 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("input_dir", type=Path, help="Directory containing Charis .ttf files")
     parser.add_argument("output_dir", type=Path, help="Where to write modified fonts")
+    parser.add_argument(
+        "--undershoot",
+        type=int,
+        default=DEFAULT_UNDERSHOOT,
+        help=f"Font units to pull i/j stems below sxHeight (default: {DEFAULT_UNDERSHOOT})",
+    )
     args = parser.parse_args()
 
     ttfs = sorted(args.input_dir.glob("*.ttf"))
@@ -146,7 +166,7 @@ def main() -> int:
 
     for src in ttfs:
         dst = args.output_dir / src.name
-        n = process_font(src, dst)
+        n = process_font(src, dst, args.undershoot)
         print(f"{src.name}: flattened {n} stem(s) -> {dst}")
     return 0
 

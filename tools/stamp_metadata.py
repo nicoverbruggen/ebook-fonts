@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 """Stamp .ttf files with an ebook-fonts release marker.
 
-For each font given on the command line, this script modifies (in place):
-
-  - Name ID 0 (Copyright): appends a modification notice preserving the
-    original copyright above it, as required by the OFL.
-  - Name ID 5 (Version string): appends `; ebook-fonts <YYYY-MM-DD>`.
-  - Name ID 3 (Unique identifier): appends the same suffix so the
-    modified font has a unique ID distinct from the upstream release.
+For each font given on the command line, this script modifies (in place)
+Name ID 0 (Copyright): the original copyright is preserved verbatim, and
+a short modification notice dated to today is appended beneath it, as
+required by the OFL.
 
 Idempotent: running twice on the same file is a no-op — detected via the
 `ebook-fonts` marker in the copyright string.
@@ -27,10 +24,14 @@ from fontTools.ttLib import TTFont
 
 MOD_MARKER = "ebook-fonts"
 REPO_URL = "https://github.com/nicoverbruggen/ebook-fonts"
-COPYRIGHT_NOTICE = (
-    f"Some modifications for e-readers applied by Nico Verbruggen ({REPO_URL}). "
-    "Released under an identical license as the original."
-)
+
+
+def build_copyright_notice(date_iso: str) -> str:
+    return (
+        f"Some modifications for e-readers applied on {date_iso} by "
+        f"Nico Verbruggen ({REPO_URL}). "
+        "Released under an identical license as the original."
+    )
 
 
 def is_already_stamped(font: TTFont) -> bool:
@@ -46,18 +47,14 @@ def stamp(path: Path) -> bool:
         return False
 
     today = datetime.date.today().isoformat()
-    suffix = f"; {MOD_MARKER} {today}"
+    notice = build_copyright_notice(today)
     name_table = font["name"]
 
     # Iterate over a copy because setName may mutate the underlying list.
     for rec in list(name_table.names):
-        current = rec.toUnicode()
-        if rec.nameID == 0:
-            new = current.rstrip() + "\n\n" + COPYRIGHT_NOTICE
-        elif rec.nameID in (3, 5):
-            new = current + suffix
-        else:
+        if rec.nameID != 0:
             continue
+        new = rec.toUnicode().rstrip() + "\n\n" + notice
         name_table.setName(new, rec.nameID, rec.platformID, rec.platEncID, rec.langID)
 
     font.save(path)
