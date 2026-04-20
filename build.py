@@ -4,9 +4,9 @@
 For each collection (core, extra) this produces two sibling directories:
 
   out/sources/<collection>/ — the NV/Cartisse/Readerly/Sourcerer fonts,
-                              with NV_*.ttf stamped with the ebook-fonts
-                              copyright notice. This is what gets zipped
-                              as `other-<collection>-fonts.zip` on release.
+                              all stamped with the ebook-fonts copyright
+                              notice. This is what gets zipped as
+                              `other-<collection>-fonts.zip` on release.
   out/kobo/<collection>/    — the KF_*.ttf outputs produced by running
                               kobofix on the stamped sources above.
                               This is what gets zipped as
@@ -28,6 +28,7 @@ from pathlib import Path
 KOBOFIX_URL = "https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/main/kobofix.py"
 REPO_ROOT = Path(__file__).resolve().parent
 STAMP_SCRIPT = REPO_ROOT / "tools" / "stamp_metadata.py"
+LOCAL_KOBOFIX = REPO_ROOT / "tools" / "kobofix.py"
 
 
 def download_kobofix(target_path: Path) -> None:
@@ -47,16 +48,12 @@ def copy_sources(source_dir: Path, dest_dir: Path) -> list[Path]:
     return copied
 
 
-def stamp_nv(staged_dir: Path) -> None:
-    """Stamp every NV_*.ttf in `staged_dir` with the ebook-fonts copyright
-    notice. Only the NV originals are stamped: KF outputs inherit the
-    notice through kobofix, and non-NV fonts (Cartisse, Readerly, ...)
-    carry their own upstream copyright handling.
-    """
-    nv_fonts = sorted(staged_dir.glob("NV_*.ttf"))
-    if not nv_fonts:
+def stamp_all(staged_dir: Path) -> None:
+    """Stamp every *.ttf in `staged_dir` with the ebook-fonts copyright notice."""
+    fonts = sorted(staged_dir.glob("*.ttf"))
+    if not fonts:
         return
-    cmd = [sys.executable, str(STAMP_SCRIPT)] + [str(f) for f in nv_fonts]
+    cmd = [sys.executable, str(STAMP_SCRIPT)] + [str(f) for f in fonts]
     subprocess.run(cmd, check=True)
 
 
@@ -74,7 +71,7 @@ def run_kobofix(kobofix_path: Path, staged_dir: Path, kf_out_dir: Path) -> int:
         for font in fonts:
             shutil.copy2(font, temp_path / font.name)
 
-        cmd = [sys.executable, str(kobofix_path), "--preset", "kf"] + [f.name for f in fonts]
+        cmd = [sys.executable, str(kobofix_path), "--preset", "kf", "--stamp"] + [f.name for f in fonts]
         subprocess.run(cmd, cwd=temp_path, check=True)
 
         generated = sorted(temp_path.glob("KF_*.ttf"))
@@ -93,7 +90,7 @@ def build_collection(kobofix_path: Path, name: str, out_dir: Path) -> tuple[int,
     kf_out_dir = out_dir / "kobo" / name
 
     staged = copy_sources(source_dir, staged_dir)
-    stamp_nv(staged_dir)
+    stamp_all(staged_dir)
     kf_count = run_kobofix(kobofix_path, staged_dir, kf_out_dir)
     return len(staged), kf_count
 
@@ -120,12 +117,15 @@ def main() -> int:
 
     with tempfile.TemporaryDirectory(prefix="kobofix-script-") as temp_dir:
         temp_path = Path(temp_dir)
-        kobofix_path = (args.kobofix.resolve() if args.kobofix else temp_path / "kobofix.py")
-
         if args.kobofix:
+            kobofix_path = args.kobofix.resolve()
             if not kobofix_path.is_file():
                 raise FileNotFoundError(f"kobofix.py not found: {kobofix_path}")
+        elif LOCAL_KOBOFIX.exists():
+            kobofix_path = LOCAL_KOBOFIX.resolve()
+            print(f"Using local kobofix.py at {kobofix_path}")
         else:
+            kobofix_path = temp_path / "kobofix.py"
             print(f"Downloading kobofix.py from {KOBOFIX_URL}")
             download_kobofix(kobofix_path)
 
