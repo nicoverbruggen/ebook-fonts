@@ -25,7 +25,7 @@ import tempfile
 import urllib.request
 from pathlib import Path
 
-KOBOFIX_URL = "https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/main/kobofix.py"
+KOBOFIX_URL = "https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/v0.5.3/kobofix.py"
 REPO_ROOT = Path(__file__).resolve().parent
 STAMP_SCRIPT = REPO_ROOT / "tools" / "stamp_metadata.py"
 LOCAL_KOBOFIX = REPO_ROOT / "tools" / "kobofix.py"
