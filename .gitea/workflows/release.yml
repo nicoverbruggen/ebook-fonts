@@ -4,11 +4,6 @@ on:
   push:
     tags:
       - '*'
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Release version (e.g. v5.0)'
-        required: true
 
 jobs:
   release:
@@ -20,33 +15,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download kobofix.py
-        run: curl -fsSL -o /tmp/kobofix.py https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/main/kobofix.py
-
-      - name: Process core fonts with KF preset
-        run: |
-          mkdir -p /tmp/kobo-core
-          cp fonts/core/*.ttf /tmp/kobo-core/
-          cd /tmp/kobo-core
-          python3 /tmp/kobofix.py --preset kf *.ttf
-          mkdir -p /tmp/kf-core
-          mv KF_*.ttf /tmp/kf-core/
-
-      - name: Process extra fonts with KF preset
-        run: |
-          mkdir -p /tmp/kobo-extra
-          cp fonts/extra/*.ttf /tmp/kobo-extra/
-          cd /tmp/kobo-extra
-          python3 /tmp/kobofix.py --preset kf *.ttf
-          mkdir -p /tmp/kf-extra
-          mv KF_*.ttf /tmp/kf-extra/
+      - name: Build release artifacts
+        run: python3 build.py --out-dir out
 
       - name: Create zip files
         run: |
-          cd /tmp/kf-core && zip -j /tmp/kobo-core-fonts.zip *.ttf
-          cd /tmp/kf-extra && zip -j /tmp/kobo-extra-fonts.zip *.ttf
-          cd $GITHUB_WORKSPACE/fonts/core && zip -j /tmp/other-core-fonts.zip *.ttf
-          cd $GITHUB_WORKSPACE/fonts/extra && zip -j /tmp/other-extra-fonts.zip *.ttf
+          cd out/kobo/core    && zip -j /tmp/kobo-core-fonts.zip *.ttf
+          cd $GITHUB_WORKSPACE/out/kobo/extra   && zip -j /tmp/kobo-extra-fonts.zip *.ttf
+          cd $GITHUB_WORKSPACE/out/sources/core  && zip -j /tmp/other-core-fonts.zip *.ttf
+          cd $GITHUB_WORKSPACE/out/sources/extra && zip -j /tmp/other-extra-fonts.zip *.ttf
 
       - name: Create draft release
         uses: akkuman/gitea-release-action@v1
