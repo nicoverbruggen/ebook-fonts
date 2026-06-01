@@ -27,11 +27,10 @@ import urllib.request
 from pathlib import Path
 from tools.download_core_fonts import verify_locked_core_fonts
 
-KOBOFIX_URL = "https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/v0.5.3/kobofix.py"
+KOBOFIX_URL = "https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/v0.6/kobofix.py"
 REPO_ROOT = Path(__file__).resolve().parent
 STAMP_SCRIPT = REPO_ROOT / "tools" / "stamp_metadata.py"
 LOCAL_KOBOFIX = REPO_ROOT / "tools" / "kobofix.py"
-
 
 def download_kobofix(target_path: Path) -> None:
     target_path.parent.mkdir(parents=True, exist_ok=True)
