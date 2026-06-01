@@ -39,7 +39,7 @@ Each of these fonts has solid styles for all four font files (Regular, Italic, B
 
 <kbd><img src="./examples/Readerly.png" width='400px'/></kbd>
 
-**NV Readerly** is modified font based on [Newsreader (9pt)](https://github.com/productiontype/Newsreader), while attempting to be metrically very similar to [Bookerly](https://en.wikipedia.org/wiki/Bookerly). The latter is the default font on Kindle devices. This font aims to provide a similar reading experience. A [separate repository](https://github.com/nicoverbruggen/readerly) is available with the source files.
+**Readerly** is modified font based on [Newsreader (9pt)](https://github.com/productiontype/Newsreader), while attempting to be metrically very similar to [Bookerly](https://en.wikipedia.org/wiki/Bookerly). The latter is the default font on Kindle devices. This font aims to provide a similar reading experience. A [separate repository](https://github.com/nicoverbruggen/readerly) is available with the source files.
 
 > [Newsreader](https://github.com/productiontype/Newsreader) is an original typeface designed by Production Type, primarily intended for continuous on-screen reading in content-rich environments. It is available under the [OFL license](https://openfontlicense.org/), and so is this derivative version.
 

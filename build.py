@@ -13,6 +13,7 @@ For each collection (core, extra) this produces two sibling directories:
                               `kobo-<collection>-fonts.zip` on release.
 
 The files under ./fonts are never modified by this script.
+Pinned core fonts are verified against ./fonts.lock before building.
 """
 
 from __future__ import annotations
@@ -24,6 +25,7 @@ import sys
 import tempfile
 import urllib.request
 from pathlib import Path
+from tools.download_core_fonts import verify_locked_core_fonts
 
 KOBOFIX_URL = "https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/v0.5.3/kobofix.py"
 REPO_ROOT = Path(__file__).resolve().parent
@@ -117,6 +119,8 @@ def main() -> int:
 
     if out_dir.exists():
         shutil.rmtree(out_dir)
+
+    verify_locked_core_fonts()
 
     with tempfile.TemporaryDirectory(prefix="kobofix-script-") as temp_dir:
         temp_path = Path(temp_dir)
