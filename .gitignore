@@ -1,4 +1,5 @@
 docs/.~lock*
 .DS_Store
+__pycache__/
 out/
 tools/kobofix.py
