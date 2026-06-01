@@ -283,35 +283,3 @@ Because I thought it would be fun, and to avoid confusion with the original vers
 If you're having an issue you think I can fix, please get [in touch](mailto:mail@nicoverbruggen.be) with me and let me know what the issue is. I may be able to help.
 
 It is possible that certain issues are resolved by updating the fonts with the upstream version, which may need to happen every now and then.
-
-### Can I build this myself?
-
-Yes. When you download the assets from GitHub, Kobo variant assets have likely been built. 
-
-Running these or creating these assets requires running `kobofix.py` and applying specific patches included in this repository. 
-
-If you would like to run these locally, you can do so, but it's highly recommended that you use the prebuilt `fntbld-oci` container instead:
-
-```sh
-podman run --rm -v "$PWD:/work" -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest <command>
-```
-
-To build the release outputs yourself, you can simply run:
-
-```sh
-./local_build.sh
-```
-
-The build script will use Podman or Docker to run the build in the `fntbld-oci` container, and writes the generated font collections to the ignored `out/` directory in the repository root.
-
-### How do I ensure I have the latest Readerly, etc?
-
-Some fonts, like Readerly, Cartisse and Sourcerer, while included, are sourced from separate repositories. 
-
-The versions included in this repository are pinned to a specific font file in `tools/download_core_fonts.py`, which needs to be updated when new releases are available.
-
-You don't need to manually download these new releases once the pinned URLs have been updated. To refresh the downloaded core fonts, simply run:
-
-```sh
-podman run --rm -v "$PWD:/work" -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest python3 tools/download_core_fonts.py
-```
