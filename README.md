@@ -296,7 +296,7 @@ If you would like to run these locally, you can do so, but it's highly recommend
 podman run --rm -v "$PWD:/work" -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest <command>
 ```
 
-To build the release outputs yourself, run:
+To build the release outputs yourself, you can simply run:
 
 ```sh
 ./local_build.sh
@@ -304,14 +304,14 @@ To build the release outputs yourself, run:
 
 The build script will use Podman or Docker to run the build in the `fntbld-oci` container, and writes the generated font collections to the ignored `out/` directory in the repository root.
 
-To refresh the downloaded core fonts, run:
+### How do I ensure I have the latest Readerly, etc?
+
+Some fonts, like Readerly, Cartisse and Sourcerer, while included, are sourced from separate repositories. 
+
+The versions included in this repository are pinned to a specific font file in `tools/download_core_fonts.py`, which needs to be updated when new releases are available.
+
+You don't need to manually download these new releases once the pinned URLs have been updated. To refresh the downloaded core fonts, simply run:
 
 ```sh
 podman run --rm -v "$PWD:/work" -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest python3 tools/download_core_fonts.py
-```
-
-For example, to run `kobofix.py` against fonts in the current directory:
-
-```sh
-podman run --rm -v "$PWD:/work" -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest python3 kobofix.py --preset nv *.ttf
 ```
