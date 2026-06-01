@@ -171,6 +171,8 @@ Here's the included fonts, with links to the original and licensing information:
 
 - **NV NinePoint** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader), based on the 9pt optical variant. This makes it a very good choice for those who want maximum readability at smaller font sizes. In order to ensure it loads correctly on Kobo devices, and in order to avoid confusion with the other version of Newsreader included in this repository, the font has been renamed to _NinePoint_. OFL licensed.
 
+- **NV Plex Serif** is a renamed version of [IBM Plex Serif](https://github.com/IBM/plex). It has been renamed so it works correctly on Kobo devices and can be installed alongside the original IBM Plex Serif family. OFL licensed.
+
 - **NV Scarlet** is a renamed version of [Crimson](https://github.com/skosch/Crimson)'s 2012 version. I personally find it to be a better choice for digital reading than the more modern version of Crimson Pro, because it looks visually more similar to Minion Pro, which is a very popular commercial font from Adobe. This version has been optically resized for optimal reading on Kobo devices. OFL-licensed.
 
 - **NV Source Serif** is a version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing and has been renamed so it works correctly on Kobo devices. Yup, if fonts contain a number they will often not work, so I wanted to make sure that was fixed. OFL licensed. (Like Sourcerer, but thinner.)
