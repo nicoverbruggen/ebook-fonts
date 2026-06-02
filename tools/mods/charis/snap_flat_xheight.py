@@ -1,27 +1,29 @@
 #!/usr/bin/env python3
-"""Snap `i`/`j` stem tops to x-height in Charis TTFs.
+"""Snap flat lowercase stem tops to x-height in Charis TTFs.
 
 Problem
 -------
-Charis's `i` and `j` stems peak a handful of font units above the declared
-x-height — a deliberate optical overshoot that prevents their flat tops from
-looking shorter than neighbouring round letters like `e`/`o`. On desktop
-renderers this overshoot lands within the same pixel row as the x-height
-line and disappears. On Kobo's e-ink renderer, the extra few units push
-the stem across a pixel-rounding boundary: `i`'s top rounds *up* to an
-extra pixel row while `e`/`v` round *down*, so `i` ends up visibly one
-pixel taller than its neighbours. Hinting (native or autohint) does not
-fix this because the overshoot is baked into the outline, not the hints.
+Charis's flat lowercase stems can peak a handful of font units above the
+declared x-height — a deliberate optical overshoot that prevents their flat
+tops from looking shorter than neighbouring round letters like `e`/`o`. On
+desktop renderers this overshoot lands within the same pixel row as the
+x-height line and disappears. On Kobo's e-ink renderer, the extra few units
+can push the stem across a pixel-rounding boundary: the flat top rounds *up*
+to an extra pixel row while `e`/`v` round *down*, so glyphs like `i` and `u`
+end up visibly one pixel taller than their neighbours. Hinting (native or
+autohint) does not fix this because the overshoot is baked into the outline,
+not the hints.
 
 What this script does
 ---------------------
 For each target glyph it finds the stem contour (the one that reaches
 the baseline) and rigidly translates every stem point above the target
-y down so the stem's top sits at that target. The target is
-`OS/2.sxHeight − undershoot` (default undershoot: 25 font units at
-Charis's UPEM of 2048, ≈1% of x-height).
+y down so the stem's top sits at that target. `i`/`j` and their dotless
+bases target `OS/2.sxHeight − undershoot` (default undershoot: 25 font
+units at Charis's UPEM of 2048, ≈1% of x-height). `u` targets
+`OS/2.sxHeight`, matching Cartisse's `u` metrics.
 
-The undershoot exists because `i`'s flat top renders as a full-width
+The undershoot exists because a flat stem top renders as a full-width
 pixel row of ink, while neighbouring letters like `n`/`e`/`o` have
 curved tops that antialias to a thinner visual mark. Setting `i`'s
 outline at exactly x-height still leaves it visually taller than the
@@ -34,9 +36,10 @@ compressed. Any additional contours on the glyph — i.e. the tittle on
 `i`/`j` — are translated down by the same delta so the dot-to-stem
 spacing designed by SIL is preserved.
 
-Glyphs targeted: `i`, `j`, and the dotless bases `dotlessi`/`uni0237`.
-Accented variants (`iacute`, `idieresis`, ...) are composites that
-reference the dotless base, so they inherit the fix for free.
+Glyphs targeted: `i`, `j`, `u`, and the dotless bases
+`dotlessi`/`uni0237`. Accented variants (`iacute`, `idieresis`, `uacute`,
+`udieresis`, ...) are composites that reference the base glyphs, so they
+inherit the fix for free.
 
 Why a script, not a one-off edit
 --------------------------------
@@ -52,21 +55,23 @@ automatically if SIL adjusts x-height or overshoot in a future release.
 
 Usage
 -----
-    python snap_ij_xheight.py <input-dir> <output-dir> [--undershoot N]
+    python snap_flat_xheight.py <input-dir> <output-dir> [--undershoot N]
 """
 
 from __future__ import annotations
 
 import argparse
+import shutil
 import sys
 from pathlib import Path
 
 from fontTools.ttLib import TTFont
 
-# Flat-topped stems at x-height. Accented variants (iacute, idieresis, ...)
-# are composites that reference dotlessi/uni0237, so modifying those bases
-# propagates the fix automatically — no need to list every accented form.
-STEM_GLYPHS = ["i", "j", "dotlessi", "idotless", "uni0237", "dotlessj"]
+# Flat-topped stems at x-height. Accented variants (iacute, idieresis,
+# uacute, udieresis, ...) are composites that reference these bases, so
+# modifying the bases propagates the fix automatically.
+UNDERSHOT_STEM_GLYPHS = ["i", "j", "dotlessi", "idotless", "uni0237", "dotlessj"]
+XHEIGHT_STEM_GLYPHS = ["u"]
 
 DEFAULT_UNDERSHOOT = 25  # font units, ~1% of Charis's sxHeight (987 @ UPEM 2048)
 
@@ -133,15 +138,22 @@ def process_font(src: Path, dst: Path, undershoot: int) -> int:
     if not x_height:
         raise RuntimeError(f"{src.name}: OS/2.sxHeight is 0 or missing; cannot flatten")
 
-    target_y = x_height - undershoot
     glyf = font["glyf"]
     modified = 0
-    for name in STEM_GLYPHS:
+    for name in UNDERSHOT_STEM_GLYPHS:
         if name not in glyf:
             continue
-        if flatten_stem_top(glyf[name], target_y):
+        if flatten_stem_top(glyf[name], x_height - undershoot):
             modified += 1
-    font.save(dst)
+    for name in XHEIGHT_STEM_GLYPHS:
+        if name not in glyf:
+            continue
+        if flatten_stem_top(glyf[name], x_height):
+            modified += 1
+    if modified:
+        font.save(dst)
+    elif src != dst:
+        shutil.copy2(src, dst)
     return modified
 
 
@@ -153,13 +165,13 @@ def main() -> int:
         "--undershoot",
         type=int,
         default=DEFAULT_UNDERSHOOT,
-        help=f"Font units to pull i/j stems below sxHeight (default: {DEFAULT_UNDERSHOOT})",
+        help=f"Font units to pull i/j stem tops below sxHeight (default: {DEFAULT_UNDERSHOOT}); u snaps to sxHeight",
     )
     args = parser.parse_args()
 
-    ttfs = sorted(args.input_dir.glob("*.ttf"))
+    ttfs = sorted(args.input_dir.glob("*Charis*.ttf"))
     if not ttfs:
-        print(f"No .ttf files found in {args.input_dir}", file=sys.stderr)
+        print(f"No Charis .ttf files found in {args.input_dir}", file=sys.stderr)
         return 1
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
