@@ -3,7 +3,7 @@
 
 For each collection (core, extra) this produces two sibling directories:
 
-  out/sources/<collection>/ — the NV/Cartisse/Readerly/Sourcerer fonts,
+  out/sources/<collection>/ — the NV/Cartisse/Libron/Sourcerer fonts,
                               all stamped with the ebook-fonts copyright
                               notice. This is what gets zipped as
                               `other-<collection>-fonts.zip` on release.
@@ -25,7 +25,7 @@ import sys
 import tempfile
 import urllib.request
 from pathlib import Path
-from tools.download_core_fonts import verify_core_font_versions
+from tools.download_fonts import verify_core_font_versions
 
 KOBOFIX_URL = "https://raw.githubusercontent.com/nicoverbruggen/kobo-font-fix/v0.6/kobofix.py"
 REPO_ROOT = Path(__file__).resolve().parent

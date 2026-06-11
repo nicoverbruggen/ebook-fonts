@@ -24,12 +24,12 @@ podman run --rm -v "$PWD:/work" -w /work ghcr.io/nicoverbruggen/fntbld-oci:lates
 
 ### Sourcing files from other repositories
 
-Some fonts, like Readerly, Cartisse and Sourcerer, while included, are sourced from separate repositories. 
+Some fonts, like Libron, Cartisse, Sourcerer and Readerly, while included, are sourced from separate repositories. 
 
-The versions included in this repository are pinned to a specific font file in `tools/download_core_fonts.py`, which needs to be updated when new releases are available.
+The versions included in this repository are pinned to a specific font file in `tools/download_fonts.py`, which needs to be updated when new releases are available.
 
-You don't need to manually download these new releases once the pinned URLs have been updated. To refresh the downloaded core fonts, simply run:
+You don't need to manually download these new releases once the pinned URLs have been updated. To refresh the downloaded fonts, simply run:
 
 ```sh
-podman run --rm -v "$PWD:/work" -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest python3 tools/download_core_fonts.py
+podman run --rm -v "$PWD:/work" -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest python3 tools/download_fonts.py
 ```

@@ -35,15 +35,15 @@ If you're curious, you can learn more about how and why I originally made these 
 
 Each of these fonts has solid styles for all four font files (Regular, Italic, Bold and Bold Italic) that modern e-readers require, and have decent glyph coverage, with at least full support for Latin-1, and preferably even more character sets. This is all done to provide you with the optimal reading experience.
 
-### Readerly
+### Libron
 
-<kbd><img src="./examples/Readerly.png" width='400px'/></kbd>
+<kbd><img src="./examples/Libron.png" width='400px'/></kbd>
 
-**Readerly** is modified font based on [Newsreader (9pt)](https://github.com/productiontype/Newsreader), while attempting to be metrically very similar to [Bookerly](https://en.wikipedia.org/wiki/Bookerly). The latter is the default font on Kindle devices. This font aims to provide a similar reading experience. A [separate repository](https://github.com/nicoverbruggen/readerly) is available with the source files.
+**Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various manual edits to give the font a more neutral look. The serifs have been trimmed down on several capitals, certain glyphs have been reworked, and composite glyphs have been fixed. The result is a more understated serif that is less visually "loud" during extended reading sessions. A [separate repository](https://github.com/nicoverbruggen/libron) is available with the source files.
 
-> [Newsreader](https://github.com/productiontype/Newsreader) is an original typeface designed by Production Type, primarily intended for continuous on-screen reading in content-rich environments. It is available under the [OFL license](https://openfontlicense.org/), and so is this derivative version.
+> [Readerly](https://github.com/nicoverbruggen/readerly) is a modified font based on Newsreader, designed by Production Type. Readerly is available under the [OFL license](https://openfontlicense.org/), and so is this derivative version.
 
-_**Nico's Note**: Readerly has become my new default for digital reading on my Kobo Libra Color. (If you prefer the original 9pt version, don't worry: I've also made it available, compatible with Kobo devices as "NinePoint" in the Extra Collection.)_
+_**Nico's Note**: Libron is my current favorite for digital reading — it keeps the readability of Readerly but refines the serifs for a more subtle appearance on e-ink._
 
 ### Sourcerer
 
@@ -69,7 +69,7 @@ _**Note**: Cartisse makes for a great universal pick for most books. It's my cho
 
 <kbd><img src="./examples/NV-Charis.png" width='400px'/></kbd>
 
-**NV Charis** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license. The `i` and `j` stems have also been nudged slightly below x-height so rendering appears more visually correct.
+**NV Charis** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license. The `i`, `j` and `u` stems have also been nudged slightly below x-height so rendering appears more visually correct.
 
 > Charis is very closely based on the design of Bitstream Charter. [...] The glyphs were completely redrawn based only on visual reference to Charter. There are some significant design differences in the serif structure, proportions, diacritics, and Cyrillic. The design was also adjusted and extended to cover a much wider range of characters and publishing needs. It is available under the [OFL license](https://openfontlicense.org/).
 
@@ -132,6 +132,8 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 > If you are interested in checking these fonts out, I recommend trying them via [the showcase website](https://ebook-fonts.nicoverbruggen.be/). You can click on "Additional Fonts" to open the list of extra fonts.
 
 Here's the included fonts, with links to the original and licensing information:
+
+- **Readerly** is a modified font based on [Newsreader (9pt)](https://github.com/productiontype/Newsreader), while attempting to be metrically very similar to [Bookerly](https://en.wikipedia.org/wiki/Bookerly). A [separate repository](https://github.com/nicoverbruggen/readerly) is available with the source files. OFL licensed. It has been superseded by _Libron_ in the Core Collection.
 
 - **NV Adelph** is a variant of the [Adelphe](https://gitlab.com/bye-bye-binary/adelphe). I've altered the metrics for adjusted line height. [OIFL licensed](https://typotheque.genderfluid.space/fr/licences), like the original. (If you're curious, this is in essence a more gender-inclusive version of the OFL, so you can use the font in the exact same way as any OFL-licensed font.)
 
@@ -216,7 +218,7 @@ Some practical changes to the fonts themselves have been made, including:
 - Certain fonts have had their **glyphs rescaled**. Certain fonts have had their glyph sizes increased by 10%, making them seem visually larger, and more consistent in size with the other fonts included in this collection. If you like to stick to a certain font size, you won't need to constantly tweak things if you swap to a different font.
 - The Kobo Collection versions of the fonts are optimized for Kobo devices. They were **re-exported with an old style `kern` table** via [kobo-font-fix](https://github.com/nicoverbruggen/kobo-font-fix), to ensure improved kerning is applied for the `kepub` render on Kobo devices.
 
-Font-specific tweaks (like the Charis `i`/`j` adjustment, described in the Core Collection section above) are applied via small scripts under `tools/mods/`. Scripts rather than hand-edited outlines means upstream font updates can simply be re-run through the same script, and the fixes self-calibrate from each font's own metrics.
+Font-specific tweaks (like the Charis `i`/`j`/`u` adjustment, described in the Core Collection section above) are applied via small scripts under `tools/mods/`. Scripts rather than hand-edited outlines means upstream font updates can simply be re-run through the same script, and the fixes self-calibrate from each font's own metrics.
 
 ### Are the modified fonts' copyright messages updated?
 
@@ -271,7 +273,7 @@ webkitTextRendering=optimizeLegibility
 
 Then, **fully restart your Kobo device**. After rebooting, ligatures should render correctly, at the cost of breaking your fully-justified text. (Make sure to choose left-aligned text!)
 
-You can be on the lookout for words containing `fi` or `ff`, which are commonly used ligatures, and present in fonts like NV Garamond and NV Readerly.
+You can be on the lookout for words containing `fi` or `ff`, which are commonly used ligatures, and present in fonts like NV Garamond and Libron.
 
 > [!TIP]
 > I should note that this also fixes kerning issues. If you enable this you don't need to use the KF fonts, and the regular NV fonts should now render correctly.
