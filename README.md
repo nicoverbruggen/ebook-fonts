@@ -1,9 +1,9 @@
 # Modified fonts for e-reading
 
-This is a selection of fonts that I've tweaked for reading purposes on Kobo devices. These fonts can also be used other devices, including Kindle, Pocketbook, and may also work well for general use (i.e. word processing).
+This is a selection of fonts that I've tweaked for reading purposes on Kobo devices. These fonts can also be used other devices, including Kindle, Pocketbook, and may also work well for general use (i.e. word processing). 
 
 > [!IMPORTANT]
-> **If you found these fonts useful, please consider starring the repository**, it helps me understand how useful my work has been.
+> **If you found these fonts useful, please consider starring the repository**, it helps me understand how useful my work has been. Also, please consider [sponsoring](https://nicoverbruggen.be/sponsor) to support the project, as this is something I maintain in my free time. **Thank you!** ⭐️
 
 ## About this curated collection
 
@@ -28,6 +28,8 @@ I have also prepared an [interactive showcase](https://ebook-fonts.nicoverbrugge
 <a href="https://ebook-fonts.nicoverbruggen.be/"><img src="./examples/showcase.png" /></a>
 
 If you're curious, you can learn more about how and why I originally made these tweaked fonts on my website: [Patching Fonts for my Kobo](https://nicoverbruggen.be/blog/patching-fonts-for-kobo). I explain there how this repository came to be. This blog post is part of a larger series that I've worked on, so if you are interested in the technical explanation behind all of the changes I've made, I think it's worth reading.
+
+While the *KF* patched fonts tend to give you better text rendering on Kobo devices, I recommend the use of [KOReader](https://koreader.rocks) for the best results. KOReader can be easily installed on Kobo devices via the browser with [KoboPatch Web UI](https://kp.nicoverbruggen.be/), which can also help you mod your device in other ways if that's something you're interested in.
 
 ## Core Collection
 
@@ -193,13 +195,23 @@ To reboot, long-press the power button until your Kobo says it has been shut dow
 
 ### Where can I download these fonts?
 
-The fonts are available via the [releases section](https://github.com/nicoverbruggen/ebook-fonts/releases) on GitHub.
+The fonts are available via the [releases section](https://github.com/nicoverbruggen/ebook-fonts/releases) on GitHub. Take care to pick the right release for your device!
+
+### Are these fonts installable via KoboPatch Web UI?
+
+Some of these fonts are currently included as a default option in [KoboPatch Web UI](https://kp.nicoverbruggen.be/) for the NickelMenu preset.
+
+You can verify they get installed by making sure the "Install additional fonts" option is checked. If you want to install the rest of the fonts from this collection, you will need to do so manually.
 
 ### Do you have any other recommendations other than installing these fonts?
 
 Yes! I highly recommend using [KOReader](https://koreader.rocks/) instead of the built-in functionality that comes with your device, especially if you wish to read books you bought as `epub` files. 
 
-It's the best and most comprehensive digital reading software I know, with excellent font rendering and incredible customization options. It's available for almost all devices you can think of. I highly recommend trying it.
+It's the best and most comprehensive digital reading software I know, with excellent font rendering and incredible customization options. It's available for almost all devices you can think of. 
+
+I highly recommend trying it. It's my experience that it is the most accurate renderer, even better than using the patched fonts on `kepub` books.
+
+
 
 ### Why did you alter these fonts?
 
@@ -207,7 +219,7 @@ Please go take a look at my blog post, [Patching Fonts for my Kobo](https://nico
 
 ### What tweaks have been applied to these fonts?
 
-All of the **fonts have been renamed** (using [fontname.py](https://github.com/chrissimpkins/fontname.py)). Sometimes only a prefix has been added, but sometimes the font name has been totally changed, although I've attributed the original and their authors, of course.
+All of the **fonts have been adjusted in various ways**, and the names of the fonts are also different. Sometimes only a prefix has been added, but sometimes the font name has been totally changed, although I've attributed the original and their authors, of course.
 
 This way, you can keep them installed side-by-side with the original versions, if you'd like. This is also a requirement of the Open Font License, which does not allow you to redistribute the fonts using the original name if they have been altered.
 
@@ -218,15 +230,15 @@ Some practical changes to the fonts themselves have been made, including:
 - Certain fonts have had their **glyphs rescaled**. Certain fonts have had their glyph sizes increased by 10%, making them seem visually larger, and more consistent in size with the other fonts included in this collection. If you like to stick to a certain font size, you won't need to constantly tweak things if you swap to a different font.
 - The Kobo Collection versions of the fonts are optimized for Kobo devices. They were **re-exported with an old style `kern` table** via [kobo-font-fix](https://github.com/nicoverbruggen/kobo-font-fix), to ensure improved kerning is applied for the `kepub` render on Kobo devices.
 
-Font-specific tweaks (like the Charis `i`/`j`/`u` adjustment, described in the Core Collection section above) are applied via small scripts under `tools/mods/`. Scripts rather than hand-edited outlines means upstream font updates can simply be re-run through the same script, and the fixes self-calibrate from each font's own metrics.
+Font-specific tweaks (like the Charis `i`/`j`/`u` adjustment, described in the Core Collection section above) are applied via small scripts under `tools/mods/`. 
+
+Scripts rather than hand-edited outlines means upstream font updates can simply be re-run through the same script, and the fixes self-calibrate from each font's own metrics.
 
 ### Are the modified fonts' copyright messages updated?
 
-Yes, but this doesn't change the actual licensing. 
+Yes, but I should note that this doesn't change the actual licensing.  The release build (`build.py`) appends a short dated notice to each NV font's copyright string (Name ID 0) pointing back at this repository.
 
-The release build (`build.py`) appends a short dated notice to each NV font's copyright string (Name ID 0) pointing back at this repository. 
-
-The original copyright is preserved verbatim above it, as required by the OFL. The stamping is idempotent, and is done using [fontTools](https://github.com/fonttools/fonttools). This stamp is only added to make it easier to determine when a font was generated.
+The original copyright is preserved verbatim above it, as required by the OFL. This stamp is only added to make it easier to determine when a font was generated.
 
 ### How are these fonts licensed?
 
@@ -274,6 +286,8 @@ webkitTextRendering=optimizeLegibility
 Then, **fully restart your Kobo device**. After rebooting, ligatures should render correctly, at the cost of breaking your fully-justified text. (Make sure to choose left-aligned text!)
 
 You can be on the lookout for words containing `fi` or `ff`, which are commonly used ligatures, and present in fonts like NV Garamond and Libron.
+
+If you use [KoboPatch Web UI](https://kp.nicoverbruggen.be/) to install the NickelMenu preset, you can select **Enable better typography**, and it will adjust this for you.
 
 > [!TIP]
 > I should note that this also fixes kerning issues. If you enable this you don't need to use the KF fonts, and the regular NV fonts should now render correctly.
