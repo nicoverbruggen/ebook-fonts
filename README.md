@@ -163,6 +163,8 @@ Here's the included fonts, with links to the original and licensing information:
 
 - **NV Junius** is a [Junicode 2](https://github.com/psb1558/Junicode-font) variant based on the variable font, with adjusted metrics and a 10% glyph size increase. This one does not have a repository, but can be easily recreated by using [Slice](https://github.com/source-foundry/Slice), a GUI that allows you to export various fixed configurations. OFL licensed.
 
+- **NV Kierkegaard** is a renamed version of [Kierkegaard Text](https://github.com/jrgdrs/Kierkegaard) by Jörg Drees, with adjusted metrics for e-readers. OFL licensed.
+
 - **NV Libertinus** is a variant of [Libertinus](https://github.com/alerque/libertinus) Serif. I've altered the metrics for adjusted line height. OFL licensed.
 
 - **NV Literata** is a variant of [Literata](https://github.com/googlefonts/literata) with some adjusted metrics and has been renamed so it works correctly on Kobo devices. OFL licensed.
