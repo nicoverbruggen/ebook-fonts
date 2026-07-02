@@ -141,7 +141,7 @@ Here's the included fonts, with links to the original and licensing information:
 
 - **NV Ancizar Serif** is a variant of [UNAL Ancizar Serif](https://github.com/UNAL-OMD/UNAL-Ancizar). I've altered the metrics for adjusted line height and increased the glyph scale by 8% so it sits more comfortably alongside the other serif fonts in this collection. OFL licensed.
 
-- **NV Ancizar Sans** is a variant of [UNAL Ancizar Sans](https://github.com/UNAL-OMD/UNAL-Ancizar). I've altered the metrics for adjusted line height. Effectively the sans serif version of Ancizar Serif, as you might expect. OFL licensed.
+- **NV Ancizar Sans** is a variant of [UNAL Ancizar Sans](https://github.com/UNAL-OMD/UNAL-Ancizar). I've altered the metrics for adjusted line height and increased the glyph scale by 8% so it sits more comfortably alongside the other fonts in this collection. Effectively the sans serif version of Ancizar Serif, as you might expect. OFL licensed.
 
 - **NV Basker** is a variant of [ANRT-Baskervville](https://github.com/anrt-type/ANRT-Baskervville). I've altered the metrics for adjusted line height, and the medium weight is used for text, as opposed to the regular weight. OFL licensed.
 
