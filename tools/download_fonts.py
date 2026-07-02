@@ -17,12 +17,12 @@ CORE_DEST = REPO_ROOT / "fonts" / "core"
 EXTRA_DEST = REPO_ROOT / "fonts" / "extra"
 
 CORE_RELEASES = {
-    "Libron": "https://github.com/nicoverbruggen/libron/releases/download/v0.10/Libron.zip",
+    "Libron": "https://github.com/nicoverbruggen/libron/releases/download/v0.11/Libron.zip",
     "Cartisse": "https://github.com/nicoverbruggen/cartisse/releases/download/v2.2/Cartisse.zip",
     "Sourcerer": "https://github.com/nicoverbruggen/sourcerer/releases/download/v1.2/Sourcerer.zip",
 }
 EXTRA_RELEASES = {
-    "Readerly": "https://github.com/nicoverbruggen/readerly/releases/download/v1.9/Readerly.zip",
+    "Readerly": "https://github.com/nicoverbruggen/readerly/releases/download/v1.10/Readerly.zip",
 }
 VERSION_RE = re.compile(r"\d+(?:\.\d+)+")
 
