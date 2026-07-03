@@ -29,7 +29,10 @@ I have also prepared an [interactive showcase](https://ebook-fonts.nicoverbrugge
 
 If you're curious, you can learn more about how and why I originally made these tweaked fonts on my website: [Patching Fonts for my Kobo](https://nicoverbruggen.be/blog/patching-fonts-for-kobo). I explain there how this repository came to be. This blog post is part of a larger series that I've worked on, so if you are interested in the technical explanation behind all of the changes I've made, I think it's worth reading.
 
-While the *KF* patched fonts tend to give you better text rendering on Kobo devices, I recommend the use of [KOReader](https://koreader.rocks) for the best results. KOReader can be easily installed on Kobo devices via the browser with [KoboPatch Web UI](https://kp.nicoverbruggen.be/), which can also help you mod your device in other ways if that's something you're interested in.
+> [!TIP]
+> While the *KF* patched fonts tend to give you better text rendering on Kobo devices, I also recommend installing [NickelTypeFix](https://github.com/nicoverbruggen/NickelTypeFix) with `optimizeLegibility` if you would like to have proper kerning, tracking, ligatures and correct justification support. For more information, please see that repository.
+
+No matter what e-reader you use, [KOReader](https://koreader.rocks) is also a recommendation of mine. It gives you the most customizable reading experience. On Kobo devices, KOReader can be easily installed via the browser with [KoboPatch Web UI](https://kp.nicoverbruggen.be/). That's another project of mine which can also help you mod your device in other ways (if that's something you're interested in).
 
 ## Core Collection
 
@@ -43,9 +46,9 @@ Each of these fonts has solid styles for all four font files (Regular, Italic, B
 
 **Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various manual edits to give the font a more neutral look. The serifs have been trimmed down on several capitals, certain glyphs have been reworked, and composite glyphs have been fixed. The result is a more understated serif that is less visually "loud" during extended reading sessions. A [separate repository](https://github.com/nicoverbruggen/libron) is available with the source files.
 
-> [Readerly](https://github.com/nicoverbruggen/readerly) is a modified font based on Newsreader, designed by Production Type. Readerly is available under the [OFL license](https://openfontlicense.org/), and so is this derivative version.
+> [Libron](https://github.com/nicoverbruggen/libron) is a modified font based on Newsreader, designed by Production Type and has been manually modified for an even better reading experience. Libron is available under the [OFL license](https://openfontlicense.org/).
 
-_**Nico's Note**: Libron is my current favorite for digital reading — it keeps the readability of Readerly but refines the serifs for a more subtle appearance on e-ink._
+_**Nico's Note**: Libron is my current favorite for digital reading — it keeps the readability of Readerly but refines the serifs for a more subtle appearance on e-ink, while still retaining a slightly increased weight for optimal contrast._
 
 ### Sourcerer
 
