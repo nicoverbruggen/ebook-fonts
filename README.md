@@ -74,7 +74,7 @@ _**Note**: Cartisse makes for a great universal pick for most books. It's my cho
 
 <kbd><img src="./examples/NV-Charis.png" width='400px'/></kbd>
 
-**NV Charis** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license. The `i`, `j` and `u` stems have also been nudged slightly below x-height so rendering appears more visually correct.
+**NV Charis** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license.
 
 > Charis is very closely based on the design of Bitstream Charter. [...] The glyphs were completely redrawn based only on visual reference to Charter. There are some significant design differences in the serif structure, proportions, diacritics, and Cyrillic. The design was also adjusted and extended to cover a much wider range of characters and publishing needs. It is available under the [OFL license](https://openfontlicense.org/).
 
@@ -150,9 +150,13 @@ Here's the included fonts, with links to the original and licensing information:
 
 - **NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
 
-- **NV Charter** is simply a tweaked version of the original [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). Available under [this license](https://github.com/nicoverbruggen/nv-xcharter/blob/main/LICENSE) which lets you use, copy, modify, sublicense, sell and redistribute this font.
+- **NV Charter** is no longer included. Cartisse is effectively the same with improved language support, and you can find it in the Core Collection.
 
 - **NV Charis** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license.
+
+- **NV Charis Literacy** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with the "Single-story a and g" stylistic set baked in by default, which makes it a good pick for early readers or literacy contexts where simplified letterforms are easier to recognize. Like NV Charis, it has a slightly more narrow line-height. OFL licensed.
+
+- **NV Charis Old Style** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with old-style (text) figures baked in by default, so numerals blend more naturally with lowercase text instead of standing at full cap-height. Like NV Charis, it has a slightly more narrow line-height. OFL licensed.
 
 - **NV Clara** is a version of [Clara](https://ctan.org/pkg/clara) by Seamas O Brogain, with adjusted metrics and an 8% glyph scale increase for e-readers. OFL/GPL-with-font-exception licensed.
 
@@ -251,8 +255,6 @@ Scripts rather than hand-edited outlines means upstream font updates can simply 
 ### How are these fonts licensed?
 
 Most of these fonts are available under their original [Open Font License](https://openfontlicense.org/). Because of licensing rules, the font names have been modified to include a prefix to avoid confusion with the original fonts. 
-
-_NV Charter_ is available under the original Bitstream license. The original LICENSE file is embedded within my version of the fonts, and also included in the repository for legal reasons.
 
 ### Is there anything else I should do, to get a better reading experience with these fonts?
 
