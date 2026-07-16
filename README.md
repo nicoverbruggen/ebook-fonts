@@ -204,7 +204,7 @@ Here's the included fonts, with links to the original and licensing information:
 
 - **NV Scarlet** is a variant of [Cochineal](https://ctan.org/pkg/cochineal), with adjusted metrics for line height and a 10% glyph size increase so it reads at the same size as the rest of the collection. Cochineal is Michael Sharpe's extension of [Crimson](https://github.com/skosch/Crimson) by Sebastian Kosch, which is where earlier releases of NV Scarlet came from. Sharpe added over 1500 glyphs, so this version brings real small caps, old-style and lining figures, fractions, and Greek and Cyrillic coverage that the plain Crimson never had. It keeps what made Crimson a good pick for digital reading: an oldstyle garalde at heart, but closer to Minion Pro than to the more modern Crimson Pro. The name is apt, as it happens, since cochineal is the insect that scarlet dye is made from. OFL licensed.
 
-- **NV Source Serif** is a version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing and has been renamed so it works correctly on Kobo devices. Yup, if fonts contain a number they will often not work, so I wanted to make sure that was fixed. OFL licensed. (Like Sourcerer, but thinner.)
+- **NV Source Serif** is no longer included. Sourcerer supersedes it, and you can find it in the Core Collection.
 
 - **NV Technical** is a variant of [STIX Two Text](https://fonts.google.com/specimen/STIX+Two+Text/about). OFL licensed. If you use a Kobo that has stylus support, STIX Two Text will likely already be included on your device, and in that case you probably don't need to install this version.
 
