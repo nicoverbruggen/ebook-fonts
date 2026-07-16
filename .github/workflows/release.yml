@@ -15,8 +15,40 @@ jobs:
       contents: write
 
     steps:
+      # Full history, so the branch check below can resolve origin/main.
       - name: Checkout repository
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      # Tags on main are stable; tags anywhere else (e.g. trunk) ship as
+      # pre-releases.
+      - name: Determine release type
+        id: release_type
+        run: |
+          if ! git rev-parse --verify -q origin/main >/dev/null; then
+            echo "origin/main not found; cannot tell stable from pre-release" >&2
+            exit 1
+          fi
+          if git merge-base --is-ancestor "${{ github.ref_name }}" origin/main; then
+            echo "prerelease=false" >> "$GITHUB_OUTPUT"
+            echo "${{ github.ref_name }} is on main: stable release"
+          else
+            echo "prerelease=true" >> "$GITHUB_OUTPUT"
+            echo "${{ github.ref_name }} is not on main: pre-release"
+          fi
+
+      # The collection's own version, which is independent of the date-based tag.
+      - name: Read version
+        id: version
+        run: |
+          version="$(tr -d '[:space:]' < VERSION)"
+          if [ -z "$version" ]; then
+            echo "VERSION is empty" >&2
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "version: $version"
 
       - name: Build release artifacts
         run: python3 build.py --out-dir out
@@ -31,11 +63,12 @@ jobs:
       - name: Generate manifest
         run: python3 tools/generate_manifest.py --host github.com --tag ${{ github.ref_name }} --out /tmp/manifest.json
 
-      - name: Create draft release
+      - name: Create release
         uses: softprops/action-gh-release@v2.5.0
         with:
-          draft: true
-          name: NV Collection (${{ github.ref_name }})
+          draft: false
+          prerelease: ${{ steps.release_type.outputs.prerelease }}
+          name: v${{ steps.version.outputs.version }}
           body: |
             > [!TIP]
             > **If you are using a Kobo device and reading books purchased from the Kobo Store or reading `kepub` files converted via Calibre**, you should download the Kobo Collection (`kobo-core-fonts.zip`, `kobo-extra-fonts.zip`), which has fonts slightly altered for optimal kerning for the `kepub` renderer.
