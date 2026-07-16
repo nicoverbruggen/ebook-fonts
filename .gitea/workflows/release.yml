@@ -25,6 +25,9 @@ jobs:
           cd $GITHUB_WORKSPACE/out/sources/core  && zip -j /tmp/other-core-fonts.zip *.ttf
           cd $GITHUB_WORKSPACE/out/sources/extra && zip -j /tmp/other-extra-fonts.zip *.ttf
 
+      - name: Generate manifest
+        run: python3 tools/generate_manifest.py --host git.nicoverbruggen.be --tag ${{ inputs.version || gitea.ref_name }} --out /tmp/manifest.json
+
       - name: Create draft release
         uses: akkuman/gitea-release-action@v1
         with:
@@ -50,3 +53,4 @@ jobs:
             /tmp/kobo-extra-fonts.zip
             /tmp/other-core-fonts.zip
             /tmp/other-extra-fonts.zip
+            /tmp/manifest.json
