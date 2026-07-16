@@ -31,12 +31,28 @@ from fontTools.ttLib import TTFont
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
-# Raw-file URL per forge. The forges differ in more than the hostname: the
+# URL templates per forge, for individual font files ("raw") and for the
+# release zips ("asset"). The forges differ in more than the hostname: the
 # repository lives under a different owner on each, and Gitea serves tagged
 # raw files from /raw/tag/<tag>/ where GitHub uses /raw/refs/tags/<tag>/.
+# Release assets happen to share the same /releases/download/ shape.
 HOST_URLS = {
-    "github.com": "https://github.com/nicoverbruggen/ebook-fonts/raw/refs/tags/{tag}/{path}",
-    "git.nicoverbruggen.be": "https://git.nicoverbruggen.be/fonts/ebook-fonts/raw/tag/{tag}/{path}",
+    "github.com": {
+        "raw": "https://github.com/nicoverbruggen/ebook-fonts/raw/refs/tags/{tag}/{path}",
+        "asset": "https://github.com/nicoverbruggen/ebook-fonts/releases/download/{tag}/{name}",
+    },
+    "git.nicoverbruggen.be": {
+        "raw": "https://git.nicoverbruggen.be/fonts/ebook-fonts/raw/tag/{tag}/{path}",
+        "asset": "https://git.nicoverbruggen.be/fonts/ebook-fonts/releases/download/{tag}/{name}",
+    },
+}
+
+# The zips the release workflow builds for each collection, as {key: filename}.
+# `kobo` holds the KF_*.ttf fonts patched for the kepub renderer; `other` holds
+# the stamped sources. Keep in sync with the "Create zip files" workflow step.
+ARCHIVES = {
+    "kobo": "kobo-{collection}-fonts.zip",
+    "other": "other-{collection}-fonts.zip",
 }
 
 FAMILY_ORDER: dict[str, list[str]] = {
@@ -115,11 +131,19 @@ def collect_families(collection: str, url_template: str, tag: str) -> dict[str, 
     return {family: [url for _, _, url in sorted(entries)] for family, entries in styles.items()}
 
 
+def collect_archives(collection: str, asset_template: str, tag: str) -> dict[str, str]:
+    """Map each release zip for a collection to its download URL."""
+    return {
+        key: asset_template.format(tag=tag, name=filename.format(collection=collection))
+        for key, filename in ARCHIVES.items()
+    }
+
+
 def build_manifest(host: str, tag: str) -> dict:
-    url_template = HOST_URLS[host]
+    urls = HOST_URLS[host]
     collections = []
     for collection, order in FAMILY_ORDER.items():
-        families = collect_families(collection, url_template, tag)
+        families = collect_families(collection, urls["raw"], tag)
 
         unlisted = sorted(set(families) - set(order))
         if unlisted:
@@ -136,6 +160,7 @@ def build_manifest(host: str, tag: str) -> dict:
         collections.append(
             {
                 "name": collection,
+                "archives": collect_archives(collection, urls["asset"], tag),
                 "fonts": [{"family": family, "files": families[family]} for family in order],
             }
         )
