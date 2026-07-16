@@ -58,7 +58,7 @@ _**Nico's Note**: Libron is my current favorite for digital reading — it keeps
 
 > [Source Serif](https://github.com/adobe-fonts/source-serif/wiki/Source-Serif-Readme) continues Adobe’s line of high-quality open source typefaces. Designed for a digital environment, the letter shapes are simplified and highly readable. Its historical roots, combined with expert guidance give the typeface a strong character of its own that will shine when used for extended text on paper or screen.
 
-_**Nico's Note**: If you prefer the original (thinner) version of Source Serif, it's included in the Extra collection. However, I've found this version nicer to read on e-ink displays._
+_**Nico's Note**: This is a thicker take on Source Serif, which I've found nicer to read on e-ink displays than the original._
 
 ### Cartisse
 
@@ -188,8 +188,6 @@ Here's the included fonts, with links to the original and licensing information:
 
 - **NV Literata** is a variant of [Literata](https://github.com/googlefonts/literata) with some adjusted metrics and has been renamed so it works correctly on Kobo devices. OFL licensed.
 
-- **NV Lore** is a variant of [Lora](https://github.com/cyrealtype/Lora-Cyrillic). I've altered the metrics for adjusted line height. OFL licensed.
-
 - **NV Membo** is a renamed version of [fbb](https://www.ctan.org/tex-archive/fonts/fbb), a modified version of Cardo which has a Bold Italic style, unlike NV Cardo. It has been converted to TrueType (`ttf`) for better Kobo compatibility. OFL licensed.
 
 - **NV Newsreader** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader). Based on the 14pt optical variant, which makes it great for e-reading at larger font sizes. OFL licensed.
@@ -201,6 +199,8 @@ Here's the included fonts, with links to the original and licensing information:
 - **NV Publica** is a variant of [PT Serif](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, with adjusted metrics for line height. A sturdy, low-contrast transitional face drawn for both screen and print, with broad Latin and Cyrillic coverage. ParaType reserves "PT Serif" and "ParaType" under the OFL, so it could not simply be prefixed: the _PT_ is usually read as _public type_, after the Russian public-types programme it was made for, and _Publica_ keeps that sense. Note that only ParaType's OFL release is used here; the version on CTAN ships under the ParaType Free Font License instead. OFL licensed.
 
 - **NV Publica Wide** is a variant of [PT Serif Caption](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, with adjusted metrics for line height. This is the _caption_ optical size of the same design as NV Publica: drawn for small text, so it has a slightly larger x-height and roughly 13% more width per character, which keeps it sturdy and open at sizes where the text cut starts to close up. It is named _Wide_ rather than _Caption_ because that is what it actually does to your page, so expect fewer words per line, not more. Note that ParaType never drew a bold for this cut, so only Regular and Italic exist; your reader will synthesise bold if it needs one. OFL licensed.
+
+- **NV Sable** is a variant of [Lora](https://github.com/cyrealtype/Lora-Cyrillic) by Cyreal, with adjusted metrics for line height. A contemporary serif with calligraphic roots, so its curves have a brushed quality that gives a page a bit more movement than the quieter faces here. Named for the sable brush those strokes recall, since Cyreal reserve the name _Lora_ for their own releases. OFL licensed.
 
 - **NV Scarlet** is a variant of [Cochineal](https://ctan.org/pkg/cochineal), with adjusted metrics for line height and a 10% glyph size increase so it reads at the same size as the rest of the collection. Cochineal is Michael Sharpe's extension of [Crimson](https://github.com/skosch/Crimson) by Sebastian Kosch, which is where earlier releases of NV Scarlet came from. Sharpe added over 1500 glyphs, so this version brings real small caps, old-style and lining figures, fractions, and Greek and Cyrillic coverage that the plain Crimson never had. It keeps what made Crimson a good pick for digital reading: an oldstyle garalde at heart, but closer to Minion Pro than to the more modern Crimson Pro. The name is apt, as it happens, since cochineal is the insect that scarlet dye is made from. OFL licensed.
 
