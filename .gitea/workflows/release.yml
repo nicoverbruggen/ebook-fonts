@@ -23,6 +23,10 @@ jobs:
       - name: Determine release type
         id: release_type
         run: |
+          # The workspace is owned by the runner user but this job runs as root
+          # inside the container, so git refuses the repo as "dubious ownership"
+          # and every command fails. Trust it explicitly.
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           if ! git rev-parse --verify -q origin/main >/dev/null; then
             echo "origin/main not found; cannot tell stable from pre-release" >&2
             exit 1
