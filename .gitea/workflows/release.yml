@@ -58,7 +58,7 @@ jobs:
           cd $GITHUB_WORKSPACE/out/sources/extra && zip -j /tmp/other-extra-fonts.zip *.ttf
 
       - name: Generate manifest
-        run: python3 tools/generate_manifest.py --host git.nicoverbruggen.be --tag ${{ inputs.version || gitea.ref_name }} --out /tmp/manifest.json
+        run: python3 tools/generate_manifest.py --host git.nicoverbruggen.be --tag ${{ inputs.version || gitea.ref_name }} --archive-dir /tmp --out /tmp/manifest.json
 
       - name: Create release
         uses: akkuman/gitea-release-action@v1

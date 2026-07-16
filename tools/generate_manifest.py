@@ -49,7 +49,9 @@ HOST_URLS = {
 
 # The zips the release workflow builds for each collection, as {key: filename}.
 # `kobo` holds the KF_*.ttf fonts patched for the kepub renderer; `other` holds
-# the stamped sources. Keep in sync with the "Create zip files" workflow step.
+# the stamped sources. These names are also written in the "Create zip files"
+# workflow step; pass --archive-dir so a mismatch fails the build instead of
+# publishing URLs that 404.
 ARCHIVES = {
     "kobo": "kobo-{collection}-fonts.zip",
     "other": "other-{collection}-fonts.zip",
@@ -131,19 +133,31 @@ def collect_families(collection: str, url_template: str, tag: str) -> dict[str, 
     return {family: [url for _, _, url in sorted(entries)] for family, entries in styles.items()}
 
 
+def archive_filenames(collection: str) -> dict[str, str]:
+    """Map each release zip key for a collection to its filename."""
+    return {key: template.format(collection=collection) for key, template in ARCHIVES.items()}
+
+
 def collect_archives(collection: str, asset_template: str, tag: str) -> dict[str, str]:
     """Map each release zip for a collection to its download URL."""
     return {
-        key: asset_template.format(tag=tag, name=filename.format(collection=collection))
-        for key, filename in ARCHIVES.items()
+        key: asset_template.format(tag=tag, name=filename)
+        for key, filename in archive_filenames(collection).items()
     }
 
 
-def build_manifest(host: str, tag: str) -> dict:
+def build_manifest(host: str, tag: str, archive_dir: Path | None = None) -> dict:
     urls = HOST_URLS[host]
     collections = []
+    missing_archives = []
     for collection, order in FAMILY_ORDER.items():
         families = collect_families(collection, urls["raw"], tag)
+
+        if archive_dir is not None:
+            missing_archives += [
+                name for name in archive_filenames(collection).values()
+                if not (archive_dir / name).is_file()
+            ]
 
         unlisted = sorted(set(families) - set(order))
         if unlisted:
@@ -165,6 +179,13 @@ def build_manifest(host: str, tag: str) -> dict:
             }
         )
 
+    if missing_archives:
+        raise RuntimeError(
+            f"{archive_dir}: no such zip(s): {', '.join(missing_archives)}; "
+            f"ARCHIVES in tools/generate_manifest.py disagrees with the zips the "
+            f"release workflow builds, so the manifest would link to files that do not exist"
+        )
+
     return {"collections": collections}
 
 
@@ -173,12 +194,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--tag", required=True, help="Tag the URLs should be pinned to, e.g. v2026.07.02.")
     parser.add_argument("--host", required=True, choices=sorted(HOST_URLS), help="Forge the URLs should point at.")
     parser.add_argument("--out", default="manifest.json", type=Path, help="Where to write the manifest (default: ./manifest.json).")
+    parser.add_argument(
+        "--archive-dir",
+        type=Path,
+        help="Directory holding the built release zips. If given, every archive the manifest "
+        "links to must exist there, so a rename cannot silently produce dead URLs. The release "
+        "workflow passes the directory it zips into.",
+    )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    manifest = build_manifest(args.host, args.tag)
+    manifest = build_manifest(args.host, args.tag, args.archive_dir)
     args.out.write_text(json.dumps(manifest, indent=4) + "\n")
     for collection in manifest["collections"]:
         total = sum(len(entry["files"]) for entry in collection["fonts"])
