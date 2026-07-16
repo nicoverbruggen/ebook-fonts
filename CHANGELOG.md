@@ -21,6 +21,11 @@ All notable changes to this collection. Versions are the collection's own; see `
 | NV Sable | Extra | 👌 Renamed | Was NV Lore. The font itself is unchanged. |
 | NV Kierkegaard | Extra | 👌 Updated | Glyph scale increased 9%, since it read a size down from the rest of the collection. |
 | NV Libertinus | Extra | 👌 Updated | Glyph scale increased 11%, since it read a size down from the rest of the collection. |
+| NV Castoro | Extra | 👌 Updated | Fixed metadata for the Bold and Bold Italic font files. |
+| Cartisse | Core | 👌 Updated | Updated to Cartisse 2.4, which corrects its unique font identifier. |
+| Libron | Core | 👌 Updated | Updated to Libron 0.23, which corrects its unique font identifier. |
+| Sourcerer | Core | 👌 Updated | Updated to Sourcerer 1.4, which corrects its unique font identifier. |
+| Readerly | Extra | 👌 Updated | Updated to Readerly 1.11, which corrects its unique font identifier. |
 
 ### Removed
 
@@ -34,6 +39,8 @@ All notable changes to this collection. Versions are the collection's own; see `
 - Some fonts were renamed to better comply with the OFL license's RFN policy.
 - A `manifest.json` is now attached to each release, listing every font by collection with direct download links for the individual files and for the zips.
 - Releases are published automatically when a tag is pushed. Tags on `main` are stable releases; tags elsewhere ship as pre-releases.
+- Built with `kobo-font-fix` v0.9.2. Every font now carries a correct unique identifier: previously all four styles of a family shared one, and it reported the wrong version.
+- Several fonts gained typographic spaces and a soft hyphen that were missing, which could show as blank boxes or prevent hyphenation (NV Adelph, NV Basker, NV Castoro, NV Legible Next, NV Newsreader, NV NinePoint).
 
 ## v4.0 (2026-07-02)
 
