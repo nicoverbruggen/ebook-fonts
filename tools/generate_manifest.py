@@ -72,8 +72,11 @@ FAMILY_ORDER: dict[str, list[str]] = {
     "extra": [
         "Readerly",
         "NV Adelph",
+        "NV Alegreya",
+        "NV Alizar",
         "NV Ancizar Serif",
         "NV Ancizar Sans",
+        "NV Andada",
         "NV Basker",
         "NV Cardo",
         "NV Castoro",
