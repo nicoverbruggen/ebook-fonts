@@ -39,6 +39,7 @@ All notable changes to this collection. Versions are the collection's own; see `
 - Built with `kobo-font-fix` v0.10. Every font now carries a correct unique identifier: previously all four styles of a family shared one, and it reported the wrong version. Capital spacing is also removed from the GPOS table, as it was causing issues as well.
 - Some fonts were renamed to better comply with the OFL license's RFN policy.
 - A `manifest.json` is now attached to each release, listing every font by collection with direct download links for the individual files and for the zips.
+- The README now shows a rendered example image for every font in both collections. The images are generated from the font files themselves (unhinted, as Kobo renders them) via `./tools/generate_examples.sh`, replacing the device screenshots.
 - Releases are published automatically when a tag is pushed. Tags on `main` are stable releases; tags elsewhere ship as pre-releases.
 - Several fonts gained typographic spaces and a soft hyphen that were missing, which could show as blank boxes or prevent hyphenation (NV Adelph, NV Basker, NV Castoro, NV Legible Next, NV Newsreader, NV NinePoint).
 

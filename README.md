@@ -42,7 +42,7 @@ Each of these fonts has solid styles for all four font files (Regular, Italic, B
 
 ### Libron
 
-<kbd><img src="./examples/Libron.png" width='400px'/></kbd>
+<img src="./examples/core/Libron.png" width='400px'/>
 
 **Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various manual edits to give the font a more neutral look. The serifs have been trimmed down on several capitals, certain glyphs have been reworked, and composite glyphs have been fixed. The result is a more understated serif that is less visually "loud" during extended reading sessions. A [separate repository](https://github.com/nicoverbruggen/libron) is available with the source files.
 
@@ -52,7 +52,7 @@ _**Nico's Note**: Libron is my current favorite for digital reading — it keeps
 
 ### Sourcerer
 
-<kbd><img src="./examples/Sourcerer.png" width='400px'/></kbd>
+<img src="./examples/core/Sourcerer.png" width='400px'/>
 
 **Sourcerer** is a thicker version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing, and has been renamed so it works correctly on Kobo devices (as fonts containing a number will often not work). It is available under the [OFL license](https://openfontlicense.org/).
 
@@ -62,7 +62,7 @@ _**Nico's Note**: This is a thicker take on Source Serif, which I've found nicer
 
 ### Cartisse
 
-<kbd><img src="./examples/Cartisse.png" width='400px'/></kbd>
+<img src="./examples/core/Cartisse.png" width='400px'/>
 
 **Cartisse** is a modified version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This modified version has a [dedicated repository](https://github.com/nicoverbruggen/cartisse) that I've linked since it does contain some manual modifications to kerning specifically made for optimal legibility and appearance on Kobo devices.
 
@@ -72,7 +72,7 @@ _**Note**: Cartisse makes for a great universal pick for most books. It's my cho
 
 ### NV Charis
 
-<kbd><img src="./examples/NV-Charis.png" width='400px'/></kbd>
+<img src="./examples/core/NV-Charis.png" width='400px'/>
 
 **NV Charis** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with a slightly more narrow line-height. It is very similar to Charter, but under a more permissive license.
 
@@ -82,7 +82,7 @@ _**Note**: Charis is slightly thicker than Cartisse, and has broader language su
 
 ### NV Garamond
 
-<kbd><img src="./examples/NV-Garamond.png" width='400px'/></kbd>
+<img src="./examples/core/NV-Garamond.png" width='400px'/>
 
 **NV Garamond** is an EB Garamond variant that contains a bunch of tweaks, mostly related to glyph sizes. This version is about 10% optically larger than EB Garamond, which, with an adjusted line height, makes it ideal for reading on Kobo devices. This version has a [dedicated repository](https://github.com/nicoverbruggen/nv-garamond) that I've linked because of the manual edits that I've made.
 
@@ -92,7 +92,7 @@ _**Nico's Note**: Various Garamond variants are commonly used when typesetting f
 
 ### NV Jost
 
-<kbd><img src="./examples/NV-Jost.png" width='400px'/></kbd>
+<img src="./examples/core/NV-Jost.png" width='400px'/>
 
 **NV Jost** is a Jost variant, with a slightly altered lowercase G and single storey a (similar to Futura, only accessible via OT feature on the original font). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-jost), mostly because I made some glyph alterations.
 
@@ -102,7 +102,7 @@ _**Nico's Note**: If you're looking for something different, the sans-serif Jost
 
 ### NV Bitter
 
-<kbd><img src="./examples/NV-Bitter.png" width='400px'/></kbd>
+<img src="./examples/core/NV-Bitter.png" width='400px'/>
 
 **NV Bitter** is a version of [Bitter](https://github.com/solmatas/BitterPro) that has been renamed, so it can be installed and loaded correctly on old and new Kobo devices. Newer devices may already include Bitter as part of the software, which is why this version has been renamed to avoid conflicts.
 
@@ -112,7 +112,7 @@ _**Nico's Note**: Bitter is a gorgeous slab serif font. If you enjoyed Caecilia 
 
 ### NV Legible Next
 
-<kbd><img src="./examples/NV-Legible.png" width='400px'/></kbd>
+<img src="./examples/core/NV-Legible-Next.png" width='400px'/>
 
 **NV Legible Next** is a variant of Atkinson Hyperlegible Next. This is a refined version of the original Atkinson Hyperlegible released in 2025. Because "Atkinson Hyperlegible Next" is a very long name, I decided to shorten it up a bit for your e-reader.
 
@@ -122,7 +122,7 @@ _**Nico's Note**: The previous version of this font is included by default on ne
 
 ### NV Palatium
 
-<kbd><img src="./examples/NV-Palatium.png" width='400px'/></kbd>
+<img src="./examples/core/NV-Palatium.png" width='400px'/>
 
 **NV Palatium**, is a renamed version of [Domitian](https://www.ctan.org/tex-archive/fonts/domitian/), which is an extended version of [URW Palladio](https://tug.org/FontCatalogue/urwpalladio/). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-palatium) that I've linked because I've expanded and updated the embedded license in each of the font files.
 
@@ -132,83 +132,217 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 ## Extra Collection
 
-**These are additional fonts that I think you should try, as well! Because this list remains in flux and can potentially grow, I do not have screenshots for each and every one of them.**
+**These are additional fonts that I think you should try, as well!** You can check them out below or visit [the showcase](https://ebook-fonts.nicoverbruggen.be/).
 
-> If you are interested in checking these fonts out, I recommend trying them via [the showcase website](https://ebook-fonts.nicoverbruggen.be/). You can click on "Additional Fonts" to open the list of extra fonts.
+### Readerly
 
-Here's the included fonts, with links to the original and licensing information:
+<img src="./examples/extra/Readerly.png" width='400px'/>
 
-- **Readerly** is a modified font based on [Newsreader (9pt)](https://github.com/productiontype/Newsreader), while attempting to be metrically very similar to [Bookerly](https://en.wikipedia.org/wiki/Bookerly). A [separate repository](https://github.com/nicoverbruggen/readerly) is available with the source files. OFL licensed. It has been superseded by _Libron_ in the Core Collection.
+**Readerly** is a modified font based on [Newsreader (9pt)](https://github.com/productiontype/Newsreader), while attempting to be metrically very similar to [Bookerly](https://en.wikipedia.org/wiki/Bookerly). A [separate repository](https://github.com/nicoverbruggen/readerly) is available with the source files. OFL licensed. It has been superseded by _Libron_ in the Core Collection.
 
-- **NV Adelph** is a variant of the [Adelphe](https://gitlab.com/bye-bye-binary/adelphe). I've altered the metrics for adjusted line height. [OIFL licensed](https://typotheque.genderfluid.space/fr/licences), like the original. (If you're curious, this is in essence a more gender-inclusive version of the OFL, so you can use the font in the exact same way as any OFL-licensed font.)
+### NV Adelph
 
-- **NV Alegreya** is a variant of [Alegreya](https://github.com/huertatipografica/Alegreya) by Huerta Tipográfica, with adjusted metrics for line height. It was designed specifically for literature, and it shows: the letterforms have a slightly restless, calligraphic rhythm that is meant to keep long stretches of text from going flat. A good pick if you find the more neutral serifs here a little anonymous over a few hundred pages. OFL licensed.
+<img src="./examples/extra/NV-Adelph.png" width='400px'/>
 
-- **NV Alizar** is a variant of [Crimson Pro](https://github.com/Fonthausen/CrimsonPro), with adjusted metrics for line height and a 12.6% glyph size increase, which puts it at exactly the same size as NV Scarlet. Crimson Pro is the modern redraw of the same Crimson that NV Scarlet comes from, so the two are worth trying against each other: this one is cleaner and more even. Named for _alizarin_, the synthetic pigment that replaced the natural reds. OFL licensed.
+**NV Adelph** is a variant of the [Adelphe](https://gitlab.com/bye-bye-binary/adelphe). I've altered the metrics for adjusted line height. [OIFL licensed](https://typotheque.genderfluid.space/fr/licences), like the original. (If you're curious, this is in essence a more gender-inclusive version of the OFL, so you can use the font in the exact same way as any OFL-licensed font.)
 
-- **NV Ancizar Serif** is a variant of [UNAL Ancizar Serif](https://github.com/UNAL-OMD/UNAL-Ancizar). I've altered the metrics for adjusted line height and increased the glyph scale by 8% so it sits more comfortably alongside the other serif fonts in this collection. OFL licensed.
+### NV Alegreya
 
-- **NV Ancizar Sans** is a variant of [UNAL Ancizar Sans](https://github.com/UNAL-OMD/UNAL-Ancizar). I've altered the metrics for adjusted line height and increased the glyph scale by 8% so it sits more comfortably alongside the other fonts in this collection. Effectively the sans serif version of Ancizar Serif, as you might expect. OFL licensed.
+<img src="./examples/extra/NV-Alegreya.png" width='400px'/>
 
-- **NV Andada** is a variant of [Andada Pro](https://github.com/huertatipografica/Andada-Pro) by Huerta Tipográfica, with adjusted metrics for line height. It's a hybrid: an organic slab serif with moderate stroke contrast, so it sits somewhere between NV Zilla Slab's bluntness and a conventional book serif. Sturdy enough for E Ink without the mechanical feel that slabs often bring, and it was drawn for editorial text rather than for screens. OFL licensed.
+**NV Alegreya** is a variant of [Alegreya](https://github.com/huertatipografica/Alegreya) by Huerta Tipográfica, with adjusted metrics for line height. It was designed specifically for literature, and it shows: the letterforms have a slightly restless, calligraphic rhythm that is meant to keep long stretches of text from going flat. A good pick if you find the more neutral serifs here a little anonymous over a few hundred pages. OFL licensed.
 
-- **NV Basker** is a variant of [ANRT-Baskervville](https://github.com/anrt-type/ANRT-Baskervville). I've altered the metrics for adjusted line height, and the medium weight is used for text, as opposed to the regular weight. OFL licensed.
+### NV Alizar
 
-- **NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
+<img src="./examples/extra/NV-Alizar.png" width='400px'/>
 
-- **NV Castoro** is a variant of [Castoro](https://github.com/TiroTypeworks/Castoro) by Tiro Typeworks, with adjusted metrics for line height. OFL licensed.
+**NV Alizar** is a variant of [Crimson Pro](https://github.com/Fonthausen/CrimsonPro), with adjusted metrics for line height and a 12.6% glyph size increase, which puts it at exactly the same size as NV Scarlet. Crimson Pro is the modern redraw of the same Crimson that NV Scarlet comes from, so the two are worth trying against each other: this one is cleaner and more even. Named for _alizarin_, the synthetic pigment that replaced the natural reds. OFL licensed.
 
-- **NV Charis Literacy** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with the "Single-story a and g" stylistic set baked in by default, which makes it a good pick for early readers or literacy contexts where simplified letterforms are easier to recognize. Like NV Charis, it has a slightly more narrow line-height. OFL licensed.
+### NV Ancizar Serif
 
-- **NV Charis Old Style** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with old-style (text) figures baked in by default, so numerals blend more naturally with lowercase text instead of standing at full cap-height. Like NV Charis, it has a slightly more narrow line-height. OFL licensed.
+<img src="./examples/extra/NV-Ancizar-Serif.png" width='400px'/>
 
-- **NV Clara** is a version of [Clara](https://ctan.org/pkg/clara) by Seamas O Brogain, with adjusted metrics and an 8% glyph scale increase for e-readers. OFL/GPL-with-font-exception licensed.
+**NV Ancizar Serif** is a variant of [UNAL Ancizar Serif](https://github.com/UNAL-OMD/UNAL-Ancizar). I've altered the metrics for adjusted line height and increased the glyph scale by 8% so it sits more comfortably alongside the other serif fonts in this collection. OFL licensed.
 
-- **NV Disleksio** is a variant of [OpenDyslexic](https://forge.hackers.town/antijingoist/opendyslexic), based on experiments made on v0.99 of the original in [this repository](https://github.com/nicoverbruggen/odys-compare). OFL licensed. (This revision replaces the original *NV OpenDyslexic* that used to ship with this collection.)
+### NV Ancizar Sans
 
-- **NV Elstob** is a version of [Elstob](https://github.com/psb1558/Elstob-font) that has been renamed so it works correctly on Kobo devices. It is based on the 12pt version. Does not have a separate repository because no other changes were applied. OFL licensed.
+<img src="./examples/extra/NV-Ancizar-Sans.png" width='400px'/>
 
-- **NV Erewhon** is a version of [Erewhon](https://ctan.org/pkg/erewhon), derived from Heuristica and Utopia, with adjusted metrics for e-readers. OFL licensed.
+**NV Ancizar Sans** is a variant of [UNAL Ancizar Sans](https://github.com/UNAL-OMD/UNAL-Ancizar). I've altered the metrics for adjusted line height and increased the glyph scale by 8% so it sits more comfortably alongside the other fonts in this collection. Effectively the sans serif version of Ancizar Serif, as you might expect. OFL licensed.
 
-- **NV Gentium** is a version of [Gentium](https://software.sil.org/gentium/) Book 7.0 with corrected PANOSE information for the Bold and Bold Italic weights, which was incorrect. This modified version ensures the font is displayed correctly on Kobo devices. OFL licensed.
+### NV Andada
 
-- **NV Georsio** is a modified version of Gelasio, which was created to have identical metrics to Georgia, one of the [web's core fonts](https://en.wikipedia.org/wiki/Core_fonts_for_the_Web) thanks to Microsoft making it available on pretty much every PC and Mac in the world. OFL licensed.
+<img src="./examples/extra/NV-Andada.png" width='400px'/>
 
-- **NV Halcyon** is a variant of [Merriweather](https://github.com/SorkinType/Merriweather) by Eben Sorkin, with adjusted metrics for line height and the glyph scale reduced by 8%. A sturdy text face drawn to read well on screens, which serves E Ink nicely too. Merriweather's x-height is unusually large, so the reduction brings it into line with the rest of the collection. _Halcyon_ keeps the fair-weather sense of the original's name. OFL licensed.
+**NV Andada** is a variant of [Andada Pro](https://github.com/huertatipografica/Andada-Pro) by Huerta Tipográfica, with adjusted metrics for line height. It's a hybrid: an organic slab serif with moderate stroke contrast, so it sits somewhere between NV Zilla Slab's bluntness and a conventional book serif. Sturdy enough for E Ink without the mechanical feel that slabs often bring, and it was drawn for editorial text rather than for screens. OFL licensed.
 
-- **NV Ibarra** is a variant of [Ibarra Real Nova](https://github.com/googlefonts/ibarrareal), with adjusted metrics for line height and an 11% glyph size increase, since it is drawn small. It revives the types cut for Joaquín Ibarra, the Madrid printer behind the 1780 _Don Quixote_, so it carries rather more period character than the workhorses here. The text weight is instanced at 450 rather than 400, as the thin strokes would otherwise drop out on E Ink, in the same spirit as NV Basker. OFL licensed.
+### NV Basker
 
-- **NV Junius** is a [Junicode 2](https://github.com/psb1558/Junicode-font) variant based on the variable font, with adjusted metrics and a 10% glyph size increase. This one does not have a repository, but can be easily recreated by using [Slice](https://github.com/source-foundry/Slice), a GUI that allows you to export various fixed configurations. OFL licensed.
+<img src="./examples/extra/NV-Basker.png" width='400px'/>
 
-- **NV Kierkegaard** is a renamed version of [Kierkegaard Text](https://github.com/jrgdrs/Kierkegaard) by Jörg Drees, with adjusted metrics for e-readers and a 9% glyph size increase, since it is drawn small. OFL licensed.
+**NV Basker** is a variant of [ANRT-Baskervville](https://github.com/anrt-type/ANRT-Baskervville). I've altered the metrics for adjusted line height, and the medium weight is used for text, as opposed to the regular weight. OFL licensed.
 
-- **NV Libertinus** is a variant of [Libertinus](https://github.com/alerque/libertinus) Serif. I've altered the metrics for adjusted line height and increased the glyph scale by 11%, since it is drawn small and would otherwise read a size down from the rest of the collection. OFL licensed.
+### NV Cardo
 
-- **NV Literata** is a variant of [Literata](https://github.com/googlefonts/literata) with some adjusted metrics and has been renamed so it works correctly on Kobo devices. OFL licensed.
+<img src="./examples/extra/NV-Cardo.png" width='400px'/>
 
-- **NV Membo** is a renamed version of [fbb](https://www.ctan.org/tex-archive/fonts/fbb), a modified version of Cardo which has a Bold Italic style, unlike NV Cardo. It has been converted to TrueType (`ttf`) for better Kobo compatibility. OFL licensed.
+**NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
 
-- **NV Newsreader** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader). Based on the 14pt optical variant, which makes it great for e-reading at larger font sizes. OFL licensed.
+### NV Castoro
 
-- **NV NinePoint** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader), based on the 9pt optical variant. This makes it a very good choice for those who want maximum readability at smaller font sizes. In order to ensure it loads correctly on Kobo devices, and in order to avoid confusion with the other version of Newsreader included in this repository, the font has been renamed to _NinePoint_. OFL licensed.
+<img src="./examples/extra/NV-Castoro.png" width='400px'/>
 
-- **NV Publica** is a variant of [PT Serif](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, with adjusted metrics for line height. A sturdy, low-contrast transitional face drawn for both screen and print, with broad Latin and Cyrillic coverage. The _PT_ is usually read as _public type_, after the Russian public-types programme it was made for, which _Publica_ keeps. OFL licensed.
+**NV Castoro** is a variant of [Castoro](https://github.com/TiroTypeworks/Castoro) by Tiro Typeworks, with adjusted metrics for line height. OFL licensed.
 
-- **NV Publica Wide** is a variant of [PT Serif Caption](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, with adjusted metrics for line height. The _caption_ optical size of the same design as NV Publica: drawn for small text, so it is sturdier and about 13% wider per character. It is named _Wide_ rather than _Caption_ because that is what it does to your page: expect fewer words per line, not more. ParaType never drew a bold for this cut, so only Regular and Italic exist. OFL licensed.
+### NV Charis Literacy
 
-- **NV Sable** is a variant of [Lora](https://github.com/cyrealtype/Lora-Cyrillic) by Cyreal, with adjusted metrics for line height. A contemporary serif with calligraphic roots, so its curves have a brushed quality that gives a page a bit more movement than the quieter faces here. Named for the sable brush those strokes recall, since Cyreal reserve the name _Lora_ for their own releases. OFL licensed.
+<img src="./examples/extra/NV-Charis-Literacy.png" width='400px'/>
 
-- **NV Scarlet** is a variant of [Cochineal](https://ctan.org/pkg/cochineal), with adjusted metrics for line height and a 10% glyph size increase so it reads at the same size as before. Cochineal is Michael Sharpe's extension of [Crimson](https://github.com/skosch/Crimson) by Sebastian Kosch, which earlier releases of NV Scarlet were based on, adding over 1500 glyphs: real small caps, old-style and lining figures, fractions, and Greek and Cyrillic. An oldstyle garalde at heart, closer to Minion Pro than to the more modern Crimson Pro. Cochineal, as it happens, is the insect that scarlet dye is made from. OFL licensed.
+**NV Charis Literacy** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with the "Single-story a and g" stylistic set baked in by default, which makes it a good pick for early readers or literacy contexts where simplified letterforms are easier to recognize. Like NV Charis, it has a slightly more narrow line-height. OFL licensed.
 
-- **NV Source Serif** is no longer included. Sourcerer supersedes it, and you can find it in the Core Collection.
+### NV Charis Old Style
 
-- **NV Tabula** is a variant of [IBM Plex Serif](https://github.com/IBM/plex), with adjusted metrics for line height. A transitional serif with a large x-height and an even, faintly mechanical colour that holds up well on E Ink. Named after the Tabulating Machine Company that IBM grew out of, and for _tabula_, the writing tablet. OFL licensed.
+<img src="./examples/extra/NV-Charis-Old-Style.png" width='400px'/>
 
-- **NV Technical** is a variant of [STIX Two Text](https://fonts.google.com/specimen/STIX+Two+Text/about). OFL licensed. If you use a Kobo that has stylus support, STIX Two Text will likely already be included on your device, and in that case you probably don't need to install this version.
+**NV Charis Old Style** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with old-style (text) figures baked in by default, so numerals blend more naturally with lowercase text instead of standing at full cap-height. Like NV Charis, it has a slightly more narrow line-height. OFL licensed.
 
-- **NV Yrsa** is a variant of [Yrsa](https://github.com/rosettatype/yrsa-rasa) by Rosetta Type, with adjusted metrics for line height and a 15% glyph size increase. Yrsa is the Latin half of the Yrsa/Rasa superfamily, drawn to sit alongside Gujarati, which is why it comes out small. Scaled up for Latin-only reading it is low-contrast and even-textured, and holds together well on E Ink. OFL licensed.
+### NV Clara
 
-- **NV Zilla Slab** is a [Zilla Slab](https://github.com/mozilla/zilla-slab) variant, with adjusted metrics and a 10% glyph size increase. This makes it ideal for digital reading on e-readers. This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-zilla-slab) that I've linked, OFL licensed.
+<img src="./examples/extra/NV-Clara.png" width='400px'/>
+
+**NV Clara** is a version of [Clara](https://ctan.org/pkg/clara) by Seamas O Brogain, with adjusted metrics and an 8% glyph scale increase for e-readers. OFL/GPL-with-font-exception licensed.
+
+### NV Elstob
+
+<img src="./examples/extra/NV-Elstob.png" width='400px'/>
+
+**NV Elstob** is a version of [Elstob](https://github.com/psb1558/Elstob-font) that has been renamed so it works correctly on Kobo devices. It is based on the 12pt version. Does not have a separate repository because no other changes were applied. OFL licensed.
+
+### NV Erewhon
+
+<img src="./examples/extra/NV-Erewhon.png" width='400px'/>
+
+**NV Erewhon** is a version of [Erewhon](https://ctan.org/pkg/erewhon), derived from Heuristica and Utopia, with adjusted metrics for e-readers. OFL licensed.
+
+### NV Gentium
+
+<img src="./examples/extra/NV-Gentium.png" width='400px'/>
+
+**NV Gentium** is a version of [Gentium](https://software.sil.org/gentium/) Book 7.0 with corrected PANOSE information for the Bold and Bold Italic weights, which was incorrect. This modified version ensures the font is displayed correctly on Kobo devices. OFL licensed.
+
+### NV Georsio
+
+<img src="./examples/extra/NV-Georsio.png" width='400px'/>
+
+**NV Georsio** is a modified version of Gelasio, which was created to have identical metrics to Georgia, one of the [web's core fonts](https://en.wikipedia.org/wiki/Core_fonts_for_the_Web) thanks to Microsoft making it available on pretty much every PC and Mac in the world. OFL licensed.
+
+### NV Halcyon
+
+<img src="./examples/extra/NV-Halcyon.png" width='400px'/>
+
+**NV Halcyon** is a variant of [Merriweather](https://github.com/SorkinType/Merriweather) by Eben Sorkin, with adjusted metrics for line height and the glyph scale reduced by 8%. A sturdy text face drawn to read well on screens, which serves E Ink nicely too. Merriweather's x-height is unusually large, so the reduction brings it into line with the rest of the collection. _Halcyon_ keeps the fair-weather sense of the original's name. OFL licensed.
+
+### NV Ibarra
+
+<img src="./examples/extra/NV-Ibarra.png" width='400px'/>
+
+**NV Ibarra** is a variant of [Ibarra Real Nova](https://github.com/googlefonts/ibarrareal), with adjusted metrics for line height and an 11% glyph size increase, since it is drawn small. It revives the types cut for Joaquín Ibarra, the Madrid printer behind the 1780 _Don Quixote_, so it carries rather more period character than the workhorses here. The text weight is instanced at 450 rather than 400, as the thin strokes would otherwise drop out on E Ink, in the same spirit as NV Basker. OFL licensed.
+
+### NV Junius
+
+<img src="./examples/extra/NV-Junius.png" width='400px'/>
+
+**NV Junius** is a [Junicode 2](https://github.com/psb1558/Junicode-font) variant based on the variable font, with adjusted metrics and a 10% glyph size increase. This one does not have a repository, but can be easily recreated by using [Slice](https://github.com/source-foundry/Slice), a GUI that allows you to export various fixed configurations. OFL licensed.
+
+### NV Kierkegaard
+
+<img src="./examples/extra/NV-Kierkegaard.png" width='400px'/>
+
+**NV Kierkegaard** is a renamed version of [Kierkegaard Text](https://github.com/jrgdrs/Kierkegaard) by Jörg Drees, with adjusted metrics for e-readers and a 9% glyph size increase, since it is drawn small. OFL licensed.
+
+### NV Libertinus
+
+<img src="./examples/extra/NV-Libertinus.png" width='400px'/>
+
+**NV Libertinus** is a variant of [Libertinus](https://github.com/alerque/libertinus) Serif. I've altered the metrics for adjusted line height and increased the glyph scale by 11%, since it is drawn small and would otherwise read a size down from the rest of the collection. OFL licensed.
+
+### NV Literata
+
+<img src="./examples/extra/NV-Literata.png" width='400px'/>
+
+**NV Literata** is a variant of [Literata](https://github.com/googlefonts/literata) with some adjusted metrics and has been renamed so it works correctly on Kobo devices. OFL licensed.
+
+### NV Membo
+
+<img src="./examples/extra/NV-Membo.png" width='400px'/>
+
+**NV Membo** is a renamed version of [fbb](https://www.ctan.org/tex-archive/fonts/fbb), a modified version of Cardo which has a Bold Italic style, unlike NV Cardo. It has been converted to TrueType (`ttf`) for better Kobo compatibility. OFL licensed.
+
+### NV Newsreader
+
+<img src="./examples/extra/NV-Newsreader.png" width='400px'/>
+
+**NV Newsreader** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader). Based on the 14pt optical variant, which makes it great for e-reading at larger font sizes. OFL licensed.
+
+### NV NinePoint
+
+<img src="./examples/extra/NV-NinePoint.png" width='400px'/>
+
+**NV NinePoint** is a variant of [Newsreader](https://fonts.google.com/specimen/Newsreader), based on the 9pt optical variant. This makes it a very good choice for those who want maximum readability at smaller font sizes. In order to ensure it loads correctly on Kobo devices, and in order to avoid confusion with the other version of Newsreader included in this repository, the font has been renamed to _NinePoint_. OFL licensed.
+
+### NV Publica
+
+<img src="./examples/extra/NV-Publica.png" width='400px'/>
+
+**NV Publica** is a variant of [PT Serif](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, with adjusted metrics for line height. A sturdy, low-contrast transitional face drawn for both screen and print, with broad Latin and Cyrillic coverage. The _PT_ is usually read as _public type_, after the Russian public-types programme it was made for, which _Publica_ keeps. OFL licensed.
+
+### NV Publica Wide
+
+<img src="./examples/extra/NV-Publica-Wide.png" width='400px'/>
+
+**NV Publica Wide** is a variant of [PT Serif Caption](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, with adjusted metrics for line height. The _caption_ optical size of the same design as NV Publica: drawn for small text, so it is sturdier and about 13% wider per character. It is named _Wide_ rather than _Caption_ because that is what it does to your page: expect fewer words per line, not more. ParaType never drew a bold for this cut, so only Regular and Italic exist. OFL licensed.
+
+### NV Sable
+
+<img src="./examples/extra/NV-Sable.png" width='400px'/>
+
+**NV Sable** is a variant of [Lora](https://github.com/cyrealtype/Lora-Cyrillic) by Cyreal, with adjusted metrics for line height. A contemporary serif with calligraphic roots, so its curves have a brushed quality that gives a page a bit more movement than the quieter faces here. Named for the sable brush those strokes recall, since Cyreal reserve the name _Lora_ for their own releases. OFL licensed.
+
+### NV Scarlet
+
+<img src="./examples/extra/NV-Scarlet.png" width='400px'/>
+
+**NV Scarlet** is a variant of [Cochineal](https://ctan.org/pkg/cochineal), with adjusted metrics for line height and a 10% glyph size increase so it reads at the same size as before. Cochineal is Michael Sharpe's extension of [Crimson](https://github.com/skosch/Crimson) by Sebastian Kosch, which earlier releases of NV Scarlet were based on, adding over 1500 glyphs: real small caps, old-style and lining figures, fractions, and Greek and Cyrillic. An oldstyle garalde at heart, closer to Minion Pro than to the more modern Crimson Pro. Cochineal, as it happens, is the insect that scarlet dye is made from. OFL licensed.
+
+### NV Tabula
+
+<img src="./examples/extra/NV-Tabula.png" width='400px'/>
+
+**NV Tabula** is a variant of [IBM Plex Serif](https://github.com/IBM/plex), with adjusted metrics for line height. A transitional serif with a large x-height and an even, faintly mechanical colour that holds up well on E Ink. Named after the Tabulating Machine Company that IBM grew out of, and for _tabula_, the writing tablet. OFL licensed.
+
+### NV Technical
+
+<img src="./examples/extra/NV-Technical.png" width='400px'/>
+
+**NV Technical** is a variant of [STIX Two Text](https://fonts.google.com/specimen/STIX+Two+Text/about). OFL licensed. If you use a Kobo that has stylus support, STIX Two Text will likely already be included on your device, and in that case you probably don't need to install this version.
+
+### NV Yrsa
+
+<img src="./examples/extra/NV-Yrsa.png" width='400px'/>
+
+**NV Yrsa** is a variant of [Yrsa](https://github.com/rosettatype/yrsa-rasa) by Rosetta Type, with adjusted metrics for line height and a 15% glyph size increase. Yrsa is the Latin half of the Yrsa/Rasa superfamily, drawn to sit alongside Gujarati, which is why it comes out small. Scaled up for Latin-only reading it is low-contrast and even-textured, and holds together well on E Ink. OFL licensed.
+
+### NV Zilla Slab
+
+<img src="./examples/extra/NV-Zilla-Slab.png" width='400px'/>
+
+**NV Zilla Slab** is a [Zilla Slab](https://github.com/mozilla/zilla-slab) variant, with adjusted metrics and a 10% glyph size increase. This makes it ideal for digital reading on e-readers. This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-zilla-slab) that I've linked, OFL licensed.
+
+### NV Disleksio
+
+<img src="./examples/extra/NV-Disleksio.png" width='400px'/>
+
+**NV Disleksio** is a variant of [OpenDyslexic](https://forge.hackers.town/antijingoist/opendyslexic), based on experiments made on v0.99 of the original in [this repository](https://github.com/nicoverbruggen/odys-compare). OFL licensed. (This revision replaces the original *NV OpenDyslexic* that used to ship with this collection.)
 
 ## How to install
 
@@ -242,7 +376,11 @@ Some practical changes to the NV fonts themselves have been made, including:
 - Incorrect **PANOSE metadata has been corrected** where necessary (using [panosifier](https://github.com/source-foundry/panosifier)). This ensures that the fonts render correctly on Kobo devices. For some fonts, incorrect information meant that the fonts would always render using their Bold style, for example.
 - Certain fonts have had their **glyphs rescaled**. Certain fonts have had their glyph sizes increased by 10%, making them seem visually larger, and more consistent in size with the other fonts included in this collection. If you like to stick to a certain font size, you won't need to constantly tweak things if you swap to a different font.
 
-The **Kobo Fix (KF)** versions of the fonts are optimized for Kobo devices. Various automatic fixes are applied via [kobo-font-fix](https://github.com/nicoverbruggen/kobo-font-fix), to ensure improved kerning and text hinting is used for the `kepub` renderer on Kobo devices.
+### What has changed with the KF fonts?
+
+The **Kobo Fix (KF)** versions of the fonts are optimized for Kobo devices. Please use these if you are reading on a Kobo e-reader!
+
+Various automatic fixes are applied via [kobo-font-fix](https://github.com/nicoverbruggen/kobo-font-fix), to ensure improved kerning and text hinting is used for the `kepub` renderer on Kobo devices.
 
 ### Are these fonts free?
 
@@ -254,21 +392,21 @@ Yes, you can embed them, just make sure you include the license of the font in t
 
 ### Are these fonts installable via KoboPatch Web UI?
 
-Yes, but the fonts may be outdated on the website, it may take a few days for the website to catch up. Some of these fonts are currently included as a default option in [KoboPatch Web UI](https://kp.nicoverbruggen.be/) for the NickelMenu preset.
+Yes, some are included. 
+
+However, the fonts may be outdated on the website, it may take a few days for the website to catch up. Some of these fonts are currently included as a default option in [KoboPatch Web UI](https://kp.nicoverbruggen.be/) for the NickelMenu preset.
 
 You can verify they get installed by making sure the "Install additional fonts" option is checked. If you want to install the rest of the fonts from this collection, you will need to do so manually.
 
 ### What's up with the scripts?
 
-Besides the build script, there's also individual, small tweaks to several fonts, some of which are automated.
+Besides the build script, the helper scripts under `tools/` download the pinned fonts from their upstream repositories, stamp metadata, and generate the release manifest.
 
-Font-specific tweaks (like the Charis `i`/`j`/`u` adjustment, described in the Core Collection section above) are applied via small scripts under `tools/mods/`. 
-
-Scripts rather than hand-edited outlines means upstream font updates can simply be re-run through the same script, and the fixes self-calibrate from each font's own metrics.
+The example images in this README are also scripted: `./tools/generate_examples.sh` re-renders every image under `examples/` from the fonts on disk, so updating a font only takes a re-run to refresh its picture.
 
 ### How are these fonts licensed?
 
-Most of these fonts are available under their original [Open Font License](https://openfontlicense.org/). Because of licensing rules, the font names have been modified to include a prefix to avoid confusion with the original fonts. 
+Most of these fonts are available under their original [Open Font License](https://openfontlicense.org/). Because of licensing rules, the font names have been modified to include a prefix to avoid confusion with the original fonts. The license for each font is listed below each listing, as well.
 
 ### Is there anything else I should do, to get a better reading experience with these fonts?
 
@@ -278,7 +416,9 @@ To do this, you can use [kepubify](https://pgaskin.net/kepubify/) or use [Calibr
 
 ### What version of the Kobo operating system did you last test the fonts with?
 
-The last release was tested on a Kobo Libra Color running firmware version 4.45 and on a Kobo Libra 2 running version firmware 4.38. The screenshots you see above were made on a Kobo Libra Color running [NickelMenu](https://pgaskin.net/NickelMenu/) with [this configuration](https://github.com/nicoverbruggen/kobo-config).
+The last release was tested on a Kobo Libra Color running firmware version 4.45 and on a Kobo Libra 2 running version firmware 4.38.
+
+The example images you see above are not device screenshots: they are rendered directly from the font files in this repository (at the width of a Kobo Libra Color screen, and without font hinting, since Kobo does not apply hinting either), so they always match the fonts as currently shipped. They can be regenerated with `./tools/generate_examples.sh`.
 
 ### Can I do anything else to fix or improve text rendering on Kobo devices?
 
@@ -310,7 +450,7 @@ Because I thought it would be fun, and to avoid confusion with the original vers
 
 Well, those are my initials... also, I like to think of the prefix to mean "Nice Version" or "Nico's Version". I have also modified the font names where necessary. 
 
-(The alternate variants for Kobo devices are prefixed with "KF", meaning "Kobo Fixed". If you use a stock Kobo without the `webkitTextRendering` override -- see below -- these are the ones you want.)
+(The alternate variants for Kobo devices are prefixed with "KF", meaning "Kobo Fixed". If you use a stock Kobo without the `webkitTextRendering` override -- see above -- these are the ones you want.)
 
 I initially suffixed each of the fonts with "eBook", but I wanted to have shorter font names for display purposes on smaller e-ink devices.
 

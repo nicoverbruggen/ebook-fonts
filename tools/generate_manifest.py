@@ -83,7 +83,6 @@ FAMILY_ORDER: dict[str, list[str]] = {
         "NV Charis Literacy",
         "NV Charis Old Style",
         "NV Clara",
-        "NV Disleksio",
         "NV Elstob",
         "NV Erewhon",
         "NV Gentium",
@@ -105,6 +104,7 @@ FAMILY_ORDER: dict[str, list[str]] = {
         "NV Technical",
         "NV Yrsa",
         "NV Zilla Slab",
+        "NV Disleksio",
     ],
 }
 
