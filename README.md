@@ -48,7 +48,7 @@ Each of these fonts has solid styles for all four font files (Regular, Italic, B
 
 > [Libron](https://github.com/nicoverbruggen/libron) is a modified font based on Newsreader, designed by Production Type and has been manually modified for an even better reading experience. Libron is available under the [OFL license](https://openfontlicense.org/).
 
-_**Nico's Note**: Libron is my current favorite for digital reading — it keeps the readability of Readerly but refines the serifs for a more subtle appearance on e-ink, while still retaining a slightly increased weight for optimal contrast._
+_**Nico's Note**: Libron is my current favorite for digital reading: it keeps the readability of Readerly but refines the serifs for a more subtle appearance on e-ink, while still retaining an increased weight for optimal contrast._
 
 ### Sourcerer
 
@@ -58,7 +58,7 @@ _**Nico's Note**: Libron is my current favorite for digital reading — it keeps
 
 > [Source Serif](https://github.com/adobe-fonts/source-serif/wiki/Source-Serif-Readme) continues Adobe’s line of high-quality open source typefaces. Designed for a digital environment, the letter shapes are simplified and highly readable. Its historical roots, combined with expert guidance give the typeface a strong character of its own that will shine when used for extended text on paper or screen.
 
-_**Nico's Note**: This is a thicker take on Source Serif, which I've found nicer to read on e-ink displays than the original._
+_**Nico's Note**: This is a heavier take on Source Serif, which I've found nicer to read on e-ink displays than the original._
 
 ### Cartisse
 
@@ -78,7 +78,7 @@ _**Note**: Cartisse makes for a great universal pick for most books. It's my cho
 
 > Charis is very closely based on the design of Bitstream Charter. [...] The glyphs were completely redrawn based only on visual reference to Charter. There are some significant design differences in the serif structure, proportions, diacritics, and Cyrillic. The design was also adjusted and extended to cover a much wider range of characters and publishing needs. It is available under the [OFL license](https://openfontlicense.org/).
 
-_**Note**: Charis is slightly thicker than Cartisse, and has broader language support. If that's what you want, you may want to pick it over Cartisse._
+_**Note**: Charis is slightly thicker than Cartisse, and has broader language support. If that's what you need, you may want to pick it over Cartisse._
 
 ### NV Garamond
 
@@ -150,13 +150,13 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Alegreya.png" width='400px'/>
 
-**NV Alegreya** is a variant of [Alegreya](https://github.com/huertatipografica/Alegreya) by Huerta Tipográfica, with adjusted metrics for line height. It was designed specifically for literature, and it shows: the letterforms have a slightly restless, calligraphic rhythm that is meant to keep long stretches of text from going flat. A good pick if you find the more neutral serifs here a little anonymous over a few hundred pages. OFL licensed.
+**NV Alegreya** is a variant of [Alegreya](https://github.com/huertatipografica/Alegreya) by Huerta Tipográfica, with adjusted metrics for line height. Like all fonts in this collection, its line height has been modified. OFL licensed.
 
 ### NV Alizar
 
 <img src="./examples/extra/NV-Alizar.png" width='400px'/>
 
-**NV Alizar** is a variant of [Crimson Pro](https://github.com/Fonthausen/CrimsonPro), with adjusted metrics for line height and a 12.6% glyph size increase, which puts it at exactly the same size as NV Scarlet. Crimson Pro is the modern redraw of the same Crimson that NV Scarlet comes from, so the two are worth trying against each other: this one is cleaner and more even. Named for _alizarin_, the synthetic pigment that replaced the natural reds. OFL licensed.
+**NV Alizar** is a variant of [Crimson Pro](https://github.com/Fonthausen/CrimsonPro), with adjusted metrics for line height and a 12.6% glyph size increase, which puts it at exactly the same size as NV Scarlet. Crimson Pro is the modern redraw of the same Crimson that NV Scarlet comes from. OFL licensed.
 
 ### NV Ancizar Serif
 
@@ -174,7 +174,7 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Andada.png" width='400px'/>
 
-**NV Andada** is a variant of [Andada Pro](https://github.com/huertatipografica/Andada-Pro) by Huerta Tipográfica, with adjusted metrics for line height. It's a hybrid: an organic slab serif with moderate stroke contrast, so it sits somewhere between NV Zilla Slab's bluntness and a conventional book serif. Sturdy enough for E Ink without the mechanical feel that slabs often bring, and it was drawn for editorial text rather than for screens. OFL licensed.
+**NV Andada** is a variant of [Andada Pro](https://github.com/huertatipografica/Andada-Pro) by Huerta Tipográfica, with adjusted metrics for line height. OFL licensed.
 
 ### NV Basker
 
@@ -210,7 +210,7 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Clara.png" width='400px'/>
 
-**NV Clara** is a version of [Clara](https://ctan.org/pkg/clara) by Seamas O Brogain, with adjusted metrics and an 8% glyph scale increase for e-readers. OFL/GPL-with-font-exception licensed.
+**NV Clara** is a version of [Clara](https://ctan.org/pkg/clara) by Séamas Ó Brógáin, with adjusted metrics and an 8% glyph scale increase for e-readers. OFL/GPL-with-font-exception licensed.
 
 ### NV Elstob
 
@@ -246,7 +246,7 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Ibarra.png" width='400px'/>
 
-**NV Ibarra** is a variant of [Ibarra Real Nova](https://github.com/googlefonts/ibarrareal), with adjusted metrics for line height and an 11% glyph size increase, since it is drawn small. It revives the types cut for Joaquín Ibarra, the Madrid printer behind the 1780 _Don Quixote_, so it carries rather more period character than the workhorses here. The text weight is instanced at 450 rather than 400, as the thin strokes would otherwise drop out on E Ink, in the same spirit as NV Basker. OFL licensed.
+**NV Ibarra** is a variant of [Ibarra Real Nova](https://github.com/googlefonts/ibarrareal), with adjusted metrics for line height and an 11% glyph size increase, since it is drawn small. The text weight is instanced at 450 rather than 400, as the thin strokes would otherwise drop out on E Ink. OFL licensed.
 
 ### NV Junius
 
@@ -370,17 +370,18 @@ All of the **fonts have been adjusted in various ways**, and the names of the fo
 
 This way, you can keep them installed side-by-side with the original versions, if you'd like. This is also a requirement of the Open Font License, which does not allow you to redistribute the fonts using the original name if they have been altered.
 
-Some practical changes to the NV fonts themselves have been made, including:
+All of the fonts have been standardized with the "NV" preset of [kobo-font-fix](https://github.com/nicoverbruggen/kobo-font-fix), which applies the following changes automatically. (The fonts with their own name, such as Libron and Cartisse, keep that name instead of getting an NV prefix.)
 
-- I've **normalized metrics** for all fonts to a **20% line height** (using `font-line percent 20`). Some fonts rendered poorly on Kobo devices with the line height slider all the way to the left. This fixes that. Some fonts have not been modified if their line spacing was even smaller.
-- Incorrect **PANOSE metadata has been corrected** where necessary (using [panosifier](https://github.com/source-foundry/panosifier)). This ensures that the fonts render correctly on Kobo devices. For some fonts, incorrect information meant that the fonts would always render using their Bold style, for example.
-- Certain fonts have had their **glyphs rescaled**. Certain fonts have had their glyph sizes increased by 10%, making them seem visually larger, and more consistent in size with the other fonts included in this collection. If you like to stick to a certain font size, you won't need to constantly tweak things if you swap to a different font.
+- **Metrics are normalized** for all fonts to a **20% line height** (via `font-line percent 20`). Some fonts rendered poorly on Kobo devices with the line height slider all the way to the left. This fixes that.
+- Incorrect **PANOSE metadata is corrected** where necessary. This ensures that the fonts render correctly on Kobo devices. For some fonts, incorrect information meant that the fonts would always render using their Bold style, for example.
+- Certain fonts have had their **glyphs rescaled**. Fonts that are drawn optically small have had their glyph sizes increased, making them more consistent in size with the other fonts included in this collection. If you like to stick to a certain font size, you won't need to constantly tweak things if you swap to a different font.
+- **Missing space and dash characters are filled in** (such as the thin space, narrow no-break space, soft hyphen and non-breaking hyphen). Books do use these, and if a font doesn't include them, you get a "missing character" box on your e-reader.
 
 ### What has changed with the KF fonts?
 
 The **Kobo Fix (KF)** versions of the fonts are optimized for Kobo devices. Please use these if you are reading on a Kobo e-reader!
 
-Various automatic fixes are applied via [kobo-font-fix](https://github.com/nicoverbruggen/kobo-font-fix), to ensure improved kerning and text hinting is used for the `kepub` renderer on Kobo devices.
+These are built with the "KF" preset of the same [kobo-font-fix](https://github.com/nicoverbruggen/kobo-font-fix) tool, which applies additional fixes on top of the standardized fonts: a legacy `kern` table is generated for improved kerning in the `kepub` renderer, and hinting adjustments prevent the vertical "wobble" that Kobo's rasterizer otherwise introduces.
 
 ### Are these fonts free?
 
