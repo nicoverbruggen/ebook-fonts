@@ -4,7 +4,7 @@
 
 A curated collection of libre-licensed fonts, tweaked for reading on e-readers (primarily Kobo). The fonts under `fonts/` are the sources, split into two collections: `core` (the recommended picks) and `extra` (everything else).
 
-`build.py` stamps those sources with the project's copyright notice and runs them through `kobofix` to produce the `KF_*` variants, which are patched for the Kobo `kepub` renderer. Each tagged release ships four zips (Kobo and stamped-source builds of each collection) plus a `manifest.json` describing them.
+`build.py` stamps those sources with the project's copyright notice and runs them through `kobofix` to produce the `KF_*` variants, which are patched for the Kobo `kepub` renderer. It also builds a relaxed variant of every family (`<name> R`, e.g. `NV Charis R` or `Cartisse R`), rebuilt with looser line spacing. Each tagged release ships six zips (Kobo, stamped-source and relaxed builds of each collection) plus a `manifest.json` describing them.
 
 Most fonts are renamed (usually `NV_`-prefixed) so they install alongside the originals without clashing. **README.md is the reference** for the collection itself: what each font is, where it came from, how it was altered, licensing, and installation. Read it before changing anything font-facing; this file only covers how to work on the repository.
 

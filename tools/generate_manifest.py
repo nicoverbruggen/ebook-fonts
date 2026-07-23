@@ -49,12 +49,14 @@ HOST_URLS = {
 
 # The zips the release workflow builds for each collection, as {key: filename}.
 # `kobo` holds the KF_*.ttf fonts patched for the kepub renderer; `other` holds
-# the stamped sources. These names are also written in the "Create zip files"
-# workflow step; pass --archive-dir so a mismatch fails the build instead of
-# publishing URLs that 404.
+# the stamped sources; `relaxed` holds the `NV <name> R` variants with looser
+# line spacing. These names are also written in the "Create zip files" workflow
+# step; pass --archive-dir so a mismatch fails the build instead of publishing
+# URLs that 404.
 ARCHIVES = {
     "kobo": "kobo-{collection}-fonts.zip",
     "other": "other-{collection}-fonts.zip",
+    "relaxed": "relaxed-{collection}-fonts.zip",
 }
 
 FAMILY_ORDER: dict[str, list[str]] = {

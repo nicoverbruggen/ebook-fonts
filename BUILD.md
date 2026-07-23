@@ -12,7 +12,7 @@ To build the release outputs yourself, you can simply run:
 ./local_build.sh
 ```
 
-The build script will use Podman or Docker to run the build in the `fntbld-oci` container, and writes the generated font collections to the ignored `out/` directory in the repository root.
+The build script will use Podman or Docker to run the build in the `fntbld-oci` container, and writes the generated font collections to the ignored `out/` directory in the repository root. Each collection is written three ways: `out/sources/` (stamped originals), `out/kobo/` (the `KF_*` kepub builds) and `out/relaxed/` (the `<name> R` variants, every family rebuilt with looser line spacing).
 
 ### Regenerating the README example images
 
