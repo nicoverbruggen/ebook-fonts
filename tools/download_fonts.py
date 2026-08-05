@@ -17,7 +17,7 @@ CORE_DEST = REPO_ROOT / "fonts" / "core"
 EXTRA_DEST = REPO_ROOT / "fonts" / "extra"
 
 CORE_RELEASES = {
-    "Libron": "https://github.com/nicoverbruggen/libron/releases/download/v0.23/Libron.zip",
+    "Libron": "https://github.com/nicoverbruggen/libron/releases/download/v0.24/Libron.zip",
     "Cartisse": "https://github.com/nicoverbruggen/cartisse/releases/download/v2.4/Cartisse.zip",
     "Sourcerer": "https://github.com/nicoverbruggen/sourcerer/releases/download/v1.4/Sourcerer.zip",
 }
