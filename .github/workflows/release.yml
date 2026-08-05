@@ -57,6 +57,9 @@ jobs:
       - name: Build release artifacts
         run: python3 build.py --out-dir out
 
+      - name: Build CrossPoint fonts
+        run: python3 tools/build_cpfont.py
+
       - name: Create zip files
         run: |
           cd out/kobo/core    && zip -j /tmp/kobo-core-fonts.zip *.ttf
@@ -65,6 +68,12 @@ jobs:
           cd $GITHUB_WORKSPACE/out/sources/extra && zip -j /tmp/other-extra-fonts.zip *.ttf
           cd $GITHUB_WORKSPACE/out/relaxed/core  && zip -j /tmp/relaxed-core-fonts.zip *.ttf
           cd $GITHUB_WORKSPACE/out/relaxed/extra && zip -j /tmp/relaxed-extra-fonts.zip *.ttf
+          # CrossPoint reads a fonts/<family>/ tree, so these keep their directories.
+          mkdir -p /tmp/crosspoint-core/fonts /tmp/crosspoint-extra/fonts
+          cp -R $GITHUB_WORKSPACE/out/cpfont/core/.  /tmp/crosspoint-core/fonts/
+          cp -R $GITHUB_WORKSPACE/out/cpfont/extra/. /tmp/crosspoint-extra/fonts/
+          cd /tmp/crosspoint-core  && zip -r /tmp/crosspoint-core-fonts.zip fonts
+          cd /tmp/crosspoint-extra && zip -r /tmp/crosspoint-extra-fonts.zip fonts
 
       - name: Generate manifest
         run: python3 tools/generate_manifest.py --host github.com --tag ${{ github.ref_name }} --archive-dir /tmp --out /tmp/manifest.json
@@ -81,6 +90,7 @@ jobs:
             - **If you are using a Kobo device**, download the [KF Core fonts](https://github.com/nicoverbruggen/ebook-fonts/releases/download/${{ github.ref_name }}/kobo-core-fonts.zip) and the [KF Extra fonts](https://github.com/nicoverbruggen/ebook-fonts/releases/download/${{ github.ref_name }}/kobo-extra-fonts.zip). These are altered for optimal kerning on the `kepub` renderer.
             - **If you are using a Kindle or another e-reader**, download the [NV Core fonts](https://github.com/nicoverbruggen/ebook-fonts/releases/download/${{ github.ref_name }}/other-core-fonts.zip) and the [NV Extra fonts](https://github.com/nicoverbruggen/ebook-fonts/releases/download/${{ github.ref_name }}/other-extra-fonts.zip).
             - **If you are using KOReader**, download the [Relaxed Core fonts](https://github.com/nicoverbruggen/ebook-fonts/releases/download/${{ github.ref_name }}/relaxed-core-fonts.zip) and the [Relaxed Extra fonts](https://github.com/nicoverbruggen/ebook-fonts/releases/download/${{ github.ref_name }}/relaxed-extra-fonts.zip). Every family, rebuilt with looser line spacing.
+            - **If you are using CrossPoint Reader**, download the [CrossPoint Core fonts](https://github.com/nicoverbruggen/ebook-fonts/releases/download/${{ github.ref_name }}/crosspoint-core-fonts.zip) and the [CrossPoint Extra fonts](https://github.com/nicoverbruggen/ebook-fonts/releases/download/${{ github.ref_name }}/crosspoint-extra-fonts.zip). These are experimental. Copy the `fonts` folder from the zip to the root of your SD card. Every family is built from the relaxed fonts, at 12, 14, 16 and 18 point.
 
             ### Learn more
 
@@ -98,4 +108,6 @@ jobs:
             /tmp/other-extra-fonts.zip
             /tmp/relaxed-core-fonts.zip
             /tmp/relaxed-extra-fonts.zip
+            /tmp/crosspoint-core-fonts.zip
+            /tmp/crosspoint-extra-fonts.zip
             /tmp/manifest.json

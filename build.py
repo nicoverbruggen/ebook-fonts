@@ -43,7 +43,7 @@ LOCAL_KOBOFIX = REPO_ROOT / "tools" / "kobofix.py"
 # The relaxed variant loosens that to give a less tight reading rhythm; it is
 # the total line height as a percentage above 1em, the same figure kobofix and
 # font-line use. Bump this to make the relaxed collection looser or tighter.
-RELAXED_LINE_PERCENT = 50
+RELAXED_LINE_PERCENT = 35
 
 # NV families are renamed through kobofix's prefix mechanism so the `NV_`
 # filename and PostScript convention is preserved; every other family is

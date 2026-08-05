@@ -14,6 +14,16 @@ To build the release outputs yourself, you can simply run:
 
 The build script will use Podman or Docker to run the build in the `fntbld-oci` container, and writes the generated font collections to the ignored `out/` directory in the repository root. Each collection is written three ways: `out/sources/` (stamped originals), `out/kobo/` (the `KF_*` kepub builds) and `out/relaxed/` (the `<name> R` variants, every family rebuilt with looser line spacing).
 
+### Building the CrossPoint Reader fonts
+
+CrossPoint Reader loads pre-rasterized `.cpfont` bundles instead of TrueType files, so those are built separately, from the relaxed fonts. Run the build above first, then:
+
+```sh
+podman run --rm -v "$PWD:/work" -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest python3 tools/build_cpfont.py
+```
+
+This writes `out/cpfont/<collection>/<family>/<family>_<size>.cpfont`, which is the layout the device expects under `/fonts` on the SD card. It takes a few minutes and produces around 80 MB, since every glyph is rasterized once per size and style. The converter is downloaded from the CrossPoint firmware repository and pinned to a commit, the same way `kobofix.py` is.
+
 ### Regenerating the README example images
 
 The images under `examples/core/` and `examples/extra/` are rendered from the fonts in `./fonts` by `tools/generate_examples.py`. To regenerate all of them, run:
