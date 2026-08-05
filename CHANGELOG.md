@@ -2,6 +2,21 @@
 
 All notable changes to this collection. Versions are the collection's own; see `VERSION`.
 
+## v4.2 (2026-08-05)
+
+### New & Modified
+
+| Font | Collection | Change | Details |
+|---|---|---|---|
+| NV Bitter | Core | 👌 Updated | Two upstream OpenType bugs fixed. The italic styles left most of their small caps substitutions out of the `smcp` feature; those are now copied from the upright styles. In all four styles the `calt` lookup ran before `liga`, so `calt` replaced the `f` in `fi` and `fl` before the ligature could match it. `liga` now runs first. |
+| Libron | Core | 👌 Updated | Updated to Libron 0.24, which moves the accents on `ù ú û ü ũ ū ŭ ů ű ȕ ȗ ụ ủ` back over the middle of the `u` in the Regular style. |
+
+### Other changes
+
+- **Relaxed fonts** are a new download: every family, rebuilt with a 35% line height instead of the 20% the rest of the collection uses. They are for readers that follow the font's own metrics, such as KOReader. The family name gains an ` R` suffix, so `NV Charis R` installs beside `NV Charis`.
+- **CrossPoint Reader fonts** are a new download, and are experimental. CrossPoint does not read TrueType files, so every family is converted from its relaxed build into `.cpfont` files at 12, 14, 16 and 18 point, with all four styles in each file. Copy the `fonts` folder from the zip to the root of your SD card.
+- The `manifest.json` attached to each release now lists the relaxed and CrossPoint zips as well.
+
 ## v4.1 (2026-07-21)
 
 ### New & Modified
