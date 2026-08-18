@@ -2,6 +2,14 @@
 
 All notable changes to this collection. Versions are the collection's own; see `VERSION`.
 
+## v4.3 (unreleased)
+
+### New & Modified
+
+| Font | Collection | Change | Details |
+|---|---|---|---|
+| NV Lodestar | Extra | ✅ Added | Based on Cooper Hewitt (Chester Jenkins, 2014), the typeface of the Cooper Hewitt Smithsonian Design Museum. |
+
 ## v4.2 (2026-08-05)
 
 ### New & Modified

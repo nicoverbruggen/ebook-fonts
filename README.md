@@ -272,6 +272,12 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 **NV Literata** is a variant of [Literata](https://github.com/googlefonts/literata) with some adjusted metrics and has been renamed so it works correctly on Kobo devices. OFL licensed.
 
+### NV Lodestar
+
+<img src="./examples/extra/NV-Lodestar.png" width='400px'/>
+
+**NV Lodestar** is a variant of [Cooper Hewitt](https://github.com/cooperhewitt/cooperhewitt-typeface) by Chester Jenkins, with adjusted metrics for line height and some metadata adjustments. The design grew out of Jenkins' earlier _Polaris_, and _lodestar_ is the old English name for that star, since the museum reserve the name _Cooper Hewitt_ for their own releases. The medium is used as the regular for better contrast on e-ink. OFL licensed.
+
 ### NV Membo
 
 <img src="./examples/extra/NV-Membo.png" width='400px'/>
