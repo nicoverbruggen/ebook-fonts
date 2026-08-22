@@ -44,17 +44,17 @@ Each of these fonts has solid styles for all four font files (Regular, Italic, B
 
 <img src="./examples/core/Libron.png" width='400px'/>
 
-**Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various manual edits to give the font a more neutral look. The serifs have been trimmed down on several capitals, certain glyphs have been reworked, and composite glyphs have been fixed. The result is a more understated serif that is less visually "loud" during extended reading sessions. A [separate repository](https://github.com/nicoverbruggen/libron) is available with the source files.
+**Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various manual edits to give the font a more neutral look. The serifs have been trimmed down on several capitals, certain glyphs have been reworked, and composite glyphs have been fixed. The result is a more subtle serif that is less in your way. A [separate repository](https://github.com/nicoverbruggen/libron) is available with the source files.
 
 > [Libron](https://github.com/nicoverbruggen/libron) is a modified font based on Newsreader, designed by Production Type and has been manually modified for an even better reading experience. Libron is available under the [OFL license](https://openfontlicense.org/).
 
-_**Nico's Note**: Libron is my current favorite for digital reading: it keeps the readability of Readerly but refines the serifs for a more subtle appearance on e-ink, while still retaining an increased weight for optimal contrast._
+_**Nico's Note**: Libron is my current favorite for digital reading: it keeps the readability of Readerly but refines the serifs for a more subtle appearance on e-ink, while still retaining an increased weight for improved contrast._
 
 ### Sourcerer
 
 <img src="./examples/core/Sourcerer.png" width='400px'/>
 
-**Sourcerer** is a thicker version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing, and has been renamed so it works correctly on Kobo devices (as fonts containing a number will often not work). It is available under the [OFL license](https://openfontlicense.org/).
+**Sourcerer** is a thicker version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing, and has been renamed so it works correctly on Kobo devices (as fonts containing a number will not work due to a bug in Nickel). It is available under the [OFL license](https://openfontlicense.org/).
 
 > [Source Serif](https://github.com/adobe-fonts/source-serif/wiki/Source-Serif-Readme) continues Adobe’s line of high-quality open source typefaces. Designed for a digital environment, the letter shapes are simplified and highly readable. Its historical roots, combined with expert guidance give the typeface a strong character of its own that will shine when used for extended text on paper or screen.
 
@@ -64,7 +64,7 @@ _**Nico's Note**: This is a heavier take on Source Serif, which I've found nicer
 
 <img src="./examples/core/Cartisse.png" width='400px'/>
 
-**Cartisse** is a modified version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This modified version has a [dedicated repository](https://github.com/nicoverbruggen/cartisse) that I've linked since it does contain some manual modifications to kerning specifically made for optimal legibility and appearance on Kobo devices.
+**Cartisse** is a modified version of [XCharter](https://www.ctan.org/tex-archive/fonts/xcharter/), which is an extended version of [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter). This modified version has a [dedicated repository](https://github.com/nicoverbruggen/cartisse) that I've linked since it does contain some manual modifications (to kerning specifically) made for optimal legibility and appearance on Kobo devices.
 
 > Charter was designed by Matthew Carter in 1987 as a body text font that would hold up well on low-resolution output devices of the day—fax machines and 300 dpi laser printers. XCharter is a project by Michael Sharpe, which extends Bitstream's Charter. An extended copyright notice has been included as part of Cartisse.
 
@@ -84,7 +84,7 @@ _**Note**: Charis is slightly thicker than Cartisse, and has broader language su
 
 <img src="./examples/core/NV-Garamond.png" width='400px'/>
 
-**NV Garamond** is an EB Garamond variant that contains a bunch of tweaks, mostly related to glyph sizes. This version is about 10% optically larger than EB Garamond, which, with an adjusted line height, makes it ideal for reading on Kobo devices. This version has a [dedicated repository](https://github.com/nicoverbruggen/nv-garamond) that I've linked because of the manual edits that I've made.
+**NV Garamond** is an EB Garamond variant that contains a bunch of tweaks, mostly related to glyph sizes. This version is about 10% optically larger than EB Garamond, which, with an adjusted line height, makes it ideal for reading on Kobo devices.
 
 > You can also find the original version of EB Garamond [on Google Web Fonts](https://fonts.google.com/specimen/EB+Garamond/about). EB Garamond was designed by Octavio Pardo and Georg Duffner, and created as an open source revival of Claude Garamont's original design, based on the Berner specimen. You can learn more about the project [here](http://www.georgduffner.at/ebgaramond/). It is available under the [OFL license](https://openfontlicense.org/).
 
@@ -94,7 +94,7 @@ _**Nico's Note**: Various Garamond variants are commonly used when typesetting f
 
 <img src="./examples/core/NV-Jost.png" width='400px'/>
 
-**NV Jost** is a Jost variant, with a slightly altered lowercase G and single storey a (similar to Futura, only accessible via OT feature on the original font). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-jost), mostly because I made some glyph alterations.
+**NV Jost** is a Jost variant, with a slightly altered lowercase G and single storey a (similar to Futura, only accessible via OT feature on the original font).
 
 > You can find the original version of Jost [on Google Web Fonts](https://fonts.google.com/specimen/Jost/about). Jost was designed by Owen Earl of [indestructable type*](https://indestructibletype.com). It is available under the [OFL license](https://openfontlicense.org/).
 
@@ -104,7 +104,7 @@ _**Nico's Note**: If you're looking for something different, the sans-serif Jost
 
 <img src="./examples/core/NV-Bitter.png" width='400px'/>
 
-**NV Bitter** is a version of [Bitter](https://github.com/solmatas/BitterPro) that has been renamed, so it can be installed and loaded correctly on old and new Kobo devices. Newer devices may already include Bitter as part of the software, which is why this version has been renamed to avoid conflicts. Some minor fixes have also been applied.
+**NV Bitter** is a version of [Bitter](https://github.com/solmatas/BitterPro) that has been renamed, so it can be installed and loaded correctly on old and new Kobo devices. Newer Kobo devices may already include Bitter as part of the software, which is why this version has been renamed to avoid conflicts. Some minor fixes have also been applied.
 
 > You can find the original version of Bitter [on Google Web Fonts](https://fonts.google.com/specimen/Bitter/about). Bitter was designed by [Sol Matas](http://www.solmatas.com/), and available under the [OFL license](https://openfontlicense.org/).
 
@@ -124,7 +124,7 @@ _**Nico's Note**: The previous version of this font is included by default on ne
 
 <img src="./examples/core/NV-Palatium.png" width='400px'/>
 
-**NV Palatium**, is a renamed version of [Domitian](https://www.ctan.org/tex-archive/fonts/domitian/), which is an extended version of [URW Palladio](https://tug.org/FontCatalogue/urwpalladio/). This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-palatium) that I've linked because I've expanded and updated the embedded license in each of the font files.
+**NV Palatium**, is a renamed version of [Domitian](https://www.ctan.org/tex-archive/fonts/domitian/), which is an extended version of [URW Palladio](https://tug.org/FontCatalogue/urwpalladio/).
 
 > You can find the original version of Domitian [on GitHub](https://github.com/dbenjaminmiller/domitian). Designed by: Hermann Zapf, Daniel Benjamin Miller. Domitian is a project to develop a full-featured, free and open-source implementation of Hermann Zapf's Palatino design. "Domitian" is in reference to builder of the Flavian Palace, located on the Palatine Hill. It is available under various licenses, including the [OFL license](https://openfontlicense.org/).
 
@@ -156,7 +156,7 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Alizar.png" width='400px'/>
 
-**NV Alizar** is a variant of [Crimson Pro](https://github.com/Fonthausen/CrimsonPro), with adjusted metrics for line height and a 12.6% glyph size increase, which puts it at exactly the same size as NV Scarlet. Crimson Pro is the modern redraw of the same Crimson that NV Scarlet comes from. OFL licensed.
+**NV Alizar** is a variant of [Crimson Pro](https://github.com/Fonthausen/CrimsonPro), with adjusted metrics for line height and a 12.6% glyph size increase, which puts it at exactly the same size as NV Scarlet. Crimson Pro is the modern reworking of the same Crimson that NV Scarlet comes from. OFL licensed.
 
 ### NV Ancizar Serif
 
@@ -186,7 +186,7 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Cardo.png" width='400px'/>
 
-**NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Does not have a separate repository because no other changes were applied. OFL licensed.
+**NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. OFL licensed.
 
 ### NV Castoro
 
@@ -198,25 +198,25 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Charis-Literacy.png" width='400px'/>
 
-**NV Charis Literacy** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with the "Single-story a and g" stylistic set baked in by default, which makes it a good pick for early readers or literacy contexts where simplified letterforms are easier to recognize. Like NV Charis, it has a slightly more narrow line-height. OFL licensed.
+**NV Charis Literacy** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with the "Single-story a and g" stylistic set baked in by default, which makes it a good pick for early readers or literacy contexts where simplified letterforms are easier to recognize. Like Charis, it has a slightly more narrow line-height. OFL licensed.
 
 ### NV Charis Old Style
 
 <img src="./examples/extra/NV-Charis-Old-Style.png" width='400px'/>
 
-**NV Charis Old Style** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with old-style (text) figures baked in by default, so numerals blend more naturally with lowercase text instead of standing at full cap-height. Like NV Charis, it has a slightly more narrow line-height. OFL licensed.
+**NV Charis Old Style** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with old-style (text) figures baked in by default, so numerals blend more naturally with lowercase text instead of standing at full cap-height. Like Charis, it has a slightly more narrow line-height. OFL licensed.
 
 ### NV Clara
 
 <img src="./examples/extra/NV-Clara.png" width='400px'/>
 
-**NV Clara** is a version of [Clara](https://ctan.org/pkg/clara) by Séamas Ó Brógáin, with adjusted metrics and an 8% glyph scale increase for e-readers. OFL/GPL-with-font-exception licensed.
+**NV Clara** is a version of [Clara](https://ctan.org/pkg/clara) by Séamas Ó Brógáin, with adjusted metrics and an 8% glyph scale increase for e-readers. OFL licensed.
 
 ### NV Elstob
 
 <img src="./examples/extra/NV-Elstob.png" width='400px'/>
 
-**NV Elstob** is a version of [Elstob](https://github.com/psb1558/Elstob-font) that has been renamed so it works correctly on Kobo devices. It is based on the 12pt version. Does not have a separate repository because no other changes were applied. OFL licensed.
+**NV Elstob** is a version of [Elstob](https://github.com/psb1558/Elstob-font) that has been renamed so it works correctly on Kobo devices. It is based on the 12pt version. OFL licensed.
 
 ### NV Erewhon
 
@@ -240,19 +240,19 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Halcyon.png" width='400px'/>
 
-**NV Halcyon** is a variant of [Merriweather](https://github.com/SorkinType/Merriweather) by Eben Sorkin, with adjusted metrics for line height and the glyph scale reduced by 8%. A sturdy text face drawn to read well on screens, which serves E Ink nicely too. Merriweather's x-height is unusually large, so the reduction brings it into line with the rest of the collection. _Halcyon_ keeps the fair-weather sense of the original's name. OFL licensed.
+**NV Halcyon** is a variant of [Merriweather](https://github.com/SorkinType/Merriweather) by Eben Sorkin, with adjusted metrics for line height and the glyph scale reduced by 8%. Merriweather's x-height is unusually large, so the reduction brings it into line with the rest of the collection. OFL licensed.
 
 ### NV Ibarra
 
 <img src="./examples/extra/NV-Ibarra.png" width='400px'/>
 
-**NV Ibarra** is a variant of [Ibarra Real Nova](https://github.com/googlefonts/ibarrareal), with adjusted metrics for line height and an 11% glyph size increase, since it is drawn small. The text weight is instanced at 450 rather than 400, as the thin strokes would otherwise drop out on E Ink. OFL licensed.
+**NV Ibarra** is a variant of [Ibarra Real Nova](https://github.com/googlefonts/ibarrareal), with adjusted metrics for line height and an 11% glyph size increase, since it is drawn small. The text weight is instanced at 450 rather than 400, as the thin strokes would otherwise be difficult to read. OFL licensed.
 
 ### NV Junius
 
 <img src="./examples/extra/NV-Junius.png" width='400px'/>
 
-**NV Junius** is a [Junicode 2](https://github.com/psb1558/Junicode-font) variant based on the variable font, with adjusted metrics and a 10% glyph size increase. This one does not have a repository, but can be easily recreated by using [Slice](https://github.com/source-foundry/Slice), a GUI that allows you to export various fixed configurations. OFL licensed.
+**NV Junius** is a [Junicode 2](https://github.com/psb1558/Junicode-font) variant based on the variable font, with adjusted metrics and a 10% glyph size increase. To create this variant, I used [Slice](https://github.com/source-foundry/Slice), which is a GUI that allows you to instance various fixed font configurations. OFL licensed.
 
 ### NV Kierkegaard
 
@@ -264,7 +264,7 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Libertinus.png" width='400px'/>
 
-**NV Libertinus** is a variant of [Libertinus](https://github.com/alerque/libertinus) Serif. I've altered the metrics for adjusted line height and increased the glyph scale by 11%, since it is drawn small and would otherwise read a size down from the rest of the collection. OFL licensed.
+**NV Libertinus** is a variant of [Libertinus](https://github.com/alerque/libertinus) Serif. I've altered the metrics for adjusted line height and increased the glyph scale by 11%, since the original is drawn small. OFL licensed.
 
 ### NV Literata
 
@@ -276,7 +276,7 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Lodestar.png" width='400px'/>
 
-**NV Lodestar** is a variant of [Cooper Hewitt](https://github.com/cooperhewitt/cooperhewitt-typeface) by Chester Jenkins, with adjusted metrics for line height and some metadata adjustments. The design grew out of Jenkins' earlier _Polaris_, and _lodestar_ is the old English name for that star, since the museum reserve the name _Cooper Hewitt_ for their own releases. The medium is used as the regular for better contrast on e-ink. OFL licensed.
+**NV Lodestar** is a variant of [Cooper Hewitt](https://github.com/cooperhewitt/cooperhewitt-typeface) by Chester Jenkins, with adjusted metrics for line height and some metadata adjustments. The medium variant is used as the regular for better contrast on e-ink. OFL licensed.
 
 ### NV Membo
 
@@ -300,31 +300,31 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Publica.png" width='400px'/>
 
-**NV Publica** is a variant of [PT Serif](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, with adjusted metrics for line height. A sturdy, low-contrast transitional face drawn for both screen and print, with broad Latin and Cyrillic coverage. The _PT_ is usually read as _public type_, after the Russian public-types programme it was made for, which _Publica_ keeps. OFL licensed.
+**NV Publica** is a variant of [PT Serif](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, with adjusted metrics for line height. The _PT_ is usually read as _public type_, after the Russian public-types programme it was made for, which _Publica_ keeps. OFL licensed.
 
 ### NV Publica Wide
 
 <img src="./examples/extra/NV-Publica-Wide.png" width='400px'/>
 
-**NV Publica Wide** is a variant of [PT Serif Caption](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, with adjusted metrics for line height. The _caption_ optical size of the same design as NV Publica: drawn for small text, so it is sturdier and about 13% wider per character. It is named _Wide_ rather than _Caption_ because that is what it does to your page: expect fewer words per line, not more. ParaType never drew a bold for this cut, so only Regular and Italic exist. OFL licensed.
+**NV Publica Wide** is a variant of [PT Serif Caption](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, which is a wider and more compressed version of PT Serif with adjusted metrics for line height. OFL licensed.
 
 ### NV Sable
 
 <img src="./examples/extra/NV-Sable.png" width='400px'/>
 
-**NV Sable** is a variant of [Lora](https://github.com/cyrealtype/Lora-Cyrillic) by Cyreal, with adjusted metrics for line height. A contemporary serif with calligraphic roots, so its curves have a brushed quality that gives a page a bit more movement than the quieter faces here. Named for the sable brush those strokes recall, since Cyreal reserve the name _Lora_ for their own releases. OFL licensed.
+**NV Sable** is a variant of [Lora](https://github.com/cyrealtype/Lora-Cyrillic) by Cyreal, with adjusted metrics for line height. OFL licensed.
 
 ### NV Scarlet
 
 <img src="./examples/extra/NV-Scarlet.png" width='400px'/>
 
-**NV Scarlet** is a variant of [Cochineal](https://ctan.org/pkg/cochineal), with adjusted metrics for line height and a 10% glyph size increase so it reads at the same size as before. Cochineal is Michael Sharpe's extension of [Crimson](https://github.com/skosch/Crimson) by Sebastian Kosch, which earlier releases of NV Scarlet were based on, adding over 1500 glyphs: real small caps, old-style and lining figures, fractions, and Greek and Cyrillic. An oldstyle garalde at heart, closer to Minion Pro than to the more modern Crimson Pro. Cochineal, as it happens, is the insect that scarlet dye is made from. OFL licensed.
+**NV Scarlet** is a variant of [Cochineal](https://ctan.org/pkg/cochineal), with adjusted metrics for line height and a 10% glyph size increase so it reads at the same size as before. Cochineal is Michael Sharpe's extension of [Crimson](https://github.com/skosch/Crimson) by Sebastian Kosch. It is slightly closer to Minion Pro than to the more modern Crimson Pro. OFL licensed.
 
 ### NV Tabula
 
 <img src="./examples/extra/NV-Tabula.png" width='400px'/>
 
-**NV Tabula** is a variant of [IBM Plex Serif](https://github.com/IBM/plex), with adjusted metrics for line height. A transitional serif with a large x-height and an even, faintly mechanical colour that holds up well on E Ink. Named after the Tabulating Machine Company that IBM grew out of, and for _tabula_, the writing tablet. OFL licensed.
+**NV Tabula** is a variant of [IBM Plex Serif](https://github.com/IBM/plex), with adjusted metrics for line height. OFL licensed.
 
 ### NV Technical
 
@@ -336,13 +336,13 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Yrsa.png" width='400px'/>
 
-**NV Yrsa** is a variant of [Yrsa](https://github.com/rosettatype/yrsa-rasa) by Rosetta Type, with adjusted metrics for line height and a 15% glyph size increase. Yrsa is the Latin half of the Yrsa/Rasa superfamily, drawn to sit alongside Gujarati, which is why it comes out small. Scaled up for Latin-only reading it is low-contrast and even-textured, and holds together well on E Ink. OFL licensed.
+**NV Yrsa** is a variant of [Yrsa](https://github.com/rosettatype/yrsa-rasa) by Rosetta Type, with adjusted metrics for line height and a 15% glyph size increase. Yrsa is the Latin half of the Yrsa/Rasa superfamily. OFL licensed.
 
 ### NV Zilla Slab
 
 <img src="./examples/extra/NV-Zilla-Slab.png" width='400px'/>
 
-**NV Zilla Slab** is a [Zilla Slab](https://github.com/mozilla/zilla-slab) variant, with adjusted metrics and a 10% glyph size increase. This makes it ideal for digital reading on e-readers. This one has a [dedicated repository](https://github.com/nicoverbruggen/nv-zilla-slab) that I've linked, OFL licensed.
+**NV Zilla Slab** is a [Zilla Slab](https://github.com/mozilla/zilla-slab) variant, with adjusted metrics and a 10% glyph size increase. OFL licensed.
 
 ### NV Disleksio
 
