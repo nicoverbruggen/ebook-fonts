@@ -63,8 +63,6 @@ The script uses FreeType's `FT_Outline_EmboldenXY` in both directions, removes o
 
 The script sets the PANOSE weight to Bold even when the family classification is unspecified, as it is in Radley. The NV preset otherwise skips PANOSE correction for those fonts. Run the regression check with `python3 -m unittest discover -s tools/repair` inside the container.
 
-NV Radley's Regular and Italic styles come from [Radley 1.003](https://github.com/google/fonts/tree/8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5/ofl/radley), prepared with the `nv` preset and `--scale 1.10`.
-
 ### Sourcing files from other repositories
 
 Some fonts, like Libron, Cartisse, Sourcerer and Readerly, while included, are sourced from separate repositories. 
