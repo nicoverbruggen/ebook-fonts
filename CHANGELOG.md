@@ -11,6 +11,7 @@ All notable changes to this collection. Versions are the collection's own; see `
 | NV Lodestar | Extra | ✅ Added | Based on Cooper Hewitt (Chester Jenkins, 2014), the typeface of the Cooper Hewitt Smithsonian Design Museum. |
 | Libron | Core | 👌 Updated | Updated to Libron 0.25, adding small caps through `smcp` and `c2sc` in all four styles. |
 | NV Aleo | Extra | ✅ Added | Based on Aleo 2.002 by Alessio Laiso, with the standard NV preset and all four styles. |
+| NV Wittgenstein | Extra | ✅ Added | Based on Wittgenstein 1.500 by Jörg Drees, with adjusted line height and all four styles at the original glyph size. |
 | NV Bitter | Core | 👌 Updated | Uses Medium and Medium Italic for Regular and Italic, giving body text more weight. Bold styles, line spacing, and the small caps and ligature fixes are unchanged. |
 | Sourcerer | Core | 👌 Updated | Corrected PANOSE weight to Bold in the Bold and Bold Italic source fonts, matching their OS/2 weight class of 700. |
 | NV Garamontio | Extra | ✅ Added | Based on Garamontio 1.315, Michele Casanova's fork of EB Garamond, with less slanted italics and expanded small caps support. Scaled up 10% with line spacing to match NV Garamond, which remains in Core. |

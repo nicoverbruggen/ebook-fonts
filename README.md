@@ -346,6 +346,12 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 **NV Technical** is a variant of [STIX Two Text](https://fonts.google.com/specimen/STIX+Two+Text/about). OFL licensed. If you use a Kobo that has stylus support, STIX Two Text will likely already be included on your device, and in that case you probably don't need to install this version.
 
+### NV Wittgenstein
+
+<img src="./examples/extra/NV-Wittgenstein.png" width='400px'/>
+
+**NV Wittgenstein** is a variant of [Wittgenstein](https://github.com/jrgdrs/Wittgenstein) by Jörg Drees, with adjusted metrics for line height. OFL licensed.
+
 ### NV Yrsa
 
 <img src="./examples/extra/NV-Yrsa.png" width='400px'/>

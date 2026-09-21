@@ -109,6 +109,7 @@ FAMILY_ORDER: dict[str, list[str]] = {
         "NV Scarlet",
         "NV Tabula",
         "NV Technical",
+        "NV Wittgenstein",
         "NV Yrsa",
         "NV Zilla Slab",
         "NV Disleksio",
