@@ -184,6 +184,12 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 **NV Andada** is a variant of [Andada Pro](https://github.com/huertatipografica/Andada-Pro) by Huerta Tipográfica, with adjusted metrics for line height. OFL licensed.
 
+### NV Appleton
+
+<img src="./examples/extra/NV-Appleton.png" width='400px'/>
+
+**NV Appleton** is a renamed version of [Neuton](https://github.com/anoxic/neuton) by Brian Zick, with adjusted line height and a 12% glyph size increase. Bold Italic is a synthetic weight. OFL licensed.
+
 ### NV Basker
 
 <img src="./examples/extra/NV-Basker.png" width='400px'/>

@@ -42,6 +42,22 @@ If you would like to run these locally, you can do so, but it's highly recommend
 podman run --rm -v "$PWD:/work" -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest <command>
 ```
 
+### Rebuilding synthetic bold styles
+
+To regenerate synthetic bold styles from the checked-in Regular and Italic fonts, run:
+
+```sh
+podman run --rm -v "$PWD:/work" -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest python3 tools/repair/build_synthetic_bolds.py
+```
+
+Pass `--family Appleton` to rebuild one family. The script builds only the synthetic styles listed below and preserves native bold styles.
+
+| Family | Synthetic styles | Strength |
+|---|---|---|
+| NV Appleton | Bold Italic | 0.025 em |
+
+The script uses FreeType's `FT_Outline_EmboldenXY` in both directions, removes overlapping contours and clears the original hints. It increases advancing glyph widths by the same amount, preserves empty glyphs and zero-width advances, and applies the NV preset to set the bold style metadata. It uses the same pinned `kobofix.py` as the collection build. Run the collection build afterwards to refresh the release outputs.
+
 ### Sourcing files from other repositories
 
 Some fonts, like Libron, Cartisse, Sourcerer and Readerly, while included, are sourced from separate repositories. 

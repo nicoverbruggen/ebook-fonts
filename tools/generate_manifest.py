@@ -82,6 +82,7 @@ FAMILY_ORDER: dict[str, list[str]] = {
         "NV Ancizar Serif",
         "NV Ancizar Sans",
         "NV Andada",
+        "NV Appleton",
         "NV Basker",
         "NV Cardo",
         "NV Castoro",
