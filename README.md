@@ -200,7 +200,7 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Cardo.png" width='400px'/>
 
-**NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. OFL licensed.
+**NV Cardo** is a version of [Cardo](https://github.com/ryanfb/Cardo) with 20% spacing and has been renamed so you can keep the original Cardo installed side-by-side as well. Bold Italic is a synthetic weight. OFL licensed.
 
 ### NV Castoro
 
@@ -302,7 +302,7 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Membo.png" width='400px'/>
 
-**NV Membo** is a renamed version of [fbb](https://www.ctan.org/tex-archive/fonts/fbb), a modified version of Cardo which has a Bold Italic style, unlike NV Cardo. It has been converted to TrueType (`ttf`) for better Kobo compatibility. OFL licensed.
+**NV Membo** is a renamed version of [fbb](https://www.ctan.org/tex-archive/fonts/fbb), a modified version of Cardo with a native Bold Italic style. It has been converted to TrueType (`ttf`) for better Kobo compatibility. OFL licensed.
 
 ### NV Newsreader
 
@@ -326,7 +326,7 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 <img src="./examples/extra/NV-Publica-Wide.png" width='400px'/>
 
-**NV Publica Wide** is a variant of [PT Serif Caption](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, which is a wider and more compressed version of PT Serif with adjusted metrics for line height. OFL licensed.
+**NV Publica Wide** is a variant of [PT Serif Caption](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, which is a wider and more compressed version of PT Serif with adjusted metrics for line height. Bold and Bold Italic are synthetic weights. OFL licensed.
 
 ### NV Radley
 

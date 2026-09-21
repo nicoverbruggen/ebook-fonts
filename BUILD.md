@@ -55,6 +55,8 @@ Pass `--family Appleton` to rebuild one family. The script builds only the synth
 | Family | Synthetic styles | Strength |
 |---|---|---|
 | NV Appleton | Bold Italic | 0.025 em |
+| NV Cardo | Bold Italic | 0.020 em |
+| NV Publica Wide | Bold, Bold Italic | 0.020 em |
 | NV Radley | Bold, Bold Italic | 0.030 em |
 
 The script uses FreeType's `FT_Outline_EmboldenXY` in both directions, removes overlapping contours and clears the original hints. It increases advancing glyph widths by the same amount, preserves empty glyphs and zero-width advances, and applies the NV preset to set the bold style metadata. It uses the same pinned `kobofix.py` as the collection build. Run the collection build afterwards to refresh the release outputs.
