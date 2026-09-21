@@ -9,6 +9,7 @@ All notable changes to this collection. Versions are the collection's own; see `
 | Font | Collection | Change | Details |
 |---|---|---|---|
 | NV Lodestar | Extra | ✅ Added | Based on Cooper Hewitt (Chester Jenkins, 2014), the typeface of the Cooper Hewitt Smithsonian Design Museum. |
+| Libron | Core | 👌 Updated | Updated to Libron 0.25, adding small caps through `smcp` and `c2sc` in all four styles. |
 
 ## v4.2 (2026-08-05)
 

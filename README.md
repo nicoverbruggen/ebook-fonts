@@ -44,7 +44,7 @@ Each of these fonts has solid styles for all four font files (Regular, Italic, B
 
 <img src="./examples/core/Libron.png" width='400px'/>
 
-**Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various manual edits to give the font a more neutral look. The serifs have been trimmed down on several capitals, certain glyphs have been reworked, and composite glyphs have been fixed. The result is a more subtle serif that is less in your way. A [separate repository](https://github.com/nicoverbruggen/libron) is available with the source files.
+**Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various manual edits to give the font a more neutral look. The serifs have been trimmed down on several capitals, certain glyphs have been reworked, and composite glyphs have been fixed. The result is a more subtle serif that is less in your way. Small caps are available in all four styles. A [separate repository](https://github.com/nicoverbruggen/libron) is available with the source files.
 
 > [Libron](https://github.com/nicoverbruggen/libron) is a modified font based on Newsreader, designed by Production Type and has been manually modified for an even better reading experience. Libron is available under the [OFL license](https://openfontlicense.org/).
 
