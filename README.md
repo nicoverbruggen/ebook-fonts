@@ -148,6 +148,12 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 **NV Adelph** is a variant of the [Adelphe](https://gitlab.com/bye-bye-binary/adelphe). I've altered the metrics for adjusted line height. [OIFL licensed](https://typotheque.genderfluid.space/fr/licences), like the original. (If you're curious, this is in essence a more gender-inclusive version of the OFL, so you can use the font in the exact same way as any OFL-licensed font.)
 
+### NV Aleo
+
+<img src="./examples/extra/NV-Aleo.png" width='400px'/>
+
+**NV Aleo** is a variant of [Aleo](https://github.com/AlessioLaiso/aleo) by Alessio Laiso, with adjusted metrics for line height. OFL licensed.
+
 ### NV Alegreya
 
 <img src="./examples/extra/NV-Alegreya.png" width='400px'/>
