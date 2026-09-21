@@ -232,6 +232,12 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 **NV Erewhon** is a version of [Erewhon](https://ctan.org/pkg/erewhon), derived from Heuristica and Utopia, with adjusted metrics for e-readers. OFL licensed.
 
+### NV Garamontio
+
+<img src="./examples/extra/NV-Garamontio.png" width='400px'/>
+
+**NV Garamontio** is a variant of [Garamontio](https://codeberg.org/m-casanova/Garamontio), Michele Casanova's fork of EB Garamond, with a 10% glyph size increase and adjusted line height to match NV Garamond. It has less slanted italics and expanded small caps support. OFL licensed.
+
 ### NV Gentium
 
 <img src="./examples/extra/NV-Gentium.png" width='400px'/>

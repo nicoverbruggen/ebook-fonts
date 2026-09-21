@@ -13,6 +13,7 @@ All notable changes to this collection. Versions are the collection's own; see `
 | NV Aleo | Extra | ✅ Added | Based on Aleo 2.002 by Alessio Laiso, with the standard NV preset and all four styles. |
 | NV Bitter | Core | 👌 Updated | Uses Medium and Medium Italic for Regular and Italic, giving body text more weight. Bold styles, line spacing, and the small caps and ligature fixes are unchanged. |
 | Sourcerer | Core | 👌 Updated | Corrected PANOSE weight to Bold in the Bold and Bold Italic source fonts, matching their OS/2 weight class of 700. |
+| NV Garamontio | Extra | ✅ Added | Based on Garamontio 1.315, Michele Casanova's fork of EB Garamond, with less slanted italics and expanded small caps support. Scaled up 10% with line spacing to match NV Garamond, which remains in Core. |
 
 ## v4.2 (2026-08-05)
 

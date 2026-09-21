@@ -90,6 +90,7 @@ FAMILY_ORDER: dict[str, list[str]] = {
         "NV Clara",
         "NV Elstob",
         "NV Erewhon",
+        "NV Garamontio",
         "NV Gentium",
         "NV Georsio",
         "NV Halcyon",
