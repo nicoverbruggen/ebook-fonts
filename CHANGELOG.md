@@ -12,6 +12,7 @@ All notable changes to this collection. Versions are the collection's own; see `
 | Libron | Core | 👌 Updated | Updated to Libron 0.25, adding small caps through `smcp` and `c2sc` in all four styles. |
 | NV Aleo | Extra | ✅ Added | Based on Aleo 2.002 by Alessio Laiso, with the standard NV preset and all four styles. |
 | NV Appleton | Extra | ✅ Added | Based on Neuton 1.560 by Brian Zick, enlarged 12% with adjusted line height. Includes a synthetic Bold Italic style. |
+| NV Radley | Extra | ✅ Added | Based on Radley 1.003 by Vernon Adams, enlarged 10% with adjusted line height. Adds synthetic Bold and Bold Italic using FreeType outline emboldening, with corrected PANOSE weights. |
 | NV Wittgenstein | Extra | ✅ Added | Based on Wittgenstein 1.500 by Jörg Drees, with adjusted line height and all four styles at the original glyph size. |
 | NV Bitter | Core | 👌 Updated | Uses Medium and Medium Italic for Regular and Italic, giving body text more weight. Bold styles, line spacing, and the small caps and ligature fixes are unchanged. |
 | Sourcerer | Core | 👌 Updated | Corrected PANOSE weight to Bold in the Bold and Bold Italic source fonts, matching their OS/2 weight class of 700. |

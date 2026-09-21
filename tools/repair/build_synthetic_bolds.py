@@ -29,6 +29,7 @@ from build import download_kobofix
 
 FAMILIES = {
     "Appleton": {"BoldItalic": 0.025},
+    "Radley": {"Bold": 0.030, "BoldItalic": 0.030},
 }
 STYLE_SOURCES = {"Bold": "Regular", "BoldItalic": "Italic"}
 

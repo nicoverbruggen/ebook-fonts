@@ -55,8 +55,13 @@ Pass `--family Appleton` to rebuild one family. The script builds only the synth
 | Family | Synthetic styles | Strength |
 |---|---|---|
 | NV Appleton | Bold Italic | 0.025 em |
+| NV Radley | Bold, Bold Italic | 0.030 em |
 
 The script uses FreeType's `FT_Outline_EmboldenXY` in both directions, removes overlapping contours and clears the original hints. It increases advancing glyph widths by the same amount, preserves empty glyphs and zero-width advances, and applies the NV preset to set the bold style metadata. It uses the same pinned `kobofix.py` as the collection build. Run the collection build afterwards to refresh the release outputs.
+
+The script sets the PANOSE weight to Bold even when the family classification is unspecified, as it is in Radley. The NV preset otherwise skips PANOSE correction for those fonts. Run the regression check with `python3 -m unittest discover -s tools/repair` inside the container.
+
+NV Radley's Regular and Italic styles come from [Radley 1.003](https://github.com/google/fonts/tree/8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5/ofl/radley), prepared with the `nv` preset and `--scale 1.10`.
 
 ### Sourcing files from other repositories
 

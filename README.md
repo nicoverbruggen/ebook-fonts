@@ -328,6 +328,12 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 **NV Publica Wide** is a variant of [PT Serif Caption](https://www.paratype.com/fonts/pt/pt-serif) by ParaType, which is a wider and more compressed version of PT Serif with adjusted metrics for line height. OFL licensed.
 
+### NV Radley
+
+<img src="./examples/extra/NV-Radley.png" width='400px'/>
+
+**NV Radley** is a variant of [Radley](https://github.com/googlefonts/RadleyFont) by Vernon Adams, with adjusted line height and a 10% glyph size increase. The original has Regular and Italic styles. Bold and Bold Italic are synthetic weights made with FreeType outline emboldening. OFL licensed.
+
 ### NV Sable
 
 <img src="./examples/extra/NV-Sable.png" width='400px'/>
