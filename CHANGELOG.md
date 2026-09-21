@@ -13,6 +13,7 @@ All notable changes to this collection. Versions are the collection's own; see `
 | NV Aleo | Extra | ✅ Added | Based on Aleo 2.002 by Alessio Laiso, with the standard NV preset and all four styles. |
 | NV Appleton | Extra | ✅ Added | Based on Neuton 1.560 by Brian Zick, enlarged 12% with adjusted line height. Includes a synthetic Bold Italic style. |
 | NV Cardo | Extra | 👌 Updated | Added a synthetic Bold Italic style using restrained FreeType outline emboldening. |
+| NV Charis Old Style | Extra | ❌ Removed | No longer included in the collection. |
 | NV Publica Wide | Extra | 👌 Updated | Added synthetic Bold and Bold Italic styles using restrained FreeType outline emboldening. |
 | NV Radley | Extra | ✅ Added | Based on Radley 1.003 by Vernon Adams, enlarged 10% with adjusted line height. Adds synthetic Bold and Bold Italic using FreeType outline emboldening, with corrected PANOSE weights. |
 | NV Wittgenstein | Extra | ✅ Added | Based on Wittgenstein 1.500 by Jörg Drees, with adjusted line height and all four styles at the original glyph size. |

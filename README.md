@@ -214,12 +214,6 @@ _**Nico's Note**: If you're looking for a font that reminds you of [Palatino](ht
 
 **NV Charis Literacy** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with the "Single-story a and g" stylistic set baked in by default, which makes it a good pick for early readers or literacy contexts where simplified letterforms are easier to recognize. Like Charis, it has a slightly more narrow line-height. OFL licensed.
 
-### NV Charis Old Style
-
-<img src="./examples/extra/NV-Charis-Old-Style.png" width='400px'/>
-
-**NV Charis Old Style** is a version of [Charis 7.0](https://software.sil.org/charis/) by SIL with old-style (text) figures baked in by default, so numerals blend more naturally with lowercase text instead of standing at full cap-height. Like Charis, it has a slightly more narrow line-height. OFL licensed.
-
 ### NV Clara
 
 <img src="./examples/extra/NV-Clara.png" width='400px'/>
