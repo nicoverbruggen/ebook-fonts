@@ -104,7 +104,7 @@ _**Nico's Note**: If you're looking for something different, the sans-serif Jost
 
 <img src="./examples/core/NV-Bitter.png" width='400px'/>
 
-**NV Bitter** is a version of [Bitter](https://github.com/solmatas/BitterPro) that has been renamed, so it can be installed and loaded correctly on old and new Kobo devices. Newer Kobo devices may already include Bitter as part of the software, which is why this version has been renamed to avoid conflicts. Some minor fixes have also been applied.
+**NV Bitter** is a version of [Bitter](https://github.com/solmatas/BitterPro) that has been renamed, so it can be installed and loaded correctly on old and new Kobo devices. Medium and Medium Italic are used for the Regular and Italic styles to give body text more weight, unlike the version that comes on Kobo devices by default. Small caps and ligature fixes are also included.
 
 > You can find the original version of Bitter [on Google Web Fonts](https://fonts.google.com/specimen/Bitter/about). Bitter was designed by [Sol Matas](http://www.solmatas.com/), and available under the [OFL license](https://openfontlicense.org/).
 
