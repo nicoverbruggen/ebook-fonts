@@ -56,6 +56,8 @@ _**Nico's Note**: Libron is my current favorite for digital reading: it keeps th
 
 **Sourcerer** is a thicker version of [Source Serif 4](https://github.com/adobe-fonts/source-serif) with 20% spacing, and has been renamed so it works correctly on Kobo devices (as fonts containing a number will not work due to a bug in Nickel). It is available under the [OFL license](https://openfontlicense.org/).
 
+The Bold and Bold Italic styles have corrected PANOSE weight metadata to match their OS/2 weight class.
+
 > [Source Serif](https://github.com/adobe-fonts/source-serif/wiki/Source-Serif-Readme) continues Adobe’s line of high-quality open source typefaces. Designed for a digital environment, the letter shapes are simplified and highly readable. Its historical roots, combined with expert guidance give the typeface a strong character of its own that will shine when used for extended text on paper or screen.
 
 _**Nico's Note**: This is a heavier take on Source Serif, which I've found nicer to read on e-ink displays than the original._

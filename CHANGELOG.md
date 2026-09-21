@@ -11,6 +11,7 @@ All notable changes to this collection. Versions are the collection's own; see `
 | NV Lodestar | Extra | ✅ Added | Based on Cooper Hewitt (Chester Jenkins, 2014), the typeface of the Cooper Hewitt Smithsonian Design Museum. |
 | Libron | Core | 👌 Updated | Updated to Libron 0.25, adding small caps through `smcp` and `c2sc` in all four styles. |
 | NV Bitter | Core | 👌 Updated | Uses Medium and Medium Italic for Regular and Italic, giving body text more weight. Bold styles, line spacing, and the small caps and ligature fixes are unchanged. |
+| Sourcerer | Core | 👌 Updated | Corrected PANOSE weight to Bold in the Bold and Bold Italic source fonts, matching their OS/2 weight class of 700. |
 
 ## v4.2 (2026-08-05)
 

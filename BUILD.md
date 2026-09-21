@@ -48,6 +48,8 @@ Some fonts, like Libron, Cartisse, Sourcerer and Readerly, while included, are s
 
 The versions included in this repository are pinned to a specific font file in `tools/download_fonts.py`, which needs to be updated when new releases are available.
 
+The downloader corrects the PANOSE weight in Sourcerer 1.4's Bold and Bold Italic styles after extraction, so refreshing the sources preserves this collection's fix.
+
 You don't need to manually download these new releases once the pinned URLs have been updated. To refresh the downloaded fonts, simply run:
 
 ```sh

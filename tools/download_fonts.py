@@ -121,6 +121,22 @@ def extract_fonts(archive_path: Path, family: str, destination: Path) -> list[Pa
     return sorted(extracted.values())
 
 
+def repair_sourcerer_weights(fonts: list[Path]) -> None:
+    """Correct the two bold PANOSE weights in the pinned Sourcerer 1.4 release."""
+    if not HAVE_FONTOOLS:
+        raise RuntimeError("fontTools is required to repair Sourcerer's PANOSE weights")
+    for path in fonts:
+        if path.name not in {"Sourcerer-Bold.ttf", "Sourcerer-BoldItalic.ttf"}:
+            continue
+        with TTFont(path, recalcTimestamp=False) as font:
+            os2 = font["OS/2"]
+            if os2.usWeightClass != 700 or os2.panose.bFamilyType != 2:
+                raise ValueError(f"{path}: unexpected Sourcerer bold weight or PANOSE family")
+            if os2.panose.bWeight != 8:
+                os2.panose.bWeight = 8
+                font.save(path)
+
+
 def download_collection(releases: dict, destination: Path, label: str) -> None:
     destination.mkdir(parents=True, exist_ok=True)
 
@@ -132,6 +148,8 @@ def download_collection(releases: dict, destination: Path, label: str) -> None:
             urllib.request.urlretrieve(url, archive_path)
 
             extracted = extract_fonts(archive_path, family, destination)
+            if family == "Sourcerer" and version_from_release_url(url) == "1.4":
+                repair_sourcerer_weights(extracted)
 
             for font in extracted:
                 print(f"  {font.relative_to(REPO_ROOT)}")
