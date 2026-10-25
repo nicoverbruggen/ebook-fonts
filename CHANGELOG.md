@@ -9,7 +9,7 @@ All notable changes to this collection. Versions are the collection's own; see `
 | Font | Collection | Change | Details |
 |---|---|---|---|
 | NV Lodestar | Extra | ✅ Added | Based on Cooper Hewitt (Chester Jenkins, 2014), the typeface of the Cooper Hewitt Smithsonian Design Museum. |
-| Libron | Core | 👌 Updated | Updated to Libron 0.25, adding small caps through `smcp` and `c2sc` in all four styles. |
+| Libron | Core | 👌 Updated | Updated to Libron 0.32, with revised outlines, spacing and kerning, improved combining accents, small caps and old-style figures, completed fractions, and no-op hints for e-readers. |
 | NV Aleo | Extra | ✅ Added | Based on Aleo 2.002 by Alessio Laiso, with the standard NV preset and all four styles. |
 | NV Appleton | Extra | ✅ Added | Based on Neuton 1.560 by Brian Zick, enlarged 12% with adjusted line height. Includes a synthetic Bold Italic style. |
 | NV Cardo | Extra | 👌 Updated | Added a synthetic Bold Italic style using restrained FreeType outline emboldening. |

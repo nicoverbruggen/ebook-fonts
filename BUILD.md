@@ -22,7 +22,7 @@ CrossPoint Reader loads pre-rasterized `.cpfont` bundles instead of TrueType fil
 podman run --rm -v "$PWD:/work" -w /work ghcr.io/nicoverbruggen/fntbld-oci:latest python3 tools/build_cpfont.py
 ```
 
-This writes `out/cpfont/<collection>/<family>/<family>_<size>.cpfont`, which is the layout the device expects under `/fonts` on the SD card. It takes a few minutes and produces around 80 MB, since every glyph is rasterized once per size and style. The converter is downloaded from the CrossPoint firmware repository and pinned to a commit, the same way `kobofix.py` is.
+This writes `out/cpfont/<collection>/<family>/<family>_<size>.cpfont`, which is the layout the device expects under `/fonts` on the SD card. The build can take several minutes because it rasterizes every glyph once per size and style. The converter and Noto Sans fallback are downloaded from the same pinned CrossPoint firmware commit. The default intervals are `reading,ipa-chars`, including dictionary pronunciations. Each style uses Noto Sans Regular for glyphs missing from its source font, matching CrossPoint and Libron. Downloads are cached under `tmp/crosspoint-converter/<commit>/`. If you pass `--converter-dir`, that directory must contain `fontconvert_sdcard.py`, `cpfont_version.py` and `NotoSans-Regular.ttf`.
 
 ### Regenerating the README example images
 

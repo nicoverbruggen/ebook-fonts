@@ -44,7 +44,7 @@ Each of these fonts has solid styles for all four font files (Regular, Italic, B
 
 <img src="./examples/core/Libron.png" width='400px'/>
 
-**Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various manual edits to give the font a more neutral look. The serifs have been trimmed down on several capitals, certain glyphs have been reworked, and composite glyphs have been fixed. The result is a more subtle serif that is less in your way. Small caps are available in all four styles. A [separate repository](https://github.com/nicoverbruggen/libron) is available with the source files.
+**Libron** is a modified version of [Readerly](https://github.com/nicoverbruggen/readerly) with various manual edits to give the font a more neutral look. The serifs have been trimmed down on several capitals, certain glyphs have been reworked, and composite glyphs have been fixed. The result is a more subtle serif that is less in your way. Small caps, old-style figures and fractions are available in all four styles. Version 0.32 also improves combining accents and uses no-op hints to keep outlines in their designed positions on e-readers. A [separate repository](https://github.com/nicoverbruggen/libron) is available with the source files.
 
 > [Libron](https://github.com/nicoverbruggen/libron) is a modified font based on Newsreader, designed by Production Type and has been manually modified for an even better reading experience. Libron is available under the [OFL license](https://openfontlicense.org/).
 
@@ -385,6 +385,10 @@ To install these fonts on your Kobo, unzip the files and drag the font files int
 To reboot, long-press the power button until your Kobo says it has been shut down. Then, press the power button again and wait for your device to restart.
 
 ## FAQ
+
+### How do I install the CrossPoint Reader fonts?
+
+Download the CrossPoint Core or Extra archive from the releases page. Copy its `fonts` folder to the root of your SD card. Each family has files at 12, 14, 16 and 18 point, with all four styles and relaxed line spacing. These builds include IPA characters for dictionary pronunciations. Characters missing from a font use Noto Sans Regular in every style. This fallback applies only to the CrossPoint builds.
 
 ### Where can I download these fonts?
 

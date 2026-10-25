@@ -36,12 +36,19 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 # The converter lives in the CrossPoint firmware repository and is pinned to a
 # commit, the same way build.py pins kobofix. `cpfont_version.py` holds the
 # format version the converter writes and must come from the same commit.
-CONVERTER_COMMIT = "2ceeeccd5ae8f2693eef71388d3f0a4137c1fcc9"
+CONVERTER_COMMIT = "cf50ce73130323e6aac04d61b5916ec264b5edec"
 CONVERTER_BASE_URL = (
     "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/"
-    f"{CONVERTER_COMMIT}/lib/EpdFont/scripts"
+    f"{CONVERTER_COMMIT}/lib/EpdFont"
 )
 CONVERTER_FILES = ("fontconvert_sdcard.py", "cpfont_version.py")
+FALLBACK_FILENAME = "NotoSans-Regular.ttf"
+# CrossPoint uses the same Noto Sans fallback for every style of its SD fonts.
+FALLBACK_URL = f"{CONVERTER_BASE_URL}/builtinFonts/source/NotoSans/{FALLBACK_FILENAME}"
+CONVERTER_ASSETS = {
+    **{name: f"{CONVERTER_BASE_URL}/scripts/{name}" for name in CONVERTER_FILES},
+    FALLBACK_FILENAME: FALLBACK_URL,
+}
 
 # The reading sizes CrossPoint offers by default. Sizes 8 and 10 are only
 # needed for CJK fallback in the device UI, which none of these fonts cover.
@@ -49,7 +56,8 @@ DEFAULT_SIZES = "12,14,16,18"
 
 # The converter's own preset for literary fiction: Latin, Greek, Cyrillic,
 # math and symbol blocks, supplemental punctuation and CJK quote marks.
-DEFAULT_INTERVALS = "reading"
+# IPA characters cover dictionary pronunciations.
+DEFAULT_INTERVALS = "reading,ipa-chars"
 
 # Subfamily name (from the font's name table) to the converter's style flag.
 STYLE_FLAGS = {
@@ -69,12 +77,11 @@ CPFONT_HEADER_SIZE = 32
 
 def download_converter(destination: Path) -> Path:
     destination.mkdir(parents=True, exist_ok=True)
-    for filename in CONVERTER_FILES:
+    for filename, url in CONVERTER_ASSETS.items():
         target = destination / filename
         if target.is_file():
             continue
-        url = f"{CONVERTER_BASE_URL}/{filename}"
-        print(f"Downloading pinned CrossPoint converter: {filename}")
+        print(f"Downloading pinned CrossPoint asset: {filename}")
         temporary = target.with_suffix(f"{target.suffix}.download")
         try:
             urllib.request.urlretrieve(url, temporary)
@@ -163,6 +170,7 @@ def build_family(
     for subfamily, flag in STYLE_FLAGS.items():
         if subfamily in styles:
             command += [flag, str(styles[subfamily])]
+            command += [flag.replace("--", "--fallback-", 1), str(converter.parent / FALLBACK_FILENAME)]
 
     # The converter reports every style it rasterizes on stderr, which is far
     # too much for a 44-family run; keep it for the failure case only.
@@ -239,7 +247,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--converter-dir",
         type=Path,
-        help="Directory holding the two converter scripts. If omitted, they are downloaded.",
+        help="Directory holding the converter scripts and NotoSans-Regular.ttf. If omitted, they are downloaded.",
     )
     return parser.parse_args()
 
@@ -254,11 +262,11 @@ def main() -> int:
     if args.converter_dir:
         converter_dir = args.converter_dir.resolve()
         converter = converter_dir / "fontconvert_sdcard.py"
-        missing = [name for name in CONVERTER_FILES if not (converter_dir / name).is_file()]
+        missing = [name for name in CONVERTER_ASSETS if not (converter_dir / name).is_file()]
         if missing:
             raise FileNotFoundError(f"{converter_dir}: missing {', '.join(missing)}")
     else:
-        converter = download_converter(REPO_ROOT / "tmp" / "crosspoint-converter")
+        converter = download_converter(REPO_ROOT / "tmp" / "crosspoint-converter" / CONVERTER_COMMIT)
 
     for collection in collections:
         build_collection(
